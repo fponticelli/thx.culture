@@ -1,4 +1,4 @@
-package thx.culture.core;
+package thx.culture;
 
 class Number
 {
@@ -21,11 +21,11 @@ class Number
 
 	public static function create(decimals : Int, decimalsSeparator : String, groups : Array<Int>, groupsSeparator : String, patternNegative : String, patternPositive : String)
 	{
-		return new NumberInfo(decimals, decimalsSeparator, groups, groupsSeparator, patternNegative, patternPositive);
+		return new Number(decimals, decimalsSeparator, groups, groupsSeparator, patternNegative, patternPositive);
 	}
 
 	public static function createFromObject(ob : { decimals : Int, decimalsSeparator : String, groups : Array<Int>, groupsSeparator : String, patternNegative : String, patternPositive : String })
 	{
-		return new NumberInfo(ob.decimals, ob.decimalsSeparator, ob.groups, ob.groupsSeparator, ob.patternNegative, ob.patternPositive);
+		return new Number(ob.decimals, ob.decimalsSeparator, ob.groups, ob.groupsSeparator, ob.patternNegative, ob.patternPositive);
 	}
 }

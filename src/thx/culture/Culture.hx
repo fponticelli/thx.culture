@@ -1,7 +1,105 @@
 package thx.culture;
 
+#if macro
+import haxe.macro.Expr;
+#end
+
 class Culture
 {
+	public static var invariant(default, null) : Culture = embed("en-us");
+
+	macro public static function embed(code : Expr) 
+	{
+		var name = switch (code.expr) {
+			case EConst(CString(s)):
+				s;
+			case _:
+				throw 'expected a constant string but is ${code.expr}';
+		};
+		var file = thx.macro.Macros.getModulePath("thx.culture.Culture"),
+			path = file.split("/").slice(0, -1).join("/") + "/cultures/" + name.toLowerCase() + ".json";
+		if(!sys.FileSystem.exists(path))
+			throw 'invalid code $name';
+		var json = haxe.Json.parse(sys.io.File.getContent(path));
+		return macro new Culture(
+			$v{json.name},
+			$v{json.native},
+			$v{json.english},
+			$v{json.iso2},
+			$v{json.iso3},
+			$v{json.pluralRule},
+			Language.create(
+				$v{json.language.name},
+				$v{json.language.native},
+				$v{json.language.english},
+				$v{json.language.iso2},
+				$v{json.language.iso3},
+				$v{json.language.pluralRule}
+			),
+			DateTime.create(
+				$v{json.date.months},
+				$v{json.date.abbrMonths},
+				$v{json.date.days},
+				$v{json.date.abbrDays},
+				$v{json.date.shortDays},
+				$v{json.date.am},
+				$v{json.date.pm},
+				$v{json.date.separatorDate},
+				$v{json.date.separatorTime},
+				$v{json.date.firstWeekDay},
+				$v{json.date.patternYearMonth},
+				$v{json.date.patternMonthDay},
+				$v{json.date.patternDate},
+				$v{json.date.patternDateShort},
+				$v{json.date.patternDateRfc},
+				$v{json.date.patternDateTime},
+				$v{json.date.patternUniversal},
+				$v{json.date.patternSortable},
+				$v{json.date.patternTime},
+				$v{json.date.patternTimeShort}
+			),
+			$v{json.englishCurrency},
+			$v{json.nativeCurrency},
+			$v{json.currencySymbol},
+			$v{json.currencyIso},
+			$v{json.englishRegion},
+			$v{json.nativeRegion},
+			$v{json.isMetric},
+			$v{json.digits},
+			$v{json.signNeg},
+			$v{json.signPos},
+			$v{json.symbolNaN},
+			$v{json.symbolPercent},
+			$v{json.symbolPermille},
+			$v{json.symbolNegInf},
+			$v{json.symbolPosInf},
+			Number.create(
+				$v{json.number.decimals},
+				$v{json.number.decimalsSeparator},
+				$v{json.number.groups},
+				$v{json.number.groupsSeparator},
+				$v{json.number.patternNegative},
+				$v{json.number.patternPositive}
+			),
+			Number.create(
+				$v{json.currency.decimals},
+				$v{json.currency.decimalsSeparator},
+				$v{json.currency.groups},
+				$v{json.currency.groupsSeparator},
+				$v{json.currency.patternNegative},
+				$v{json.currency.patternPositive}
+			),
+			Number.create(
+				$v{json.percent.decimals},
+				$v{json.percent.decimalsSeparator},
+				$v{json.percent.groups},
+				$v{json.percent.groupsSeparator},
+				$v{json.percent.patternNegative},
+				$v{json.percent.patternPositive}
+			)
+		);
+	}
+
 	public var name(default, null) : String;
 	public var native(default, null) : String;
 	public var english(default, null) : String;
@@ -159,27 +257,31 @@ class Culture
 		percent : { decimals : Int, decimalsSeparator : String, groups : Array<Int>, groupsSeparator : String, patternNegative : String, patternPositive : String }
 	})
 	{
-		return new Culture(ob.name, ob.native, ob.english, ob.iso2, ob.iso3, ob.pluralRule, Language.createFromObject(ob.language), ob.date, ob.englishCurrency, ob.nativeCurrency, ob.currencySymbol, ob.currencyIso, ob.englishRegion, ob.nativeRegion, ob.isMetric, ob.digits, ob.signNeg, ob.signPos, ob.symbolNaN, ob.symbolPercent, ob.symbolPermille, ob.symbolNegInf, ob.symbolPosInf, ob.number, ob.currency, ob.percent);
+		return new Culture(ob.name, ob.native, ob.english, ob.iso2, ob.iso3, ob.pluralRule, Language.createFromObject(ob.language), DateTime.createFromObject(ob.date), ob.englishCurrency, ob.nativeCurrency, ob.currencySymbol, ob.currencyIso, ob.englishRegion, ob.nativeRegion, ob.isMetric, ob.digits, ob.signNeg, ob.signPos, ob.symbolNaN, ob.symbolPercent, ob.symbolPermille, ob.symbolNegInf, ob.symbolPosInf, Number.createFromObject(ob.number), Number.createFromObject(ob.currency), Number.createFromObject(ob.percent));
 	}
 
 	static var cultures : Map<String, Culture> = new Map();
 	public static function register(culture : Culture)
 	{
-		cultures.set(getNativeKey(culture), culture.native);
-		cultures.set(getNameKey(culture), culture.name);
-		cultures.set(getIso2Key(culture), culture.iso2);
-		cultures.set(getIso3Key(culture), culture.iso3);
+		cultures.set(getNativeKey(culture.native), culture);
+		cultures.set(getNameKey(culture.name), culture);
+		cultures.set(getIso2Key(culture.iso2), culture);
+		cultures.set(getIso3Key(culture.iso3), culture);
 		Language.register(culture.language);
 	}
 
-	public static function getByName(name : String)
-		return cultures.get(getNameKey(name));
-	public static function getByNativeName(name : String)
-		return cultures.get(getNativeKey(name));
-	public static function getByIso2(name : String)
-		return cultures.get(getIso2Key(name));
-	public static function getByIso3(name : String)
-		return cultures.get(getIso3Key(name));
+	// TODO
+	// add load async
+	// add embed (macro)
+
+	public static function getByName(name : String, ?alt : Culture)
+		return cultures.exists(getNameKey(name)) ? cultures.get(getNameKey(name)) : (alt == null ? invariant : alt);
+	public static function getByNativeName(name : String, ?alt : Culture)
+		return cultures.exists(getNativeKey(name)) ? cultures.get(getNativeKey(name)) : (alt == null ? invariant : alt);
+	public static function getByIso2(name : String, ?alt : Culture)
+		return cultures.exists(getIso2Key(name)) ? cultures.get(getIso2Key(name)) : (alt == null ? invariant : alt);
+	public static function getByIso3(name : String, ?alt : Culture)
+		return cultures.exists(getIso3Key(name)) ? cultures.get(getIso3Key(name)) : (alt == null ? invariant : alt);
 
 
 	static function getNativeKey(key : String)

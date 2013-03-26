@@ -49,11 +49,11 @@ class DateTime
 
 	public static function create(months : Array<String>, abbrMonths : Array<String>, days : Array<String>, abbrDays : Array<String>, shortDays : Array<String>, am : String, pm : String, separatorDate : String, separatorTime : String, firstWeekDay : Int, patternYearMonth : String, patternMonthDay : String, patternDate : String, patternDateShort : String, patternDateRfc : String, patternDateTime : String, patternUniversal : String, patternSortable : String, patternTime : String, patternTimeShort : String)
 	{
-		return new DateTimeInfo(months, abbrMonths, days, abbrDays, shortDays, am, pm, separatorDate, separatorTime, firstWeekDay, patternYearMonth, patternMonthDay, patternDate, patternDateShort, patternDateRfc, patternDateTime, patternUniversal, patternSortable, patternTime, patternTimeShort);
+		return new DateTime(months, abbrMonths, days, abbrDays, shortDays, am, pm, separatorDate, separatorTime, firstWeekDay, patternYearMonth, patternMonthDay, patternDate, patternDateShort, patternDateRfc, patternDateTime, patternUniversal, patternSortable, patternTime, patternTimeShort);
 	}
 
 	public static function createFromObject(ob : { months : Array<String>, abbrMonths : Array<String>, days : Array<String>, abbrDays : Array<String>, shortDays : Array<String>, am : String, pm : String, separatorDate : String, separatorTime : String, firstWeekDay : Int, patternYearMonth : String, patternMonthDay : String, patternDate : String, patternDateShort : String, patternDateRfc : String, patternDateTime : String, patternUniversal : String, patternSortable : String, patternTime : String, patternTimeShort : String })
 	{
-		return new DateTimeInfo(ob.months, ob.abbrMonths, ob.days, ob.abbrDays, ob.shortDays, ob.am, ob.pm, separatorDate, ob.separatorTime, ob.firstWeekDay, ob.patternYearMonth, ob.patternMonthDay, ob.patternDate, ob.patternDateShort, ob.patternDateRfc, ob.patternDateTime, ob.patternUniversal, ob.patternSortable, ob.patternTime, ob.patternTimeShort);
+		return new DateTime(ob.months, ob.abbrMonths, ob.days, ob.abbrDays, ob.shortDays, ob.am, ob.pm, ob.separatorDate, ob.separatorTime, ob.firstWeekDay, ob.patternYearMonth, ob.patternMonthDay, ob.patternDate, ob.patternDateShort, ob.patternDateRfc, ob.patternDateTime, ob.patternUniversal, ob.patternSortable, ob.patternTime, ob.patternTimeShort);
 	}
 }
