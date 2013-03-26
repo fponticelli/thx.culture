@@ -11,19 +11,4 @@ class TestLanguage
 		var it = Language.embed("it");
 		Assert.equals(it.native, "italiano");
 	}
-
-	public function testInvariant()
-	{
-		
-	}
-
-	public function testLoad()
-	{
-		
-	}
-
-	public function testLoadPromise()
-	{
-		
-	}
 }

@@ -12,19 +12,4 @@ class TestCulture
 		Assert.equals("italiano (Italia)", itit.native);
 		Assert.equals("italiano", itit.language.native);
 	}
-
-	public function testInvariant()
-	{
-		
-	}
-
-	public function testLoad()
-	{
-		
-	}
-
-	public function testLoadPromise()
-	{
-		
-	}
 }
