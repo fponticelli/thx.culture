@@ -8,7 +8,7 @@ class TestCulture
 
 	public function testEmbed()
 	{
-		var itit = Culture.embed("it-it");
+		var itit = Culture.embed("it-IT");
 		Assert.equals("italiano (Italia)", itit.native);
 		Assert.equals("italiano", itit.language.native);
 	}

@@ -4,9 +4,9 @@ package thx.culture;
 import haxe.macro.Expr;
 #end
 
-class Culture
+class Culture extends Domain
 {
-	public static var invariant(default, null) : Culture = embed("en-us");
+	public static var invariant(default, null) : Culture = embed("en-US");
 
 	macro public static function embed(code : Expr) 
 	{
@@ -28,7 +28,7 @@ class Culture
 			$v{json.iso2},
 			$v{json.iso3},
 			$v{json.pluralRule},
-			Language.create(
+			thx.culture.Language.create(
 				$v{json.language.name},
 				$v{json.language.native},
 				$v{json.language.english},
@@ -36,7 +36,7 @@ class Culture
 				$v{json.language.iso3},
 				$v{json.language.pluralRule}
 			),
-			DateTime.create(
+			thx.culture.DateTime.create(
 				$v{json.date.months},
 				$v{json.date.abbrMonths},
 				$v{json.date.days},
@@ -73,7 +73,7 @@ class Culture
 			$v{json.symbolPermille},
 			$v{json.symbolNegInf},
 			$v{json.symbolPosInf},
-			Number.create(
+			thx.culture.Number.create(
 				$v{json.number.decimals},
 				$v{json.number.decimalsSeparator},
 				$v{json.number.groups},
@@ -81,7 +81,7 @@ class Culture
 				$v{json.number.patternNegative},
 				$v{json.number.patternPositive}
 			),
-			Number.create(
+			thx.culture.Number.create(
 				$v{json.currency.decimals},
 				$v{json.currency.decimalsSeparator},
 				$v{json.currency.groups},
@@ -89,7 +89,7 @@ class Culture
 				$v{json.currency.patternNegative},
 				$v{json.currency.patternPositive}
 			),
-			Number.create(
+			thx.culture.Number.create(
 				$v{json.percent.decimals},
 				$v{json.percent.decimalsSeparator},
 				$v{json.percent.groups},
@@ -100,12 +100,10 @@ class Culture
 		);
 	}
 
-	public var name(default, null) : String;
 	public var native(default, null) : String;
 	public var english(default, null) : String;
 	public var iso2(default, null) : String;
 	public var iso3(default, null) : String;
-	public var pluralRule(default, null) : Int;
 	
 	public var language(default, null) : Language;
 
@@ -134,7 +132,7 @@ class Culture
 	public var currency(default, null) : Number;
 	public var percent(default, null) : Number;
 
-	public function toString()
+	override public function toString()
 	{
 		return native + " (" + english + ")";
 	}
@@ -168,12 +166,11 @@ class Culture
 		percent : Number
 	)
 	{
-		this.name = name;
+		super(name, pluralRule);
 		this.native = native;
 		this.english = english;
 		this.iso2 = iso2;
 		this.iso3 = iso3;
-		this.pluralRule = pluralRule;
 		this.language = language;
 		this.date = date;
 		this.englishCurrency = englishCurrency;
@@ -194,6 +191,7 @@ class Culture
 		this.number = number;
 		this.currency = currency;
 		this.percent = percent;
+		Culture.register(this);
 	}
 
 	public static function create(
@@ -260,7 +258,7 @@ class Culture
 		return new Culture(ob.name, ob.native, ob.english, ob.iso2, ob.iso3, ob.pluralRule, Language.createFromObject(ob.language), DateTime.createFromObject(ob.date), ob.englishCurrency, ob.nativeCurrency, ob.currencySymbol, ob.currencyIso, ob.englishRegion, ob.nativeRegion, ob.isMetric, ob.digits, ob.signNeg, ob.signPos, ob.symbolNaN, ob.symbolPercent, ob.symbolPermille, ob.symbolNegInf, ob.symbolPosInf, Number.createFromObject(ob.number), Number.createFromObject(ob.currency), Number.createFromObject(ob.percent));
 	}
 
-	static var cultures : Map<String, Culture> = new Map();
+	static var cultures : Map<String, Culture>;
 	public static function register(culture : Culture)
 	{
 		cultures.set(getNativeKey(culture.native), culture);
@@ -292,6 +290,11 @@ class Culture
 		return "ISO2:"+key;
 	static function getIso3Key(key : String)
 		return "ISO3:"+key;
+
+	static function __init__()
+	{
+		cultures = new Map();
+	}
 }
 
 /*

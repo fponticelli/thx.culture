@@ -4,7 +4,7 @@ package thx.culture;
 import haxe.macro.Expr;
 #end
 
-class Language
+class Language extends Domain
 {
 	public static var invariant(default, null) : Language = embed("en");
 
@@ -31,14 +31,12 @@ class Language
 		);
 	}
 
-	public var name(default, null) : String;
 	public var native(default, null) : String;
 	public var english(default, null) : String;
 	public var iso2(default, null) : String;
 	public var iso3(default, null) : String;
-	public var pluralRule(default, null) : Int;
 	
-	public function toString()
+	override public function toString()
 	{
 		return native + " (" + english + ")";
 	}
@@ -51,12 +49,12 @@ class Language
 		iso3 : String,
 		pluralRule : Int
 	) {
-		this.name = name;
+		super(name, pluralRule);
 		this.native = native;
 		this.english = english;
 		this.iso2 = iso2;
 		this.iso3 = iso3;
-		this.pluralRule = pluralRule;
+		Language.register(this);
 	}
 
 	public static function create(
@@ -83,7 +81,7 @@ class Language
 		return new Language(ob.name, ob.native, ob.english, ob.iso2, ob.iso3, ob.pluralRule);
 	}
 
-	static var languages : Map<String, Language> = new Map();
+	static var languages : Map<String, Language>;
 	public static function register(language : Language)
 	{
 		languages.set(getNativeKey(language.native), language);
@@ -114,6 +112,11 @@ class Language
 		return "ISO2:"+key;
 	static function getIso3Key(key : String)
 		return "ISO3:"+key;
+
+	static function __init__()
+	{
+		languages = new Map();
+	}
 }
 
 /*

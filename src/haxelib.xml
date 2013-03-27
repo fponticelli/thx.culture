@@ -1,0 +1,7 @@
+<project name="thx.culture" url="http://github.com/fponticelli/thx.culture/" license="BSD">
+    <user name="fponticelli"/>
+    <tag v="localization"/>
+	<tag v="cross"/>
+    <description>Localization library</description>
+    <version name="0.0.1">alpha release</version>
+</project>
