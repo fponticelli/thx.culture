@@ -21,7 +21,7 @@ class Culture extends Domain
 		if(!sys.FileSystem.exists(path))
 			throw 'invalid code $name';
 		var json = haxe.Json.parse(sys.io.File.getContent(path));
-		return macro new Culture(
+		return macro new thx.culture.Culture(
 			$v{json.name},
 			$v{json.native},
 			$v{json.english},
