@@ -1,0 +1,14 @@
+{
+  "name": "thx.culture",
+  "url": "https://github.com/fponticelli/thx.culture",
+  "license": "MIT",
+  "classPath": "src",
+  "tags": ["localization", "thx", "cross"],
+  "description": "Localization library.",
+  "releasenote": "updated release",
+  "version": "0.2.0",
+  "contributors": ["fponticelli"],
+  "dependencies": {
+    "thx.core": ""
+  }
+}
