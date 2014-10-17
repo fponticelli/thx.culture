@@ -277,33 +277,18 @@ Other things to do. Nested placeholders
     return formatAnyf(param, params, culture)(v);
 
   public static function formatAnyf(?param : String, ?params : Array<String>, ?culture : Culture) {
-    return function(v : Dynamic) : String {
-      switch(Type.typeof(v)) {
-        case TNull:
-          return nullformatString;
-        case TFloat if(v % 1 != 0):
-          return formatFloat(v, param, params, culture);
-        case TInt, TFloat:
-          return formatInt(v, param, params, culture);
-        case TBool:
-          return formatBool(v, param, params, culture);
-        case TClass(c):
-          if(c == String) {
-            return formatString(v, param, params, culture);
-          } else if (c == Array) {
-            return formatString(v, param, params, culture);
-          } else if(c == Date) {
-            return formatDate(v, param, params, culture);
-          } else {
-            return formatObject(v, param, params, culture);
-          }
-        case TObject:
-          return formatObject(v, param, params, culture);
-        case TFunction:
-          return "function()";
-        default:
-          return throw 'Unsupported type format: ${Type.typeof(v)}';
-      }
+    return function(v : Dynamic) : String return switch(Type.typeof(v)) {
+      case TNull:                 nullformatString;
+      case TFloat if(v % 1 != 0): formatFloat(v, param, params, culture);
+      case TInt, TFloat:          formatInt(v, param, params, culture);
+      case TBool:                 formatBool(v, param, params, culture);
+      case TClass(String):        formatString(v, param, params, culture);
+      case TClass(Array):         formatString(v, param, params, culture);
+      case TClass(Date):          formatDate(v, param, params, culture);
+      case TClass(_):             formatObject(v, param, params, culture);
+      case TObject:               formatObject(v, param, params, culture);
+      case TFunction:             "function()";
+      default:                    throw 'Unsupported type format: ${Type.typeof(v)}';
     }
   }
 
