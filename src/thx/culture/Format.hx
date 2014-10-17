@@ -128,19 +128,15 @@ Other things to do. Nested placeholders
       var left = _reFormat.matchedLeft();
       buf.push(function(_) return left);
       var df = formatAnyf(format, params, culture);
-#if haxe3
       buf.push((function(i : Int, v : Array<Dynamic>) return df(v[i])).bind(pos));
-#else
-      buf.push(callback(function(i : Int, v : Array<Dynamic>) return df(v[i]), pos));
-#end
       pattern = _reFormat.matchedRight();
     }
 
     return function(values : Array<Dynamic>) {
       if (null == values)
         values = [];
-      return buf.map(function(df) return df(values)).join("");
-    }
+      return buf.map(function(df : Array<Dynamic>) return df(values)).join("");
+    };
   }
 
   public static function formatString(v : String, ?param : String, ?params : Array<String>, culture : Culture)
@@ -184,16 +180,16 @@ Other things to do. Nested placeholders
     var decimals : Null<Int> = params.length > 0 ? Std.parseInt(params[0]) : null;
     switch format {
       case 'D':
-        return function(v) return FormatNumber.decimal(v, decimals, culture);
+        return function(v : Float) return FormatNumber.decimal(v, decimals, culture);
       case 'I':
-        return function(v) return FormatNumber.int(v, culture);
+        return function(v : Float) return FormatNumber.int(v, culture);
       case 'C':
         var s = params.length > 1 ? params[1] : null;
-        return function(v) return FormatNumber.currency(v, s, decimals, culture);
+        return function(v : Float) return FormatNumber.currency(v, s, decimals, culture);
       case 'P':
-        return function(v) return FormatNumber.percent(v, decimals, culture);
+        return function(v : Float) return FormatNumber.percent(v, decimals, culture);
       case 'M':
-        return function(v) return FormatNumber.permille(v, decimals, culture);
+        return function(v : Float) return FormatNumber.permille(v, decimals, culture);
       default:
         return throw 'Unsupported number format: $format';
     }
@@ -213,9 +209,9 @@ Other things to do. Nested placeholders
         var max : Null<Int> = params[3] == null ? null : ('' == params[3] ? null : Std.parseInt(params[3]));
         if (null != max && max < v.length) {
           var elipsis = null == params[4] ? ' ...' : params[4];
-          return v.slice(0, max).map(function(d) return formatAny(d, params[0], culture)).join(sep) + elipsis;
+          return v.slice(0, max).map(function(d : Float) return formatAny(d, params[0], culture)).join(sep) + elipsis;
         } else
-          return v.map(function(d) return formatAny(d, params[0], culture)).join(sep);
+          return v.map(function(d : Float) return formatAny(d, params[0], culture)).join(sep);
       case 'C':
         return formatInt(v.length, 'I', [], culture);
       default:
@@ -234,51 +230,51 @@ Other things to do. Nested placeholders
     var format = params.shift();
     switch format {
       case 'D':
-        return function(d) return FormatDate.date(d, culture);
+        return function(d : Float) return FormatDate.date(d, culture);
       case 'DS':
-        return function(d) return FormatDate.dateShort(d, culture);
+        return function(d : Float) return FormatDate.dateShort(d, culture);
       case 'DST':
-        return function(d) return FormatDate.dateShort(d, culture)+' '+FormatDate.time(d, culture);
+        return function(d : Float) return FormatDate.dateShort(d, culture)+' '+FormatDate.time(d, culture);
       case 'DSTS':
-        return function(d) return FormatDate.dateShort(d, culture)+' '+FormatDate.timeShort(d, culture);
+        return function(d : Float) return FormatDate.dateShort(d, culture)+' '+FormatDate.timeShort(d, culture);
       case 'DTS':
-        return function(d) return FormatDate.date(d, culture)+' '+FormatDate.timeShort(d, culture);
+        return function(d : Float) return FormatDate.date(d, culture)+' '+FormatDate.timeShort(d, culture);
       case 'Y':
-        return function(d) return FormatDate.year(d, culture);
+        return function(d : Float) return FormatDate.year(d, culture);
       case 'YM':
-        return function(d) return FormatDate.yearMonth(d, culture);
+        return function(d : Float) return FormatDate.yearMonth(d, culture);
       case 'M':
-        return function(d) return FormatDate.month(d, culture);
+        return function(d : Float) return FormatDate.month(d, culture);
       case 'MN':
-        return function(d) return FormatDate.monthName(d, culture);
+        return function(d : Float) return FormatDate.monthName(d, culture);
       case 'MS':
-        return function(d) return FormatDate.monthNameShort(d, culture);
+        return function(d : Float) return FormatDate.monthNameShort(d, culture);
       case 'MD':
-        return function(d) return FormatDate.monthDay(d, culture);
+        return function(d : Float) return FormatDate.monthDay(d, culture);
       case 'WD':
-        return function(d) return FormatDate.weekDay(d, culture);
+        return function(d : Float) return FormatDate.weekDay(d, culture);
       case 'WDN':
-        return function(d) return FormatDate.weekDayName(d, culture);
+        return function(d : Float) return FormatDate.weekDayName(d, culture);
       case 'WDS':
-        return function(d) return FormatDate.weekDayNameShort(d, culture);
+        return function(d : Float) return FormatDate.weekDayNameShort(d, culture);
       case 'R':
-        return function(d) return FormatDate.dateRfc(d, culture);
+        return function(d : Float) return FormatDate.dateRfc(d, culture);
       case 'DT':
-        return function(d) return FormatDate.dateTime(d, culture);
+        return function(d : Float) return FormatDate.dateTime(d, culture);
       case 'U':
-        return function(d) return FormatDate.universal(d, culture);
+        return function(d : Float) return FormatDate.universal(d, culture);
       case 'S':
-        return function(d) return FormatDate.sortable(d, culture);
+        return function(d : Float) return FormatDate.sortable(d, culture);
       case 'T':
-        return function(d) return FormatDate.time(d, culture);
+        return function(d : Float) return FormatDate.time(d, culture);
       case 'TS':
-        return function(d) return FormatDate.timeShort(d, culture);
+        return function(d : Float) return FormatDate.timeShort(d, culture);
       case 'C':
         var f = params[0];
         if (null == f)
-          return function(d) return FormatDate.date(d, culture);
+          return function(d : Float) return FormatDate.date(d, culture);
         else
-          return function(d) return FormatDate.format(f, d, culture, (params[1] != null ? (params[1] == 'true') : true));
+          return function(d : Float) return FormatDate.format(f, d, culture, (params[1] != null ? (params[1] == 'true') : true));
       default:
         throw 'Unsupported formatDate format: $format';
     }
@@ -360,9 +356,9 @@ Other things to do. Nested placeholders
     var format = params.shift();
     switch format {
       case 'O':
-        return function(v) return Std.string(v);
+        return function(v : Float) return Std.string(v);
       case 'R':
-        return function(v) {
+        return function(v : Float) {
           var buf = [];
           for (field in Reflect.fields(v))
             buf.push(field + ":" + formatAny(Reflect.field(v, field), culture));
