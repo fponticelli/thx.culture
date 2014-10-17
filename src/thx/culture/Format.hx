@@ -277,16 +277,18 @@ Other things to do. Nested placeholders
     return formatAnyf(params, culture)(v);
 
   public static function formatAnyf(?params : Array<String>, ?culture : Culture) {
-    return function(v : Dynamic) : String return switch(Type.typeof(v)) {
+    return function(v : Dynamic) : String return switch Type.typeof(v) {
       case TNull:                 nullformatString;
-      case TFloat if(v % 1 != 0): formatFloat(v, params, culture);
-      case TInt, TFloat:          formatInt(v, params, culture);
+      case TInt, TFloat:
+        if(v % 1 != 0)
+          formatFloat(v, params, culture);
+        else
+          formatInt(v, params, culture);
       case TBool:                 formatBool(v, params, culture);
       case TClass(String):        formatString(v, params, culture);
       case TClass(Array):         formatString(v, params, culture);
       case TClass(Date):          formatDate(v, params, culture);
-      case TClass(_):             formatObject(v, params, culture);
-      case TObject:               formatObject(v, params, culture);
+      case TClass(_), TObject:    formatObject(v, params, culture);
       case TFunction:             "function()";
       default:                    throw 'Unsupported type format: ${Type.typeof(v)}';
     }
