@@ -1,6 +1,6 @@
 package thx.culture;
 
-class Number {
+class NumberInfo {
   public var decimals(default, null) : Int;
   public var decimalsSeparator(default, null) : String;
   public var groups(default, null) : Array<Int>;
@@ -17,6 +17,6 @@ class Number {
     this.patternPositive = patternPositive;
   }
 
-  public static function numberFromObject(ob : { decimals : Int, decimalsSeparator : String, groups : Array<Int>, groupsSeparator : String, patternNegative : String, patternPositive : String })
-    return new Number(ob.decimals, ob.decimalsSeparator, ob.groups, ob.groupsSeparator, ob.patternNegative, ob.patternPositive);
+  public static function numberInfoFromObject(ob : { decimals : Int, decimalsSeparator : String, groups : Array<Int>, groupsSeparator : String, patternNegative : String, patternPositive : String })
+    return new NumberInfo(ob.decimals, ob.decimalsSeparator, ob.groups, ob.groupsSeparator, ob.patternNegative, ob.patternPositive);
 }

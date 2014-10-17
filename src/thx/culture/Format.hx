@@ -1,14 +1,7 @@
 package thx.culture;
 
 class Format {
-  static var _re = new EReg("[{](\\d+)(?::[^}]*)?[}]", "m");
-  static var _reSplitWC = ~/(\r\n|\n\r|\n|\r)/g;
-  static var _reReduceWS = ~/\s+/;
-#if !php
-  static var _reStripTags = ~/(<[a-z]+[^>\/]*\/?>|<\/[a-z]+>)/i;
-#end
-
-  static var _reFormat = ~/{(\d+)(?::([a-zA-Z]+))?(?:,([^"',}]+|'[^']+'|"[^"]+"))?(?:,([^"',}]+|'[^']+'|"[^"]+"))?(?:,([^"',}]+|'[^']+'|"[^"]+"))?}/m;
+  static var PATTERN_FORMAT = ~/{(\d+)(?::([a-zA-Z]+))?(?:,([^"',}]+|'[^']+'|"[^"]+"))?(?:,([^"',}]+|'[^']+'|"[^"]+"))?(?:,([^"',}]+|'[^']+'|"[^"]+"))?}/m;
 
 /**
 Take a formatString pattern and replaces the placeholders with the value contained in values.
@@ -108,28 +101,28 @@ Other things to do. Nested placeholders
   public static function formatf(pattern : String, culture : Culture) {
     var buf = [];
     while (true) {
-      if (!_reFormat.match(pattern)) {
+      if (!PATTERN_FORMAT.match(pattern)) {
         buf.push(function(_) return pattern);
         break;
       }
 
-      var pos = Std.parseInt(_reFormat.matched(1));
-      var format = _reFormat.matched(2);
+      var pos = Std.parseInt(PATTERN_FORMAT.matched(1));
+      var format = PATTERN_FORMAT.matched(2);
       if (format == '') // '' is for IE
         format = null;
       var p = null;
       var params = [];
       for (i in 3...20) { // 20 is a guard limit, 5 is probably more than enough
-        p = _reFormat.matched(i);
+        p = PATTERN_FORMAT.matched(i);
         if(p == null || p == '') // again IE
           break;
         params.push(FormatParams.cleanQuotes(p));
       }
-      var left = _reFormat.matchedLeft();
+      var left = PATTERN_FORMAT.matchedLeft();
       buf.push(function(_) return left);
       var df = formatAnyf(format, params, culture);
       buf.push((function(i : Int, v : Array<Dynamic>) return df(v[i])).bind(pos));
-      pattern = _reFormat.matchedRight();
+      pattern = PATTERN_FORMAT.matchedRight();
     }
 
     return function(values : Array<Dynamic>) {
@@ -288,10 +281,10 @@ Other things to do. Nested placeholders
       switch(Type.typeof(v)) {
         case TNull:
           return nullformatString;
-        case TInt:
-          return formatInt(v, param, params, culture);
-        case TFloat:
+        case TFloat if(v % 1 != 0):
           return formatFloat(v, param, params, culture);
+        case TInt, TFloat:
+          return formatInt(v, param, params, culture);
         case TBool:
           return formatBool(v, param, params, culture);
         case TClass(c):

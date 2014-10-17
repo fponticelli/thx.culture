@@ -1,6 +1,6 @@
 package thx.culture;
 
-import thx.culture.Number;
+import thx.culture.NumberInfo;
 
 class FormatNumber {
   public static function decimal(v : Float, ?decimals : Int, culture : Culture)
@@ -25,7 +25,7 @@ Be sure to include only characters in the 0...9 range.
   public static function digits(v : String, culture : Culture)
     return processDigits(v, culture.digits);
 
-  static function crunch(v : Float, decimals : Null<Int>, info : Number, negative : String, positive : String, culture : Culture, symbol : String, replace : String) {
+  static function crunch(v : Float, decimals : Null<Int>, info : NumberInfo, negative : String, positive : String, culture : Culture, symbol : String, replace : String) {
     if(Math.isNaN(v))
       return culture.symbolNaN;
     else if(!Math.isFinite(v))
@@ -45,7 +45,7 @@ Be sure to include only characters in the 0...9 range.
     return o.join('');
   }
 
-  static function value(v : Float, info : Number, decimals : Int, digits : Array<String>) {
+  static function value(v : Float, info : NumberInfo, decimals : Int, digits : Array<String>) {
     var fv = '' + Math.abs(v);
     var pos = fv.indexOf('E');
     if(pos > 0) {

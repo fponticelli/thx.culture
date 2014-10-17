@@ -32,7 +32,7 @@ class Culture extends Domain
         $v{json.language.iso3},
         $v{json.language.pluralRule}
       ),
-      new thx.culture.DateTime(
+      new thx.culture.DateTimeInfo(
         $v{json.date.months},
         $v{json.date.abbrMonths},
         $v{json.date.days},
@@ -69,7 +69,7 @@ class Culture extends Domain
       $v{json.symbolPermille},
       $v{json.symbolNegInf},
       $v{json.symbolPosInf},
-      new thx.culture.Number(
+      new thx.culture.NumberInfo(
         $v{json.number.decimals},
         $v{json.number.decimalsSeparator},
         $v{json.number.groups},
@@ -77,7 +77,7 @@ class Culture extends Domain
         $v{json.number.patternNegative},
         $v{json.number.patternPositive}
       ),
-      new thx.culture.Number(
+      new thx.culture.NumberInfo(
         $v{json.currency.decimals},
         $v{json.currency.decimalsSeparator},
         $v{json.currency.groups},
@@ -85,7 +85,7 @@ class Culture extends Domain
         $v{json.currency.patternNegative},
         $v{json.currency.patternPositive}
       ),
-      new thx.culture.Number(
+      new thx.culture.NumberInfo(
         $v{json.percent.decimals},
         $v{json.percent.decimalsSeparator},
         $v{json.percent.groups},
@@ -103,7 +103,7 @@ class Culture extends Domain
 
   public var language(default, null) : Language;
 
-  public var date(default, null) : DateTime;
+  public var date(default, null) : DateTimeInfo;
   public var englishCurrency(default, null) : String;
   public var nativeCurrency(default, null) : String;
   public var currencySymbol(default, null) : String;
@@ -124,9 +124,9 @@ class Culture extends Domain
   public var symbolNegInf(default, null) : String;
   public var symbolPosInf(default, null) : String;
 
-  public var number(default, null) : Number;
-  public var currency(default, null) : Number;
-  public var percent(default, null) : Number;
+  public var number(default, null) : NumberInfo;
+  public var currency(default, null) : NumberInfo;
+  public var percent(default, null) : NumberInfo;
 
   override public function toString()
     return native + " (" + english + ")";
@@ -139,7 +139,7 @@ class Culture extends Domain
     iso3 : String,
     pluralRule : Int,
     language : Language,
-    date : DateTime,
+    date : DateTimeInfo,
     englishCurrency : String,
     nativeCurrency : String,
     currencySymbol : String,
@@ -155,9 +155,9 @@ class Culture extends Domain
     symbolPermille : String,
     symbolNegInf : String,
     symbolPosInf : String,
-    number : Number,
-    currency : Number,
-    percent : Number
+    number : NumberInfo,
+    currency : NumberInfo,
+    percent : NumberInfo
   ) {
     super(name, pluralRule);
     this.native = native;
@@ -215,7 +215,7 @@ class Culture extends Domain
     currency : { decimals : Int, decimalsSeparator : String, groups : Array<Int>, groupsSeparator : String, patternNegative : String, patternPositive : String },
     percent : { decimals : Int, decimalsSeparator : String, groups : Array<Int>, groupsSeparator : String, patternNegative : String, patternPositive : String }
   })
-    return new Culture(ob.name, ob.native, ob.english, ob.iso2, ob.iso3, ob.pluralRule, Language.languageFromObject(ob.language), DateTime.dateTimeFromObject(ob.date), ob.englishCurrency, ob.nativeCurrency, ob.currencySymbol, ob.currencyIso, ob.englishRegion, ob.nativeRegion, ob.isMetric, ob.digits, ob.signNeg, ob.signPos, ob.symbolNaN, ob.symbolPercent, ob.symbolPermille, ob.symbolNegInf, ob.symbolPosInf, Number.numberFromObject(ob.number), Number.numberFromObject(ob.currency), Number.numberFromObject(ob.percent));
+    return new Culture(ob.name, ob.native, ob.english, ob.iso2, ob.iso3, ob.pluralRule, Language.languageFromObject(ob.language), DateTimeInfo.dateTimeInfoFromObject(ob.date), ob.englishCurrency, ob.nativeCurrency, ob.currencySymbol, ob.currencyIso, ob.englishRegion, ob.nativeRegion, ob.isMetric, ob.digits, ob.signNeg, ob.signPos, ob.symbolNaN, ob.symbolPercent, ob.symbolPermille, ob.symbolNegInf, ob.symbolPosInf, NumberInfo.numberInfoFromObject(ob.number), NumberInfo.numberInfoFromObject(ob.currency), NumberInfo.numberInfoFromObject(ob.percent));
 
   static var cultures : Map<String, Culture>;
   public static function register(culture : Culture) {

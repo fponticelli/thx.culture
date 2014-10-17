@@ -1,6 +1,6 @@
 package thx.culture;
 
-class DateTime {
+class DateTimeInfo {
   public var months(default, null) : Array<String>;
   public var abbrMonths(default, null) : Array<String>;
   public var days(default, null) : Array<String>;
@@ -45,6 +45,6 @@ class DateTime {
     this.patternTimeShort = patternTimeShort;
   }
 
-  public static function dateTimeFromObject(ob : { months : Array<String>, abbrMonths : Array<String>, days : Array<String>, abbrDays : Array<String>, shortDays : Array<String>, am : String, pm : String, separatorDate : String, separatorTime : String, firstWeekDay : Int, patternYearMonth : String, patternMonthDay : String, patternDate : String, patternDateShort : String, patternDateRfc : String, patternDateTime : String, patternUniversal : String, patternSortable : String, patternTime : String, patternTimeShort : String })
-    return new DateTime(ob.months, ob.abbrMonths, ob.days, ob.abbrDays, ob.shortDays, ob.am, ob.pm, ob.separatorDate, ob.separatorTime, ob.firstWeekDay, ob.patternYearMonth, ob.patternMonthDay, ob.patternDate, ob.patternDateShort, ob.patternDateRfc, ob.patternDateTime, ob.patternUniversal, ob.patternSortable, ob.patternTime, ob.patternTimeShort);
+  public static function dateTimeInfoFromObject(ob : { months : Array<String>, abbrMonths : Array<String>, days : Array<String>, abbrDays : Array<String>, shortDays : Array<String>, am : String, pm : String, separatorDate : String, separatorTime : String, firstWeekDay : Int, patternYearMonth : String, patternMonthDay : String, patternDate : String, patternDateShort : String, patternDateRfc : String, patternDateTime : String, patternUniversal : String, patternSortable : String, patternTime : String, patternTimeShort : String })
+    return new DateTimeInfo(ob.months, ob.abbrMonths, ob.days, ob.abbrDays, ob.shortDays, ob.am, ob.pm, ob.separatorDate, ob.separatorTime, ob.firstWeekDay, ob.patternYearMonth, ob.patternMonthDay, ob.patternDate, ob.patternDateShort, ob.patternDateRfc, ob.patternDateTime, ob.patternUniversal, ob.patternSortable, ob.patternTime, ob.patternTimeShort);
 }
