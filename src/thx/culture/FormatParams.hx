@@ -18,16 +18,16 @@ class FormatParams {
       return p;
   }
 
+  public static function parse(params : String) : Array<String> {
+    var parts = params.split(":");
+    return [parts[0]].concat(parts.length == 1 ? [] : parts.slice(1).join(":").split(",").mapi(function(s, i) if (0 == i) return s else return cleanQuotes(s)));
+  }
+
   // TODO: add support for nested formats (usefull for Arrays.format)
-  public static function params(p : String, ps : Array<String>, alt : String) {
-    if (null != ps && null != p)
-      return [p].concat(ps);
-    if ((null == ps || ps.length == 0) && null == p)
+  public static function params(ps : Array<String>, alt : String) {
+    if (null == ps || ps.length == 0)
       return [alt];
-    if (null == ps || ps.length == 0) {
-      var parts = p.split(":");
-      return [parts[0]].concat(parts.length == 1 ? [] : parts[1].split(",").mapi(function(s, i) if (0 == i) return s else return cleanQuotes(s)));
-    }
-    return ps;
+    else
+      return ps;
   }
 }

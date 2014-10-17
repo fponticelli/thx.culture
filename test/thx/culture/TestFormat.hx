@@ -11,7 +11,7 @@ class TestFormat {
 
   public function testFloat() {
     Assert.equals("0.10", (0.1).formatFloat(culture));
-    Assert.equals("0",    (0.1).formatFloat("I", culture));
+    Assert.equals("0",    (0.1).formatFloat(["I"], culture));
   }
 
   public function testFloatF() {
@@ -34,14 +34,14 @@ class TestFormat {
   public function testArray() {
     var values = [1, .01, 6];
     Assert.equals("1, 0.01, 6", values.formatArray(culture));
-    Assert.equals("$1.00, $0.01, $6.00", values.formatArray("J:C", culture));
-    Assert.equals("[]", [].formatArray("J", culture));
-    Assert.equals("empty", [].formatArray("J:C,empty", culture));
-    Assert.equals("$1.00;$0.01;$6.00", values.formatArray("J:C,'',';'", culture));
-    Assert.equals("$1.00;$0.01 ...", values.formatArray("J:C,'',';',2", culture));
-    Assert.equals("$1.00;$0.01 ... more", values.formatArray("J:C,'',';',2,' ... more'", culture));
+    Assert.equals("$1.00, $0.01, $6.00", values.formatArray(["J","C"], culture));
+    Assert.equals("[]", [].formatArray(["J"], culture));
+    Assert.equals("empty", [].formatArray(["J","C","empty"], culture));
+    Assert.equals("$1.00;$0.01;$6.00", values.formatArray(["J","C","''",';'], culture));
+    Assert.equals("$1.00;$0.01 ...", values.formatArray(["J","C","''",';',"2"], culture));
+    Assert.equals("$1.00;$0.01 ... more", values.formatArray(["J","C","''",';',"2",' ... more'], culture));
 
-    Assert.equals("0", [].formatArray("C", culture));
-    Assert.equals("3", values.formatArray("C", culture));
+    Assert.equals("0", [].formatArray(["C"], culture));
+    Assert.equals("3", values.formatArray(["C"], culture));
   }
 }

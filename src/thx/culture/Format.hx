@@ -120,7 +120,7 @@ Other things to do. Nested placeholders
       }
       var left = PATTERN_FORMAT.matchedLeft();
       buf.push(function(_) return left);
-      var df = formatAnyf(format, params, culture);
+      var df = formatAnyf(null == format ? null : [format].concat(params), culture);
       buf.push((function(i : Int, v : Array<Dynamic>) return df(v[i])).bind(pos));
       pattern = PATTERN_FORMAT.matchedRight();
     }
@@ -132,11 +132,11 @@ Other things to do. Nested placeholders
     };
   }
 
-  public static function formatString(v : String, ?param : String, ?params : Array<String>, culture : Culture)
-    return formatStringf(param, params, culture)(v);
+  public static function formatString(v : String, ?params : Array<String>, culture : Culture)
+    return formatStringf(params, culture)(v);
 
-  public static function formatStringf(?param : String, ?params : Array<String>, culture : Culture) {
-    params = FormatParams.params(param, params, 'S');
+  public static function formatStringf(?params : Array<String>, culture : Culture) {
+    params = FormatParams.params(params, 'S');
     var format = params.shift();
     switch format {
       case 'S':
@@ -158,17 +158,17 @@ Other things to do. Nested placeholders
     }
   }
 
-  public static function formatInt(v : Float, ?param : String, ?params : Array<String>, culture : Culture)
-    return formatIntf(param, params, culture)(v);
+  public static function formatInt(v : Float, ?params : Array<String>, culture : Culture)
+    return formatIntf(params, culture)(v);
 
-  public static function formatIntf(?param : String, ?params : Array<String>, culture : Culture)
-    return formatFloatf(FormatParams.params(param, params, 'I'), culture);
+  public static function formatIntf(?params : Array<String>, culture : Culture)
+    return formatFloatf(FormatParams.params(params, 'I'), culture);
 
-  public static function formatFloat(v : Float, ?param : String, ?params : Array<String>, culture : Culture)
-    return formatFloatf(param, params, culture)(v);
+  public static function formatFloat(v : Float, ?params : Array<String>, culture : Culture)
+    return formatFloatf(params, culture)(v);
 
-  public static function formatFloatf(?param : String, ?params : Array<String>, culture : Culture) {
-    params = FormatParams.params(param, params, 'D');
+  public static function formatFloatf(?params : Array<String>, culture : Culture) {
+    params = FormatParams.params(params, 'D');
     var format = params.shift();
     var decimals : Null<Int> = params.length > 0 ? Std.parseInt(params[0]) : null;
     switch format {
@@ -188,8 +188,8 @@ Other things to do. Nested placeholders
     }
   }
 
-  public static function formatArray(v : Array<Dynamic>, ?param : String, ?params : Array<String>, culture : Culture) {
-    params = FormatParams.params(param, params, 'J');
+  public static function formatArray(v : Array<Dynamic>, ?params : Array<String>, culture : Culture) {
+    params = FormatParams.params(params, 'J');
     var format = params.shift();
     switch format {
       case 'J':
@@ -202,24 +202,24 @@ Other things to do. Nested placeholders
         var max : Null<Int> = params[3] == null ? null : ('' == params[3] ? null : Std.parseInt(params[3]));
         if (null != max && max < v.length) {
           var elipsis = null == params[4] ? ' ...' : params[4];
-          return v.slice(0, max).map(function(d : Dynamic) return formatAny(d, params[0], culture)).join(sep) + elipsis;
+          return v.slice(0, max).map(function(d : Dynamic) return formatAny(d, null == params[0] ? null : [params[0]], culture)).join(sep) + elipsis;
         } else
-          return v.map(function(d : Dynamic) return formatAny(d, params[0], culture)).join(sep);
+          return v.map(function(d : Dynamic) return formatAny(d, null == params[0] ? null : [params[0]], culture)).join(sep);
       case 'C':
-        return formatInt(v.length, 'I', [], culture);
+        return formatInt(v.length, ['I'], culture);
       default:
         throw "Unsupported array format: " + format;
     }
   }
 
-  public static function formatArrayf(?param : String, ?params : Array<String>, culture : Culture)
-    return formatArray.bind(_, param, params, culture);
+  public static function formatArrayf(?params : Array<String>, culture : Culture)
+    return formatArray.bind(_, params, culture);
 
-  public static function formatDate(d : Date, ?param : String, ?params : Array<String>, culture : Culture)
-    return formatDatef(param, params, culture)(d);
+  public static function formatDate(d : Date, ?params : Array<String>, culture : Culture)
+    return formatDatef(params, culture)(d);
 
-  public static function formatDatef(?param : String, ?params : Array<String>, culture : Culture) {
-    params = FormatParams.params(param, params, 'D');
+  public static function formatDatef(?params : Array<String>, culture : Culture) {
+    params = FormatParams.params(params, 'D');
     var format = params.shift();
     switch format {
       case 'D':
@@ -273,51 +273,51 @@ Other things to do. Nested placeholders
     }
   }
 
-  public static function formatAny(v : Dynamic, ?param : String, ?params : Array<String>, ?culture : Culture)
-    return formatAnyf(param, params, culture)(v);
+  public static function formatAny(v : Dynamic, ?params : Array<String>, ?culture : Culture)
+    return formatAnyf(params, culture)(v);
 
-  public static function formatAnyf(?param : String, ?params : Array<String>, ?culture : Culture) {
+  public static function formatAnyf(?params : Array<String>, ?culture : Culture) {
     return function(v : Dynamic) : String return switch(Type.typeof(v)) {
       case TNull:                 nullformatString;
-      case TFloat if(v % 1 != 0): formatFloat(v, param, params, culture);
-      case TInt, TFloat:          formatInt(v, param, params, culture);
-      case TBool:                 formatBool(v, param, params, culture);
-      case TClass(String):        formatString(v, param, params, culture);
-      case TClass(Array):         formatString(v, param, params, culture);
-      case TClass(Date):          formatDate(v, param, params, culture);
-      case TClass(_):             formatObject(v, param, params, culture);
-      case TObject:               formatObject(v, param, params, culture);
+      case TFloat if(v % 1 != 0): formatFloat(v, params, culture);
+      case TInt, TFloat:          formatInt(v, params, culture);
+      case TBool:                 formatBool(v, params, culture);
+      case TClass(String):        formatString(v, params, culture);
+      case TClass(Array):         formatString(v, params, culture);
+      case TClass(Date):          formatDate(v, params, culture);
+      case TClass(_):             formatObject(v, params, culture);
+      case TObject:               formatObject(v, params, culture);
       case TFunction:             "function()";
       default:                    throw 'Unsupported type format: ${Type.typeof(v)}';
     }
   }
 
-  public static function formatBool(v : Dynamic, ?param : String, ?params : Array<String>, culture : Culture)
-    return formatBoolf(param, params, culture)(v);
+  public static function formatBool(v : Dynamic, ?params : Array<String>, culture : Culture)
+    return formatBoolf(params, culture)(v);
 
-  public static function formatBoolf(?param : String, ?params : Array<String>, culture : Culture) {
+  public static function formatBoolf(?params : Array<String>, culture : Culture) {
     return function(v : Dynamic) : String {
       switch(Type.typeof(v)) {
         case TNull:
           return nullformatString;
         case TInt:
-          return formatInt(v, param, params, culture);
+          return formatInt(v, params, culture);
         case TFloat:
-          return formatFloat(v, param, params, culture);
+          return formatFloat(v, params, culture);
         case TBool:
-          return formatBool(v, param, params, culture);
+          return formatBool(v, params, culture);
         case TClass(c):
           if(c == String) {
-            return formatString(v, param, params, culture);
+            return formatString(v, params, culture);
           } else if (c == Array) {
-            return formatArray(v, param, params, culture);
+            return formatArray(v, params, culture);
           } else if(c == Date) {
-            return formatDate(v, param, params, culture);
+            return formatDate(v, params, culture);
           } else {
-            return formatObject(v, param, params, culture);
+            return formatObject(v, params, culture);
           }
         case TObject:
-          return formatObject(v, param, params, culture);
+          return formatObject(v, params, culture);
         case TFunction:
           return "function()";
         default:
@@ -326,11 +326,11 @@ Other things to do. Nested placeholders
     }
   }
 
-  public static function formatObject(v : Float, ?param : String, ?params : Array<String>, culture : Culture)
-    return formatObjectf(param, params, culture)(v);
+  public static function formatObject(v : Float, ?params : Array<String>, culture : Culture)
+    return formatObjectf(params, culture)(v);
 
-  public static function formatObjectf(?param : String, ?params : Array<String>, culture : Culture) {
-    params = FormatParams.params(param, params, 'R');
+  public static function formatObjectf(?params : Array<String>, culture : Culture) {
+    params = FormatParams.params(params, 'R');
     var format = params.shift();
     switch format {
       case 'O':
