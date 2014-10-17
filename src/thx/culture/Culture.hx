@@ -1,23 +1,11 @@
 package thx.culture;
 
-class Culture extends Domain
-{
+class Culture extends Domain {
   public static var invariant(default, null) : Culture = embed("en-US");
 
-  macro public static function embed(code : haxe.macro.Expr)
-  {
-    var name = switch (code.expr) {
-      case EConst(CString(s)):
-        s;
-      case _:
-        throw 'expected a constant string but is ${code.expr}';
-    };
-    var file = thx.macro.Macros.getModulePath("thx.culture.Culture"),
-        path = file.split("/").slice(0, -1).join("/") + "/cultures/" + name.toLowerCase() + ".json";
-    if(!sys.FileSystem.exists(path))
-      throw 'invalid code $name';
-    var json = haxe.Json.parse(sys.io.File.getContent(path));
-    return macro new thx.culture.Culture(
+  macro public static function embed(code : haxe.macro.Expr) {
+   var json = Culture.readJson("Culture", code);
+    return macro thx.culture.Culture.register(new thx.culture.Culture(
       $v{json.name},
       $v{json.native},
       $v{json.english},
@@ -93,8 +81,22 @@ class Culture extends Domain
         $v{json.percent.patternNegative},
         $v{json.percent.patternPositive}
       )
-    );
+    ));
   }
+
+#if macro
+  public static function readJson(ref : String, code : haxe.macro.Expr) : Dynamic {
+    var name = switch code.expr {
+      case EConst(CString(s)): s;
+      case _: throw 'expected a constant string but is ${code.expr}';
+    };
+    var file = thx.macro.Macros.getModulePath('thx.culture.$ref'),
+        path = file.split("/").slice(0, -1).join("/") + '/${ref.toLowerCase()}s/' + name.toLowerCase() + ".json";
+    if(!sys.FileSystem.exists(path))
+      haxe.macro.Context.error('invalid code $name', code.pos);
+    return haxe.Json.parse(sys.io.File.getContent(path));
+  }
+#end
 
   public var native(default, null) : String;
   public var english(default, null) : String;
@@ -184,38 +186,7 @@ class Culture extends Domain
     this.number = number;
     this.currency = currency;
     this.percent = percent;
-    Culture.register(this);
   }
-
-  public static function cultureFromObject(ob : {
-    name : String,
-    native : String,
-    english : String,
-    iso2 : String,
-    iso3 : String,
-    pluralRule : Int,
-    language : { name : String, native : String, english : String, iso2 : String, iso3 : String, pluralRule : Int },
-    date : { months : Array<String>, abbrMonths : Array<String>, days : Array<String>, abbrDays : Array<String>, shortDays : Array<String>, am : String, pm : String, separatorDate : String, separatorTime : String, firstWeekDay : Int, patternYearMonth : String, patternMonthDay : String, patternDate : String, patternDateShort : String, patternDateRfc : String, patternDateTime : String, patternUniversal : String, patternSortable : String, patternTime : String, patternTimeShort : String },
-    englishCurrency : String,
-    nativeCurrency : String,
-    currencySymbol : String,
-    currencyIso : String,
-    englishRegion : String,
-    nativeRegion : String,
-    isMetric : Bool,
-    digits : Null<Array<String>>,
-    signNeg : String,
-    signPos : String,
-    symbolNaN : String,
-    symbolPercent : String,
-    symbolPermille : String,
-    symbolNegInf : String,
-    symbolPosInf : String,
-    number : { decimals : Int, decimalsSeparator : String, groups : Array<Int>, groupsSeparator : String, patternNegative : String, patternPositive : String },
-    currency : { decimals : Int, decimalsSeparator : String, groups : Array<Int>, groupsSeparator : String, patternNegative : String, patternPositive : String },
-    percent : { decimals : Int, decimalsSeparator : String, groups : Array<Int>, groupsSeparator : String, patternNegative : String, patternPositive : String }
-  })
-    return new Culture(ob.name, ob.native, ob.english, ob.iso2, ob.iso3, ob.pluralRule, Language.languageFromObject(ob.language), DateTimeInfo.dateTimeInfoFromObject(ob.date), ob.englishCurrency, ob.nativeCurrency, ob.currencySymbol, ob.currencyIso, ob.englishRegion, ob.nativeRegion, ob.isMetric, ob.digits, ob.signNeg, ob.signPos, ob.symbolNaN, ob.symbolPercent, ob.symbolPermille, ob.symbolNegInf, ob.symbolPosInf, NumberInfo.numberInfoFromObject(ob.number), NumberInfo.numberInfoFromObject(ob.currency), NumberInfo.numberInfoFromObject(ob.percent));
 
   static var cultures : Map<String, Culture>;
   public static function register(culture : Culture) {
@@ -224,10 +195,8 @@ class Culture extends Domain
     cultures.set(getIso2Key(culture.iso2), culture);
     cultures.set(getIso3Key(culture.iso3), culture);
     Language.register(culture.language);
+    return culture;
   }
-
-  // TODO
-  // add load async
 
   public static function getByName(name : String, ?alt : Culture)
     return cultures.exists(getNameKey(name)) ? cultures.get(getNameKey(name)) : (alt == null ? invariant : alt);

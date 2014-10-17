@@ -4,25 +4,15 @@ class Language extends Domain {
   public static var invariant(default, null) : Language = embed("en");
 
   macro public static function embed(code : haxe.macro.Expr) {
-    var name = switch code.expr {
-      case EConst(CString(s)):
-        s;
-      case _:
-        throw 'expected a constant string but is ${code.expr}';
-    };
-    var file = thx.macro.Macros.getModulePath("thx.culture.Language"),
-        path = file.split("/").slice(0, -1).join("/") + "/languages/" + name.toLowerCase() + ".json";
-    if(!sys.FileSystem.exists(path))
-      throw 'invalid code $name';
-    var json = haxe.Json.parse(sys.io.File.getContent(path));
-    return macro new Language(
+    var json = Culture.readJson('Language', code);
+    return macro thx.culture.Language.register(new Language(
       $v{json.name},
       $v{json.native},
       $v{json.english},
       $v{json.iso2},
       $v{json.iso3},
       $v{json.pluralRule}
-    );
+    ));
   }
 
   public var native(default, null) : String;
@@ -46,18 +36,7 @@ class Language extends Domain {
     this.english = english;
     this.iso2 = iso2;
     this.iso3 = iso3;
-    Language.register(this);
   }
-
-  public static function languageFromObject(ob : {
-    name : String,
-    native : String,
-    english : String,
-    iso2 : String,
-    iso3 : String,
-    pluralRule : Int
-  })
-    return new Language(ob.name, ob.native, ob.english, ob.iso2, ob.iso3, ob.pluralRule);
 
   static var languages : Map<String, Language>;
   public static function register(language : Language) {
@@ -65,28 +44,25 @@ class Language extends Domain {
     languages.set(getNameKey(language.name), language);
     languages.set(getIso2Key(language.iso2), language);
     languages.set(getIso3Key(language.iso3), language);
+    return language;
   }
 
-  // TODO
-  // add load async
+  inline public static function getByName(name : String)
+    return languages.get(getNameKey(name));
+  inline public static function getByNativeName(name : String)
+    return languages.get(getNativeKey(name));
+  inline public static function getByIso2(name : String)
+    return languages.get(getIso2Key(name));
+  inline public static function getByIso3(name : String)
+    return languages.get(getIso3Key(name));
 
-  public static function getByName(name : String, ?alt : Language)
-    return languages.exists(getNameKey(name)) ? languages.get(getNameKey(name)) : (null == alt ? invariant : alt);
-  public static function getByNativeName(name : String, ?alt : Language)
-    return languages.exists(getNativeKey(name)) ? languages.get(getNativeKey(name)) : (null == alt ? invariant : alt);
-  public static function getByIso2(name : String, ?alt : Language)
-    return languages.exists(getIso2Key(name)) ? languages.get(getIso2Key(name)) : (null == alt ? invariant : alt);
-  public static function getByIso3(name : String, ?alt : Language)
-    return languages.exists(getIso3Key(name)) ? languages.get(getIso3Key(name)) : (null == alt ? invariant : alt);
-
-
-  static function getNativeKey(key : String)
+  inline static function getNativeKey(key : String)
     return "NATIVE:"+key;
-  static function getNameKey(key : String)
+  inline static function getNameKey(key : String)
     return "NAME:"+key;
-  static function getIso2Key(key : String)
+  inline static function getIso2Key(key : String)
     return "ISO2:"+key;
-  static function getIso3Key(key : String)
+  inline static function getIso3Key(key : String)
     return "ISO3:"+key;
 
   static function __init__() {
