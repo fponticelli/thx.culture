@@ -94,11 +94,17 @@ class Culture extends Domain {
   }
 
   static var cultures : Map<String, Culture>;
+  static var list : Array<Culture>;
   public static function register(culture : Culture) {
+    var iso3 = getIso3Key(culture.iso3);
+    if(cultures.exists(iso3))
+      return cultures.get(iso3);
+
+    list.push(culture);
     cultures.set(getNativeKey(culture.native), culture);
     cultures.set(getNameKey(culture.name), culture);
     cultures.set(getIso2Key(culture.iso2), culture);
-    cultures.set(getIso3Key(culture.iso3), culture);
+    cultures.set(iso3, culture);
     Language.register(culture.language);
     return culture;
   }
@@ -111,7 +117,8 @@ class Culture extends Domain {
     return cultures.exists(getIso2Key(name)) ? cultures.get(getIso2Key(name)) : (alt == null ? invariant : alt);
   public static function getByIso3(name : String, ?alt : Culture)
     return cultures.exists(getIso3Key(name)) ? cultures.get(getIso3Key(name)) : (alt == null ? invariant : alt);
-
+  public static function iterator()
+    return list.iterator();
 
   static function getNativeKey(key : String)
     return "NATIVE:"+key;
@@ -122,6 +129,8 @@ class Culture extends Domain {
   static function getIso3Key(key : String)
     return "ISO3:"+key;
 
-  static function __init__()
+  static function __init__() {
     cultures = new Map();
+    list = [];
+  }
 }

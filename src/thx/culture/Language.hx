@@ -26,8 +26,14 @@ class Language extends Domain {
     this.iso3 = iso3;
   }
 
+  static var list : Array<Language>;
   static var languages : Map<String, Language>;
   public static function register(language : Language) {
+    var iso3 = getIso3Key(language.iso3);
+    if(languages.exists(iso3))
+      return languages.get(iso3);
+
+    list.push(language);
     languages.set(getNativeKey(language.native), language);
     languages.set(getNameKey(language.name), language);
     languages.set(getIso2Key(language.iso2), language);
@@ -43,6 +49,8 @@ class Language extends Domain {
     return languages.get(getIso2Key(name));
   inline public static function getByIso3(name : String)
     return languages.get(getIso3Key(name));
+  public static function iterator()
+    return list.iterator();
 
   inline static function getNativeKey(key : String)
     return "NATIVE:"+key;
@@ -55,5 +63,6 @@ class Language extends Domain {
 
   static function __init__() {
     languages = new Map();
+    list = [];
   }
 }
