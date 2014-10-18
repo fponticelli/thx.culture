@@ -1,19 +1,7 @@
 package thx.culture;
 
 class Language extends Domain {
-  public static var invariant(default, null) : Language = embed("en");
-
-  macro public static function embed(code : haxe.macro.Expr) {
-    var json = Culture.readJson('Language', code);
-    return macro thx.culture.Language.register(new Language(
-      $v{json.name},
-      $v{json.native},
-      $v{json.english},
-      $v{json.iso2},
-      $v{json.iso3},
-      $v{json.pluralRule}
-    ));
-  }
+  public static var invariant(default, null) : Language = Embed.language("en");
 
   public var native(default, null) : String;
   public var english(default, null) : String;
