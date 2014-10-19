@@ -1,0 +1,8 @@
+-cp gen
+-cp hxcs
+-cp src
+-lib thx.core
+-main Generate
+-cs bin/generate/cs/
+
+-cmd mono bin/generate/cs/bin/Generate.exe
