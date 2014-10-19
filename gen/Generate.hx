@@ -31,14 +31,6 @@ class Generate {
           dateTimeFormat = null,
           numberFormat = null;
 
-/*
-        //ci.CompareInfo; ???
-        //ci.NumberFormat;
-        //ci.OptionalCalendars;
-        //ci.Parent;
-        //ci.TextInfo;
-*/
-
       if(!ci.IsNeutralCulture) {
         // DATETIME
         var dt = ci.DateTimeFormat;
@@ -78,9 +70,6 @@ class Generate {
 
         // NUMBER FORMAT
         var nf = ci.NumberFormat;
-        
-/*
-*/
         numberFormat = {
           currency : {
             decimalDigits    : nf.CurrencyDecimalDigits,
@@ -115,11 +104,19 @@ class Generate {
           positiveInfinitySymbol : nf.PositiveInfinitySymbol,
           positiveSign           : nf.PositiveSign,
         };
+
+/*
+        //ci.CompareInfo; ???
+        //ci.Parent; ???
+        //ti.ANSICodePage;
+        //ti.EBCDICCodePage;
+        //ti.MacCodePage;
+        //ti.OEMCodePage;
+*/
       }
 
       acc.push({
         nativeName     : nativeName,
-/*
         englishName    : englishName,
         nativeRegion   : nativeRegion,
         englishRegion  : englishRegion,
@@ -132,10 +129,8 @@ class Generate {
         windows3       : ci.ThreeLetterWindowsLanguageName,
         calendarName   : ('' + cal).split('.').pop().substr(0, -8),
         dateTimeFormat : dateTimeFormat,
-*/
         numberFormat   : numberFormat,
-
-
+        listSeparator  : ci.TextInfo.ListSeparator,
       });
     }
 
