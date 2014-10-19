@@ -12,28 +12,16 @@ class GenMarkdown {
     var text = sys.io.File.getContent('README.md');
 
     // list all cultures
-    Embed.allCultures();
+    Embed.all();
 
-    var arr = [['english', 'native', 'ISO2', 'ISO3', 'currency', 'symbol']].concat(Culture.iterator().map(function(cult) {
-      return [cult.english, cult.native, cult.iso2, cult.iso3, cult.currencyIso, cult.currencySymbol];
+    var arr = [['code', 'english', 'native', 'ISO2', 'ISO3', 'currency']].concat(Culture.iterator().map(function(cult) {
+      return [cult.code, cult.nameDisplayEnglish, cult.nameDisplayNative, cult.iso2, cult.iso3, null != cult.number ? cult.number.symbolCurrency : '-'];
     }).order(function(a, b) return a[0].compare(b[0])));
 
     var cultures = formatTable(arr);
 
     // add to markdown
     text = replace(text, 'CULTURES', cultures);
-
-    // list all languages
-    Embed.allLanguages();
-
-    var arr = [['english', 'native', 'ISO2', 'ISO3']].concat(Language.iterator().map(function(lang) {
-      return [lang.english, lang.native, lang.iso2, lang.iso3];
-    }).order(function(a, b) return a[0].compare(b[0])));
-
-    var languages = formatTable(arr);
-
-    // add to markdown
-    text = replace(text, 'LANGUAGES', languages);
 
     // save markdown
     sys.io.File.saveContent('README.md', text);

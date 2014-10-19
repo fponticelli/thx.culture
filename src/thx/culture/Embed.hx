@@ -6,7 +6,7 @@ using thx.core.Strings;
 #end
 
 class Embed {
-  macro public static function allCultures() {
+  macro public static function all() {
     var values = listFiles('cultures'),
         s = '{\n' + values.map(function(code) return 'Embed.culture("$code");').join("\n") + '\n}';
     return haxe.macro.Context.parse(s, haxe.macro.Context.currentPos());
