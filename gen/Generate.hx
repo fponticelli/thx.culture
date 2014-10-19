@@ -22,11 +22,11 @@ class Generate {
         sys.io.File.saveContent(file, json);
       });
 
-    var ci = CultureInfo.InvariantCulture;
-    var df = extractDateTimeFormatInfo(ci);
-    var nf = extractNumberFormatInfo(ci);
-    var c  = extractCulture(ci);
-
+    // INVARIANT
+    //var ci = CultureInfo.InvariantCulture;
+    //var df = extractDateTimeFormatInfo(ci);
+    //var nf = extractNumberFormatInfo(ci);
+    //var c  = extractCulture(ci);
     //trace(haxe.Json.stringify(c, null, ' '));
   }
 
@@ -58,7 +58,6 @@ class Generate {
 
 /*
       //ci.CompareInfo; ???
-      //ci.Parent; ???
       //ti.ANSICodePage;
       //ti.EBCDICCodePage;
       //ti.MacCodePage;
