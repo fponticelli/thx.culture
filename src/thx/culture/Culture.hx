@@ -1,98 +1,86 @@
 package thx.culture;
 
-class Culture extends Domain {
-  public static var invariant(default, null) : Culture = Embed.culture("en-US");
+class Culture {
+  public static var invariant(default, null) : Culture = new Culture("", DateTimeFormatInfo.invariant, "", false, "iv", "IVL", false, 127, "Gregorian", "Invariant Language (Invariant Country)", "Invariant Language", "Invariant Language", "Invariant Country", "Invariant Country", NumberFormatInfo.invariant, ",", "IVL");
 
-  public var native(default, null) : String;
-  public var english(default, null) : String;
-  public var iso2(default, null) : String;
-  public var iso3(default, null) : String;
-
-  public var language(default, null) : Language;
-
-  public var date(default, null) : DateTimeInfo;
-  public var englishCurrency(default, null) : String;
-  public var nativeCurrency(default, null) : String;
-  public var currencySymbol(default, null) : String;
-  public var currencyIso(default, null) : String;
-
-  public var englishRegion(default, null) : String;
-  public var nativeRegion(default, null) : String;
-  public var isMetric(default, null) : Bool;
-
-  public var digits(default, null) : Null<Array<String>>;
-
-  public var signNeg(default, null) : String;
-  public var signPos(default, null) : String;
-
-  public var symbolNaN(default, null) : String;
-  public var symbolPercent(default, null) : String;
-  public var symbolPermille(default, null) : String;
-  public var symbolNegInf(default, null) : String;
-  public var symbolPosInf(default, null) : String;
-
-  public var number(default, null) : NumberInfo;
-  public var currency(default, null) : NumberInfo;
-  public var percent(default, null) : NumberInfo;
-
-  override public function toString()
-    return native + " (" + english + ")";
+  public var code(default, null)              : String;
+  public var dateTime(default, null)          : DateTimeFormatInfo;
+  public var ietf(default, null)              : String;
+  public var isNeutral(default, null)         : Bool;
+  public var iso2(default, null)              : String;
+  public var iso3(default, null)              : String;
+  public var isRightToLeft(default, null)     : Bool;
+  public var lcid(default, null)              : Int;
+  public var nameCalendar(default, null)      : String;
+  public var nameDisplay(default, null)       : String;
+  public var nameEnglish(default, null)       : String;
+  public var nameNative(default, null)        : String;
+  public var nameRegionEnglish(default, null) : String;
+  public var nameRegionNative(default, null)  : String;
+  public var number(default, null)            : NumberFormatInfo;
+  public var separatorList(default, null)     : String;
+  public var win3(default, null)              : String;
 
   public function new(
-    name : String,
-    native : String,
-    english : String,
-    iso2 : String,
-    iso3 : String,
-    pluralRule : Int,
-    language : Language,
-    date : DateTimeInfo,
-    englishCurrency : String,
-    nativeCurrency : String,
-    currencySymbol : String,
-    currencyIso : String,
-    englishRegion : String,
-    nativeRegion : String,
-    isMetric : Bool,
-    digits : Null<Array<String>>,
-    signNeg : String,
-    signPos : String,
-    symbolNaN : String,
-    symbolPercent : String,
-    symbolPermille : String,
-    symbolNegInf : String,
-    symbolPosInf : String,
-    number : NumberInfo,
-    currency : NumberInfo,
-    percent : NumberInfo
+    code              : String,
+    dateTime          : DateTimeFormatInfo,
+    ietf              : String,
+    isNeutral         : Bool,
+    iso2              : String,
+    iso3              : String,
+    isRightToLeft     : Bool,
+    lcid              : Int,
+    nameCalendar      : String,
+    nameDisplay       : String,
+    nameEnglish       : String,
+    nameNative        : String,
+    nameRegionEnglish : String,
+    nameRegionNative  : String,
+    number            : NumberFormatInfo,
+    separatorList     : String,
+    win3              : String
   ) {
-    super(name, pluralRule);
-    this.native = native;
-    this.english = english;
+    this.code = code;
+    this.dateTime = dateTime;
+    this.ietf = ietf;
+    this.isNeutral = isNeutral;
     this.iso2 = iso2;
     this.iso3 = iso3;
-    this.language = language;
-    this.date = date;
-    this.englishCurrency = englishCurrency;
-    this.nativeCurrency = nativeCurrency;
-    this.currencySymbol = currencySymbol;
-    this.currencyIso = currencyIso;
-    this.englishRegion = englishRegion;
-    this.nativeRegion = nativeRegion;
-    this.isMetric = isMetric;
-    this.digits = digits;
-    this.signNeg = signNeg;
-    this.signPos = signPos;
-    this.symbolNaN = symbolNaN;
-    this.symbolPercent = symbolPercent;
-    this.symbolPermille = symbolPermille;
-    this.symbolNegInf = symbolNegInf;
-    this.symbolPosInf = symbolPosInf;
+    this.isRightToLeft = isRightToLeft;
+    this.lcid = lcid;
+    this.nameCalendar = nameCalendar;
+    this.nameDisplay = nameDisplay;
+    this.nameEnglish = nameEnglish;
+    this.nameNative = nameNative;
+    this.nameRegionEnglish = nameRegionEnglish;
+    this.nameRegionNative = nameRegionNative;
     this.number = number;
-    this.currency = currency;
-    this.percent = percent;
+    this.separatorList = separatorList;
+    this.win3 = win3;
   }
 
+  inline public static function fromObject(o : Dynamic)
+    return new Culture(
+      o.code,
+      o.dateTime,
+      o.ietf,
+      o.isNeutral,
+      o.iso2,
+      o.iso3,
+      o.isRightToLeft,
+      o.lcid,
+      o.nameCalendar,
+      o.nameDisplay,
+      o.nameEnglish,
+      o.nameNative,
+      o.nameRegionEnglish,
+      o.nameRegionNative,
+      o.number,
+      o.separatorList,
+      o.win3
+    );
+
+/*
   static var cultures : Map<String, Culture>;
   static var list : Array<Culture>;
   public static function register(culture : Culture) {
@@ -133,4 +121,5 @@ class Culture extends Domain {
     cultures = new Map();
     list = [];
   }
+*/
 }

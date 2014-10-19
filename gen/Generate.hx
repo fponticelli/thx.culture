@@ -1,5 +1,4 @@
 import cs.Lib;
-
 import cs.system.globalization.*;
 
 using thx.core.Arrays;
@@ -8,65 +7,13 @@ import thx.culture.*;
 using StringTools;
 
 class Generate {
-  static var pattern = ~/^([^(]+)\(([^)]+)\)$/;
   public static function main() {
     var all = Lib.array(CultureInfo.GetCultures(CultureTypes.AllCultures)),
         acc = [],
         nativeName, englishName, nativeRegion, englishRegion;
 
     for(ci in all) {
-      if(pattern.match(ci.NativeName)) {
-        nativeName = StringTools.trim(pattern.matched(1));
-        nativeRegion = StringTools.trim(pattern.matched(2));
-
-        pattern.match(ci.EnglishName);
-        englishName = StringTools.trim(pattern.matched(1));
-        englishRegion = StringTools.trim(pattern.matched(2));
-      } else {
-        nativeName = ci.NativeName;
-        englishName = ci.EnglishName;
-        nativeRegion = null;
-        englishRegion = null;
-      }
-      var cal = ci.Calendar,
-          dateTimeFormat = null,
-          numberFormat = null;
-
-      if(!ci.IsNeutralCulture) {
-        // DATETIME
-        dateTimeFormat = extractDateTimeFormatInfo(ci);
-
-        // NUMBER FORMAT
-        numberFormat = extractNumberFormatInfo(ci);
-
-/*
-        //ci.CompareInfo; ???
-        //ci.Parent; ???
-        //ti.ANSICodePage;
-        //ti.EBCDICCodePage;
-        //ti.MacCodePage;
-        //ti.OEMCodePage;
-*/
-      }
-
-      acc.push({
-        displayName    : ci.DisplayName,
-        nativeName     : nativeName,
-        englishName    : englishName,
-        nativeRegion   : nativeRegion,
-        englishRegion  : englishRegion,
-        code           : ci.Name,
-        ietf           : ci.IetfLanguageTag,
-        lcid           : ci.LCID,
-        isNeutral      : ci.IsNeutralCulture,
-        iso2           : ci.TwoLetterISOLanguageName,
-        iso3           : ci.ThreeLetterISOLanguageName,
-        windows3       : ci.ThreeLetterWindowsLanguageName,
-        calendarName   : ('' + cal).split('.').pop().substr(0, -8),
-        dateTimeFormat : dateTimeFormat,
-        numberFormat   : numberFormat,
-        listSeparator  : ci.TextInfo.ListSeparator,
-      });
+      acc.push(extractCulture(ci));
     }
 
 /*
@@ -80,8 +27,66 @@ class Generate {
     var ci = CultureInfo.InvariantCulture;
     var df = extractDateTimeFormatInfo(ci);
     var nf = extractNumberFormatInfo(ci);
+    var c  = extractCulture(ci);
 
-    trace(haxe.Json.stringify(nf, null, ' '));
+    trace(haxe.Json.stringify(c, null, ' '));
+  }
+
+  static var patternExtractNames = ~/^([^(]+)\(([^)]+)\)$/;
+  public static function extractCulture(ci : CultureInfo) {
+    var nativeName, englishName, nativeRegion, englishRegion;
+    if(patternExtractNames.match(ci.NativeName)) {
+      nativeName = StringTools.trim(patternExtractNames.matched(1));
+      nativeRegion = StringTools.trim(patternExtractNames.matched(2));
+
+      patternExtractNames.match(ci.EnglishName);
+      englishName = StringTools.trim(patternExtractNames.matched(1));
+      englishRegion = StringTools.trim(patternExtractNames.matched(2));
+    } else {
+      nativeName = ci.NativeName;
+      englishName = ci.EnglishName;
+      nativeRegion = null;
+      englishRegion = null;
+    }
+    var dateTimeFormat = null,
+        numberFormat = null;
+
+    if(!ci.IsNeutralCulture) {
+      // DATETIME
+      dateTimeFormat = extractDateTimeFormatInfo(ci);
+
+      // NUMBER FORMAT
+      numberFormat = extractNumberFormatInfo(ci);
+
+/*
+      //ci.CompareInfo; ???
+      //ci.Parent; ???
+      //ti.ANSICodePage;
+      //ti.EBCDICCodePage;
+      //ti.MacCodePage;
+      //ti.OEMCodePage;
+*/
+    }
+
+    return new thx.culture.Culture(
+      ci.Name,
+      dateTimeFormat,
+      ci.IetfLanguageTag,
+      ci.IsNeutralCulture,
+      ci.TwoLetterISOLanguageName,
+      ci.ThreeLetterISOLanguageName,
+      ci.TextInfo.IsRightToLeft,
+      ci.LCID,
+      extractCalendarName(ci.Calendar),
+      ci.DisplayName,
+      englishName,
+      nativeName,
+      englishRegion,
+      nativeRegion,
+      numberFormat,
+      ci.TextInfo.ListSeparator,
+      ci.ThreeLetterWindowsLanguageName
+    );
   }
 
   public static function extractNumberFormatInfo(ci : CultureInfo) {
@@ -130,7 +135,7 @@ class Generate {
       dt.PMDesignator,
       fdw.getIndex(),
       fdw.getName(),
-      ('' + dt.Calendar).split('.').pop().substr(0, -8),
+      extractCalendarName(dt.Calendar),
       try dt.NativeCalendarName catch(e : Dynamic) null,
       Lib.array(dt.DayNames),
       Lib.array(dt.AbbreviatedDayNames),
@@ -153,4 +158,7 @@ class Generate {
       dt.TimeSeparator
     );
   }
+
+  public static function extractCalendarName(cal : Calendar)
+    return ('' + cal).split('.').pop().substr(0, -8);
 }
