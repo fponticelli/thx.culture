@@ -1,0 +1,19 @@
+{
+  "win3": "EUQ",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "euskara",
+  "nameEnglish": "Basque",
+  "nameDisplay": "Basque",
+  "nameCalendar": "Gregorian",
+  "lcid": 45,
+  "isRightToLeft": false,
+  "iso3": "eus",
+  "iso2": "eu",
+  "isNeutral": true,
+  "ietf": "eu",
+  "dateTime": null,
+  "code": "eu"
+}

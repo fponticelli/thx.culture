@@ -1,0 +1,19 @@
+{
+  "win3": "NLD",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Nederlands",
+  "nameEnglish": "Dutch",
+  "nameDisplay": "Dutch",
+  "nameCalendar": "Gregorian",
+  "lcid": 19,
+  "isRightToLeft": false,
+  "iso3": "nld",
+  "iso2": "nl",
+  "isNeutral": true,
+  "ietf": "nl",
+  "dateTime": null,
+  "code": "nl"
+}

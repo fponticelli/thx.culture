@@ -1,0 +1,19 @@
+{
+  "win3": "SLV",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "slovenščina",
+  "nameEnglish": "Slovenian",
+  "nameDisplay": "Slovenian",
+  "nameCalendar": "Gregorian",
+  "lcid": 36,
+  "isRightToLeft": false,
+  "iso3": "slv",
+  "iso2": "sl",
+  "isNeutral": true,
+  "ietf": "sl",
+  "dateTime": null,
+  "code": "sl"
+}

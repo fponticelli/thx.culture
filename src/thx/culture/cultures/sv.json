@@ -1,0 +1,19 @@
+{
+  "win3": "SVE",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "svenska",
+  "nameEnglish": "Swedish",
+  "nameDisplay": "Swedish",
+  "nameCalendar": "Gregorian",
+  "lcid": 29,
+  "isRightToLeft": false,
+  "iso3": "swe",
+  "iso2": "sv",
+  "isNeutral": true,
+  "ietf": "sv",
+  "dateTime": null,
+  "code": "sv"
+}

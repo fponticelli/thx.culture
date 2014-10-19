@@ -1,0 +1,19 @@
+{
+  "win3": "IBO",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Igbo",
+  "nameEnglish": "Igbo",
+  "nameDisplay": "Igbo",
+  "nameCalendar": "Gregorian",
+  "lcid": 112,
+  "isRightToLeft": false,
+  "iso3": "ibo",
+  "iso2": "ig",
+  "isNeutral": true,
+  "ietf": "ig",
+  "dateTime": null,
+  "code": "ig"
+}

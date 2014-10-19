@@ -1,0 +1,19 @@
+{
+  "win3": "URD",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "اردو",
+  "nameEnglish": "Urdu",
+  "nameDisplay": "Urdu",
+  "nameCalendar": "Gregorian",
+  "lcid": 32,
+  "isRightToLeft": true,
+  "iso3": "urd",
+  "iso2": "ur",
+  "isNeutral": true,
+  "ietf": "ur",
+  "dateTime": null,
+  "code": "ur"
+}

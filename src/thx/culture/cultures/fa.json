@@ -1,0 +1,19 @@
+{
+  "win3": "FAR",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "فارسی",
+  "nameEnglish": "Persian",
+  "nameDisplay": "Persian",
+  "nameCalendar": "Gregorian",
+  "lcid": 41,
+  "isRightToLeft": true,
+  "iso3": "fas",
+  "iso2": "fa",
+  "isNeutral": true,
+  "ietf": "fa",
+  "dateTime": null,
+  "code": "fa"
+}

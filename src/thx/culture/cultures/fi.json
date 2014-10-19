@@ -1,0 +1,19 @@
+{
+  "win3": "FIN",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "suomi",
+  "nameEnglish": "Finnish",
+  "nameDisplay": "Finnish",
+  "nameCalendar": "Gregorian",
+  "lcid": 11,
+  "isRightToLeft": false,
+  "iso3": "fin",
+  "iso2": "fi",
+  "isNeutral": true,
+  "ietf": "fi",
+  "dateTime": null,
+  "code": "fi"
+}

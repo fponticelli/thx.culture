@@ -1,0 +1,19 @@
+{
+  "win3": "PTB",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "português",
+  "nameEnglish": "Portuguese",
+  "nameDisplay": "Portuguese",
+  "nameCalendar": "Gregorian",
+  "lcid": 22,
+  "isRightToLeft": false,
+  "iso3": "por",
+  "iso2": "pt",
+  "isNeutral": true,
+  "ietf": "pt",
+  "dateTime": null,
+  "code": "pt"
+}

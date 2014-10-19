@@ -1,0 +1,19 @@
+{
+  "win3": "CSY",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "čeština",
+  "nameEnglish": "Czech",
+  "nameDisplay": "Czech",
+  "nameCalendar": "Gregorian",
+  "lcid": 5,
+  "isRightToLeft": false,
+  "iso3": "ces",
+  "iso2": "cs",
+  "isNeutral": true,
+  "ietf": "cs",
+  "dateTime": null,
+  "code": "cs"
+}

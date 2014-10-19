@@ -1,0 +1,19 @@
+{
+  "win3": "IRE",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Gaeilge",
+  "nameEnglish": "Irish",
+  "nameDisplay": "Irish",
+  "nameCalendar": "Gregorian",
+  "lcid": 60,
+  "isRightToLeft": false,
+  "iso3": "gle",
+  "iso2": "ga",
+  "isNeutral": true,
+  "ietf": "ga",
+  "dateTime": null,
+  "code": "ga"
+}

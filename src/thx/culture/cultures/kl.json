@@ -1,0 +1,19 @@
+{
+  "win3": "KAL",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "kalaallisut",
+  "nameEnglish": "Kalaallisut",
+  "nameDisplay": "Kalaallisut",
+  "nameCalendar": "Gregorian",
+  "lcid": 111,
+  "isRightToLeft": false,
+  "iso3": "kal",
+  "iso2": "kl",
+  "isNeutral": true,
+  "ietf": "kl",
+  "dateTime": null,
+  "code": "kl"
+}

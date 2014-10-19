@@ -80,6 +80,9 @@ class Culture {
       o.win3
     );
 
+  inline public function toString()
+    return nameDisplay;
+
 /*
   static var cultures : Map<String, Culture>;
   static var list : Array<Culture>;

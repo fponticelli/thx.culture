@@ -1,0 +1,19 @@
+{
+  "win3": "BSB",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "bosanski",
+  "nameEnglish": "Bosnian (Latin)",
+  "nameDisplay": "Bosnian (Latin)",
+  "nameCalendar": "Gregorian",
+  "lcid": 26650,
+  "isRightToLeft": false,
+  "iso3": "bsb",
+  "iso2": "bs",
+  "isNeutral": true,
+  "ietf": "bs-Latn",
+  "dateTime": null,
+  "code": "bs-Latn"
+}

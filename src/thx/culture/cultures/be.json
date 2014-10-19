@@ -1,0 +1,19 @@
+{
+  "win3": "BEL",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "беларуская",
+  "nameEnglish": "Belarusian",
+  "nameDisplay": "Belarusian",
+  "nameCalendar": "Gregorian",
+  "lcid": 35,
+  "isRightToLeft": false,
+  "iso3": "bel",
+  "iso2": "be",
+  "isNeutral": true,
+  "ietf": "be",
+  "dateTime": null,
+  "code": "be"
+}

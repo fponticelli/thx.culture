@@ -1,0 +1,19 @@
+{
+  "win3": "RMC",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "rumantsch",
+  "nameEnglish": "Romansh",
+  "nameDisplay": "Romansh",
+  "nameCalendar": "Gregorian",
+  "lcid": 23,
+  "isRightToLeft": false,
+  "iso3": "roh",
+  "iso2": "rm",
+  "isNeutral": true,
+  "ietf": "rm",
+  "dateTime": null,
+  "code": "rm"
+}

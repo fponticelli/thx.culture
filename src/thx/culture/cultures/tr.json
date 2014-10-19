@@ -1,0 +1,19 @@
+{
+  "win3": "TRK",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Türkçe",
+  "nameEnglish": "Turkish",
+  "nameDisplay": "Turkish",
+  "nameCalendar": "Gregorian",
+  "lcid": 31,
+  "isRightToLeft": false,
+  "iso3": "tur",
+  "iso2": "tr",
+  "isNeutral": true,
+  "ietf": "tr",
+  "dateTime": null,
+  "code": "tr"
+}

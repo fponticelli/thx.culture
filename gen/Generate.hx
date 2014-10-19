@@ -7,29 +7,27 @@ import thx.culture.*;
 using StringTools;
 
 class Generate {
+  static var path = 'src/thx/culture/cultures';
   public static function main() {
-    var all = Lib.array(CultureInfo.GetCultures(CultureTypes.AllCultures)),
-        acc = [],
-        nativeName, englishName, nativeRegion, englishRegion;
+    Sys.command('rm', ['-rf', path]);
+    Sys.command('mkdir', ['-p', path]);
 
-    for(ci in all) {
-      acc.push(extractCulture(ci));
-    }
-
-/*
-    acc
-      .order(function(a, b) return Strings.compare(a.displayName, b.displayName))
-      .slice(90, 105)
-      .map(function(item) {
-        //trace(item);
+    Lib.array(CultureInfo.GetCultures(CultureTypes.AllCultures))
+      .map(extractCulture)
+      .filter(function(culture) return culture.code != "")
+      .map(function(culture) {
+        var code = culture.code.toLowerCase(),
+            file = '$path/$code.json',
+            json = haxe.Json.stringify(culture, null, '  ');
+        sys.io.File.saveContent(file, json);
       });
-*/
+
     var ci = CultureInfo.InvariantCulture;
     var df = extractDateTimeFormatInfo(ci);
     var nf = extractNumberFormatInfo(ci);
     var c  = extractCulture(ci);
 
-    trace(haxe.Json.stringify(c, null, ' '));
+    //trace(haxe.Json.stringify(c, null, ' '));
   }
 
   static var patternExtractNames = ~/^([^(]+)\(([^)]+)\)$/;

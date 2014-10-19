@@ -1,0 +1,19 @@
+{
+  "win3": "BNG",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "বাংলা",
+  "nameEnglish": "Bengali",
+  "nameDisplay": "Bengali",
+  "nameCalendar": "Gregorian",
+  "lcid": 69,
+  "isRightToLeft": false,
+  "iso3": "bng",
+  "iso2": "bn",
+  "isNeutral": true,
+  "ietf": "bn",
+  "dateTime": null,
+  "code": "bn"
+}

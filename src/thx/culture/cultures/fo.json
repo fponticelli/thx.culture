@@ -1,0 +1,19 @@
+{
+  "win3": "FOS",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "føroyskt",
+  "nameEnglish": "Faroese",
+  "nameDisplay": "Faroese",
+  "nameCalendar": "Gregorian",
+  "lcid": 56,
+  "isRightToLeft": false,
+  "iso3": "fao",
+  "iso2": "fo",
+  "isNeutral": true,
+  "ietf": "fo",
+  "dateTime": null,
+  "code": "fo"
+}

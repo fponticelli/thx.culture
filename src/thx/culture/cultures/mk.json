@@ -1,0 +1,19 @@
+{
+  "win3": "MKI",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "македонски",
+  "nameEnglish": "Macedonian",
+  "nameDisplay": "Macedonian",
+  "nameCalendar": "Gregorian",
+  "lcid": 47,
+  "isRightToLeft": false,
+  "iso3": "mkd",
+  "iso2": "mk",
+  "isNeutral": true,
+  "ietf": "mk",
+  "dateTime": null,
+  "code": "mk"
+}

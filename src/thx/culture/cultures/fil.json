@@ -1,0 +1,19 @@
+{
+  "win3": "FPO",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Filipino",
+  "nameEnglish": "Filipino",
+  "nameDisplay": "Filipino",
+  "nameCalendar": "Gregorian",
+  "lcid": 100,
+  "isRightToLeft": false,
+  "iso3": "fil",
+  "iso2": "fil",
+  "isNeutral": true,
+  "ietf": "fil",
+  "dateTime": null,
+  "code": "fil"
+}

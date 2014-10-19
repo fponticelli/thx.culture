@@ -1,0 +1,19 @@
+{
+  "win3": "SQI",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Shqip",
+  "nameEnglish": "Albanian",
+  "nameDisplay": "Albanian",
+  "nameCalendar": "Gregorian",
+  "lcid": 28,
+  "isRightToLeft": false,
+  "iso3": "sqi",
+  "iso2": "sq",
+  "isNeutral": true,
+  "ietf": "sq",
+  "dateTime": null,
+  "code": "sq"
+}

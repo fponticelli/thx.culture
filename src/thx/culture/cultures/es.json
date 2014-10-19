@@ -1,0 +1,19 @@
+{
+  "win3": "ESP",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "español",
+  "nameEnglish": "Spanish",
+  "nameDisplay": "Spanish",
+  "nameCalendar": "Gregorian",
+  "lcid": 10,
+  "isRightToLeft": false,
+  "iso3": "spa",
+  "iso2": "es",
+  "isNeutral": true,
+  "ietf": "es",
+  "dateTime": null,
+  "code": "es"
+}

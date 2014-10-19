@@ -1,0 +1,19 @@
+{
+  "win3": "UZB",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "oʻzbekcha",
+  "nameEnglish": "Uzbek (Cyrillic)",
+  "nameDisplay": "Uzbek (Cyrillic)",
+  "nameCalendar": "Gregorian",
+  "lcid": 30787,
+  "isRightToLeft": false,
+  "iso3": "uzb",
+  "iso2": "uz",
+  "isNeutral": true,
+  "ietf": "uz-Cyrl",
+  "dateTime": null,
+  "code": "uz-Cyrl"
+}

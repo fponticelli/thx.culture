@@ -1,0 +1,19 @@
+{
+  "win3": "NSO",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Sesotho sa Leboa",
+  "nameEnglish": "Northern Sotho",
+  "nameDisplay": "Northern Sotho",
+  "nameCalendar": "Gregorian",
+  "lcid": 108,
+  "isRightToLeft": false,
+  "iso3": "nso",
+  "iso2": "nso",
+  "isNeutral": true,
+  "ietf": "nso",
+  "dateTime": null,
+  "code": "nso"
+}

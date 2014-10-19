@@ -1,0 +1,19 @@
+{
+  "win3": "NON",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "nynorsk",
+  "nameEnglish": "Norwegian Nynorsk",
+  "nameDisplay": "Norwegian Nynorsk",
+  "nameCalendar": "Gregorian",
+  "lcid": 30740,
+  "isRightToLeft": false,
+  "iso3": "nno",
+  "iso2": "nn",
+  "isNeutral": true,
+  "ietf": "nn",
+  "dateTime": null,
+  "code": "nn"
+}

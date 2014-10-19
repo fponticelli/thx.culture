@@ -1,0 +1,19 @@
+{
+  "win3": "CYM",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Cymraeg",
+  "nameEnglish": "Welsh",
+  "nameDisplay": "Welsh",
+  "nameCalendar": "Gregorian",
+  "lcid": 82,
+  "isRightToLeft": false,
+  "iso3": "cym",
+  "iso2": "cy",
+  "isNeutral": true,
+  "ietf": "cy",
+  "dateTime": null,
+  "code": "cy"
+}

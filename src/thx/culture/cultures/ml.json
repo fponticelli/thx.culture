@@ -1,0 +1,19 @@
+{
+  "win3": "MYM",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "മലയാളം",
+  "nameEnglish": "Malayalam",
+  "nameDisplay": "Malayalam",
+  "nameCalendar": "Gregorian",
+  "lcid": 76,
+  "isRightToLeft": false,
+  "iso3": "mym",
+  "iso2": "ml",
+  "isNeutral": true,
+  "ietf": "ml",
+  "dateTime": null,
+  "code": "ml"
+}

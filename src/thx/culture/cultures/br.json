@@ -1,0 +1,19 @@
+{
+  "win3": "BRE",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "brezhoneg",
+  "nameEnglish": "Breton",
+  "nameDisplay": "Breton",
+  "nameCalendar": "Gregorian",
+  "lcid": 126,
+  "isRightToLeft": false,
+  "iso3": "bre",
+  "iso2": "br",
+  "isNeutral": true,
+  "ietf": "br",
+  "dateTime": null,
+  "code": "br"
+}

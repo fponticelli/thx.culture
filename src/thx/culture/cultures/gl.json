@@ -1,0 +1,19 @@
+{
+  "win3": "GLC",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "galego",
+  "nameEnglish": "Galician",
+  "nameDisplay": "Galician",
+  "nameCalendar": "Gregorian",
+  "lcid": 86,
+  "isRightToLeft": false,
+  "iso3": "glg",
+  "iso2": "gl",
+  "isNeutral": true,
+  "ietf": "gl",
+  "dateTime": null,
+  "code": "gl"
+}

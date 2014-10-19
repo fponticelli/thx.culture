@@ -1,0 +1,19 @@
+{
+  "win3": "AZC",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "azərbaycan",
+  "nameEnglish": "Azerbaijani (Cyrillic)",
+  "nameDisplay": "Azerbaijani (Cyrillic)",
+  "nameCalendar": "Gregorian",
+  "lcid": 29740,
+  "isRightToLeft": false,
+  "iso3": "aze",
+  "iso2": "az",
+  "isNeutral": true,
+  "ietf": "az-Cyrl",
+  "dateTime": null,
+  "code": "az-Cyrl"
+}

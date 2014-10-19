@@ -1,0 +1,19 @@
+{
+  "win3": "NEP",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "नेपाली",
+  "nameEnglish": "Nepali",
+  "nameDisplay": "Nepali",
+  "nameCalendar": "Gregorian",
+  "lcid": 97,
+  "isRightToLeft": false,
+  "iso3": "nep",
+  "iso2": "ne",
+  "isNeutral": true,
+  "ietf": "ne",
+  "dateTime": null,
+  "code": "ne"
+}

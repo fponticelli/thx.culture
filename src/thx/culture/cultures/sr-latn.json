@@ -1,0 +1,19 @@
+{
+  "win3": "SRM",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Српски",
+  "nameEnglish": "Serbian (Latin)",
+  "nameDisplay": "Serbian (Latin)",
+  "nameCalendar": "Gregorian",
+  "lcid": 28698,
+  "isRightToLeft": false,
+  "iso3": "srp",
+  "iso2": "sr",
+  "isNeutral": true,
+  "ietf": "sr-Latn",
+  "dateTime": null,
+  "code": "sr-Latn"
+}

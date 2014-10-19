@@ -1,0 +1,19 @@
+{
+  "win3": "TEL",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "తెలుగు",
+  "nameEnglish": "Telugu",
+  "nameDisplay": "Telugu",
+  "nameCalendar": "Gregorian",
+  "lcid": 74,
+  "isRightToLeft": false,
+  "iso3": "tel",
+  "iso2": "te",
+  "isNeutral": true,
+  "ietf": "te",
+  "dateTime": null,
+  "code": "te"
+}

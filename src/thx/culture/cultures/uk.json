@@ -1,0 +1,19 @@
+{
+  "win3": "UKR",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "українська",
+  "nameEnglish": "Ukrainian",
+  "nameDisplay": "Ukrainian",
+  "nameCalendar": "Gregorian",
+  "lcid": 34,
+  "isRightToLeft": false,
+  "iso3": "ukr",
+  "iso2": "uk",
+  "isNeutral": true,
+  "ietf": "uk",
+  "dateTime": null,
+  "code": "uk"
+}

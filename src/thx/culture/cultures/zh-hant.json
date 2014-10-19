@@ -1,0 +1,19 @@
+{
+  "win3": "CHT",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "中文",
+  "nameEnglish": "Chinese (Traditional)",
+  "nameDisplay": "Chinese (Traditional)",
+  "nameCalendar": "Gregorian",
+  "lcid": 31748,
+  "isRightToLeft": false,
+  "iso3": "zho",
+  "iso2": "zh",
+  "isNeutral": true,
+  "ietf": "zh-Hant",
+  "dateTime": null,
+  "code": "zh-Hant"
+}

@@ -1,0 +1,19 @@
+{
+  "win3": "ROM",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "română",
+  "nameEnglish": "Romanian",
+  "nameDisplay": "Romanian",
+  "nameCalendar": "Gregorian",
+  "lcid": 24,
+  "isRightToLeft": false,
+  "iso3": "ron",
+  "iso2": "ro",
+  "isNeutral": true,
+  "ietf": "ro",
+  "dateTime": null,
+  "code": "ro"
+}

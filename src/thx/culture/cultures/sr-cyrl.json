@@ -1,0 +1,19 @@
+{
+  "win3": "SRO",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Српски",
+  "nameEnglish": "Serbian (Cyrillic)",
+  "nameDisplay": "Serbian (Cyrillic)",
+  "nameCalendar": "Gregorian",
+  "lcid": 27674,
+  "isRightToLeft": false,
+  "iso3": "srp",
+  "iso2": "sr",
+  "isNeutral": true,
+  "ietf": "sr-Cyrl",
+  "dateTime": null,
+  "code": "sr-Cyrl"
+}

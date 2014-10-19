@@ -1,0 +1,19 @@
+{
+  "win3": "ENU",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "English",
+  "nameEnglish": "English",
+  "nameDisplay": "English",
+  "nameCalendar": "Gregorian",
+  "lcid": 9,
+  "isRightToLeft": false,
+  "iso3": "eng",
+  "iso2": "en",
+  "isNeutral": true,
+  "ietf": "en",
+  "dateTime": null,
+  "code": "en"
+}

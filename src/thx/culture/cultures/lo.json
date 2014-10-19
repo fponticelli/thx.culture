@@ -1,0 +1,19 @@
+{
+  "win3": "LAO",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "ລາວ",
+  "nameEnglish": "Lao",
+  "nameDisplay": "Lao",
+  "nameCalendar": "Gregorian",
+  "lcid": 84,
+  "isRightToLeft": false,
+  "iso3": "lao",
+  "iso2": "lo",
+  "isNeutral": true,
+  "ietf": "lo",
+  "dateTime": null,
+  "code": "lo"
+}

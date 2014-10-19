@@ -1,0 +1,19 @@
+{
+  "win3": "MSL",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Bahasa Melayu",
+  "nameEnglish": "Malay",
+  "nameDisplay": "Malay",
+  "nameCalendar": "Gregorian",
+  "lcid": 62,
+  "isRightToLeft": false,
+  "iso3": "msa",
+  "iso2": "ms",
+  "isNeutral": true,
+  "ietf": "ms",
+  "dateTime": null,
+  "code": "ms"
+}

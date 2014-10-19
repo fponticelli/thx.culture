@@ -1,0 +1,19 @@
+{
+  "win3": "LVI",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "latviešu",
+  "nameEnglish": "Latvian",
+  "nameDisplay": "Latvian",
+  "nameCalendar": "Gregorian",
+  "lcid": 38,
+  "isRightToLeft": false,
+  "iso3": "lav",
+  "iso2": "lv",
+  "isNeutral": true,
+  "ietf": "lv",
+  "dateTime": null,
+  "code": "lv"
+}

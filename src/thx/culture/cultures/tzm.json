@@ -1,0 +1,19 @@
+{
+  "win3": "TZM",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Tamaziɣt",
+  "nameEnglish": "Central Atlas Tamazight",
+  "nameDisplay": "Central Atlas Tamazight",
+  "nameCalendar": "Gregorian",
+  "lcid": 95,
+  "isRightToLeft": false,
+  "iso3": "tzm",
+  "iso2": "tzm",
+  "isNeutral": true,
+  "ietf": "tzm",
+  "dateTime": null,
+  "code": "tzm"
+}

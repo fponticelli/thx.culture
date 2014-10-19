@@ -1,0 +1,19 @@
+{
+  "win3": "SIN",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "සිංහල",
+  "nameEnglish": "Sinhala",
+  "nameDisplay": "Sinhala",
+  "nameCalendar": "Gregorian",
+  "lcid": 91,
+  "isRightToLeft": false,
+  "iso3": "sin",
+  "iso2": "si",
+  "isNeutral": true,
+  "ietf": "si",
+  "dateTime": null,
+  "code": "si"
+}

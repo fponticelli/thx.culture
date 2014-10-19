@@ -1,0 +1,19 @@
+{
+  "win3": "MAR",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "मराठी",
+  "nameEnglish": "Marathi",
+  "nameDisplay": "Marathi",
+  "nameCalendar": "Gregorian",
+  "lcid": 78,
+  "isRightToLeft": false,
+  "iso3": "mar",
+  "iso2": "mr",
+  "isNeutral": true,
+  "ietf": "mr",
+  "dateTime": null,
+  "code": "mr"
+}

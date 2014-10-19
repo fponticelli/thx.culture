@@ -1,0 +1,19 @@
+{
+  "win3": "JPN",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "日本語",
+  "nameEnglish": "Japanese",
+  "nameDisplay": "Japanese",
+  "nameCalendar": "Gregorian",
+  "lcid": 17,
+  "isRightToLeft": false,
+  "iso3": "jpn",
+  "iso2": "ja",
+  "isNeutral": true,
+  "ietf": "ja",
+  "dateTime": null,
+  "code": "ja"
+}

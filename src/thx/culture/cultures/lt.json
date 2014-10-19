@@ -1,0 +1,19 @@
+{
+  "win3": "LTH",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "lietuvių",
+  "nameEnglish": "Lithuanian",
+  "nameDisplay": "Lithuanian",
+  "nameCalendar": "Gregorian",
+  "lcid": 39,
+  "isRightToLeft": false,
+  "iso3": "lit",
+  "iso2": "lt",
+  "isNeutral": true,
+  "ietf": "lt",
+  "dateTime": null,
+  "code": "lt"
+}

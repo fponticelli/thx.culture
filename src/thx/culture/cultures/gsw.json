@@ -1,0 +1,19 @@
+{
+  "win3": "GSW",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Schwiizertüütsch",
+  "nameEnglish": "Swiss German",
+  "nameDisplay": "Swiss German",
+  "nameCalendar": "Gregorian",
+  "lcid": 132,
+  "isRightToLeft": false,
+  "iso3": "gsw",
+  "iso2": "gsw",
+  "isNeutral": true,
+  "ietf": "gsw",
+  "dateTime": null,
+  "code": "gsw"
+}

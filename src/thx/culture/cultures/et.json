@@ -1,0 +1,19 @@
+{
+  "win3": "ETI",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "eesti",
+  "nameEnglish": "Estonian",
+  "nameDisplay": "Estonian",
+  "nameCalendar": "Gregorian",
+  "lcid": 37,
+  "isRightToLeft": false,
+  "iso3": "est",
+  "iso2": "et",
+  "isNeutral": true,
+  "ietf": "et",
+  "dateTime": null,
+  "code": "et"
+}

@@ -1,0 +1,19 @@
+{
+  "win3": "KAT",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "ქართული",
+  "nameEnglish": "Georgian",
+  "nameDisplay": "Georgian",
+  "nameCalendar": "Gregorian",
+  "lcid": 55,
+  "isRightToLeft": false,
+  "iso3": "kat",
+  "iso2": "ka",
+  "isNeutral": true,
+  "ietf": "ka",
+  "dateTime": null,
+  "code": "ka"
+}

@@ -1,0 +1,19 @@
+{
+  "win3": "GLA",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Gàidhlig",
+  "nameEnglish": "Scottish Gaelic",
+  "nameDisplay": "Scottish Gaelic",
+  "nameCalendar": "Gregorian",
+  "lcid": 145,
+  "isRightToLeft": false,
+  "iso3": "gla",
+  "iso2": "gd",
+  "isNeutral": true,
+  "ietf": "gd",
+  "dateTime": null,
+  "code": "gd"
+}

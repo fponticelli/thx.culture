@@ -1,0 +1,19 @@
+{
+  "win3": "SKY",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "slovenčina",
+  "nameEnglish": "Slovak",
+  "nameDisplay": "Slovak",
+  "nameCalendar": "Gregorian",
+  "lcid": 27,
+  "isRightToLeft": false,
+  "iso3": "slk",
+  "iso2": "sk",
+  "isNeutral": true,
+  "ietf": "sk",
+  "dateTime": null,
+  "code": "sk"
+}

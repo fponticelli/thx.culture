@@ -1,0 +1,19 @@
+{
+  "win3": "ITA",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "italiano",
+  "nameEnglish": "Italian",
+  "nameDisplay": "Italian",
+  "nameCalendar": "Gregorian",
+  "lcid": 16,
+  "isRightToLeft": false,
+  "iso3": "ita",
+  "iso2": "it",
+  "isNeutral": true,
+  "ietf": "it",
+  "dateTime": null,
+  "code": "it"
+}

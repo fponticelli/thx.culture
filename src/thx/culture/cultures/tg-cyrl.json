@@ -1,0 +1,19 @@
+{
+  "win3": "TAJ",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Тоҷикӣ",
+  "nameEnglish": "Tajik (Cyrillic)",
+  "nameDisplay": "Tajik (Cyrillic)",
+  "nameCalendar": "Gregorian",
+  "lcid": 31784,
+  "isRightToLeft": false,
+  "iso3": "tgk",
+  "iso2": "tg",
+  "isNeutral": true,
+  "ietf": "tg-Cyrl",
+  "dateTime": null,
+  "code": "tg-Cyrl"
+}

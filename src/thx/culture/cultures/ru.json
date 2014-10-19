@@ -1,0 +1,19 @@
+{
+  "win3": "RUS",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "русский",
+  "nameEnglish": "Russian",
+  "nameDisplay": "Russian",
+  "nameCalendar": "Gregorian",
+  "lcid": 25,
+  "isRightToLeft": false,
+  "iso3": "rus",
+  "iso2": "ru",
+  "isNeutral": true,
+  "ietf": "ru",
+  "dateTime": null,
+  "code": "ru"
+}

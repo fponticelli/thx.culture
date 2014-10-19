@@ -1,0 +1,19 @@
+{
+  "win3": "HEB",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "עברית",
+  "nameEnglish": "Hebrew",
+  "nameDisplay": "Hebrew",
+  "nameCalendar": "Gregorian",
+  "lcid": 13,
+  "isRightToLeft": true,
+  "iso3": "heb",
+  "iso2": "he",
+  "isNeutral": true,
+  "ietf": "he",
+  "dateTime": null,
+  "code": "he"
+}

@@ -1,0 +1,19 @@
+{
+  "win3": "ZUL",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "isiZulu",
+  "nameEnglish": "Zulu",
+  "nameDisplay": "Zulu",
+  "nameCalendar": "Gregorian",
+  "lcid": 53,
+  "isRightToLeft": false,
+  "iso3": "zul",
+  "iso2": "zu",
+  "isNeutral": true,
+  "ietf": "zu",
+  "dateTime": null,
+  "code": "zu"
+}

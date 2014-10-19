@@ -1,0 +1,19 @@
+{
+  "win3": "MLT",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Malti",
+  "nameEnglish": "Maltese",
+  "nameDisplay": "Maltese",
+  "nameCalendar": "Gregorian",
+  "lcid": 58,
+  "isRightToLeft": false,
+  "iso3": "mlt",
+  "iso2": "mt",
+  "isNeutral": true,
+  "ietf": "mt",
+  "dateTime": null,
+  "code": "mt"
+}

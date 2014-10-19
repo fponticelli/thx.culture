@@ -1,0 +1,19 @@
+{
+  "win3": "MON",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "монгол",
+  "nameEnglish": "Mongolian",
+  "nameDisplay": "Mongolian",
+  "nameCalendar": "Gregorian",
+  "lcid": 80,
+  "isRightToLeft": false,
+  "iso3": "mon",
+  "iso2": "mn",
+  "isNeutral": true,
+  "ietf": "mn",
+  "dateTime": null,
+  "code": "mn"
+}

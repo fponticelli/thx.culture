@@ -1,0 +1,19 @@
+{
+  "win3": "SME",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "davvisámegiella",
+  "nameEnglish": "Northern Sami",
+  "nameDisplay": "Northern Sami",
+  "nameCalendar": "Gregorian",
+  "lcid": 59,
+  "isRightToLeft": false,
+  "iso3": "sme",
+  "iso2": "se",
+  "isNeutral": true,
+  "ietf": "se",
+  "dateTime": null,
+  "code": "se"
+}

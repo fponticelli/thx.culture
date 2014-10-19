@@ -1,0 +1,19 @@
+{
+  "win3": "PAN",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "ਪੰਜਾਬੀ",
+  "nameEnglish": "Punjabi",
+  "nameDisplay": "Punjabi",
+  "nameCalendar": "Gregorian",
+  "lcid": 70,
+  "isRightToLeft": false,
+  "iso3": "pan",
+  "iso2": "pa",
+  "isNeutral": true,
+  "ietf": "pa",
+  "dateTime": null,
+  "code": "pa"
+}

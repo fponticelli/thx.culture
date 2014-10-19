@@ -1,0 +1,19 @@
+{
+  "win3": "THA",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "ไทย",
+  "nameEnglish": "Thai",
+  "nameDisplay": "Thai",
+  "nameCalendar": "ThaiBuddhist",
+  "lcid": 30,
+  "isRightToLeft": false,
+  "iso3": "tha",
+  "iso2": "th",
+  "isNeutral": true,
+  "ietf": "th",
+  "dateTime": null,
+  "code": "th"
+}

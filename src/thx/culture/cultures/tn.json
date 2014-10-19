@@ -1,0 +1,19 @@
+{
+  "win3": "TSN",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Setswana",
+  "nameEnglish": "Tswana",
+  "nameDisplay": "Tswana",
+  "nameCalendar": "Gregorian",
+  "lcid": 50,
+  "isRightToLeft": false,
+  "iso3": "tsn",
+  "iso2": "tn",
+  "isNeutral": true,
+  "ietf": "tn",
+  "dateTime": null,
+  "code": "tn"
+}

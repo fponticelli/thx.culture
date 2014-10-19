@@ -1,0 +1,19 @@
+{
+  "win3": "TAM",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "தமிழ்",
+  "nameEnglish": "Tamil",
+  "nameDisplay": "Tamil",
+  "nameCalendar": "Gregorian",
+  "lcid": 73,
+  "isRightToLeft": false,
+  "iso3": "tam",
+  "iso2": "ta",
+  "isNeutral": true,
+  "ietf": "ta",
+  "dateTime": null,
+  "code": "ta"
+}

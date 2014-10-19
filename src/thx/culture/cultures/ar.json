@@ -1,0 +1,19 @@
+{
+  "win3": "ARA",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "العربية",
+  "nameEnglish": "Arabic",
+  "nameDisplay": "Arabic",
+  "nameCalendar": "UmAlQura",
+  "lcid": 1,
+  "isRightToLeft": true,
+  "iso3": "ara",
+  "iso2": "ar",
+  "isNeutral": true,
+  "ietf": "ar",
+  "dateTime": null,
+  "code": "ar"
+}

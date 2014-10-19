@@ -1,0 +1,19 @@
+{
+  "win3": "YOR",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "Èdè Yorùbá",
+  "nameEnglish": "Yoruba",
+  "nameDisplay": "Yoruba",
+  "nameCalendar": "Gregorian",
+  "lcid": 106,
+  "isRightToLeft": false,
+  "iso3": "yor",
+  "iso2": "yo",
+  "isNeutral": true,
+  "ietf": "yo",
+  "dateTime": null,
+  "code": "yo"
+}

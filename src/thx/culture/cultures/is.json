@@ -1,0 +1,19 @@
+{
+  "win3": "ISL",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "íslenska",
+  "nameEnglish": "Icelandic",
+  "nameDisplay": "Icelandic",
+  "nameCalendar": "Gregorian",
+  "lcid": 15,
+  "isRightToLeft": false,
+  "iso3": "isl",
+  "iso2": "is",
+  "isNeutral": true,
+  "ietf": "is",
+  "dateTime": null,
+  "code": "is"
+}

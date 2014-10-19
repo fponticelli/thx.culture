@@ -1,0 +1,19 @@
+{
+  "win3": "KHM",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "ខ្មែរ",
+  "nameEnglish": "Khmer",
+  "nameDisplay": "Khmer",
+  "nameCalendar": "Gregorian",
+  "lcid": 83,
+  "isRightToLeft": false,
+  "iso3": "khm",
+  "iso2": "km",
+  "isNeutral": true,
+  "ietf": "km",
+  "dateTime": null,
+  "code": "km"
+}

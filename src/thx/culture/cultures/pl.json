@@ -1,0 +1,19 @@
+{
+  "win3": "PLK",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "polski",
+  "nameEnglish": "Polish",
+  "nameDisplay": "Polish",
+  "nameCalendar": "Gregorian",
+  "lcid": 21,
+  "isRightToLeft": false,
+  "iso3": "pol",
+  "iso2": "pl",
+  "isNeutral": true,
+  "ietf": "pl",
+  "dateTime": null,
+  "code": "pl"
+}

@@ -1,0 +1,19 @@
+{
+  "win3": "FRA",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "français",
+  "nameEnglish": "French",
+  "nameDisplay": "French",
+  "nameCalendar": "Gregorian",
+  "lcid": 12,
+  "isRightToLeft": false,
+  "iso3": "fra",
+  "iso2": "fr",
+  "isNeutral": true,
+  "ietf": "fr",
+  "dateTime": null,
+  "code": "fr"
+}

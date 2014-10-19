@@ -1,0 +1,19 @@
+{
+  "win3": "AMH",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "አማርኛ",
+  "nameEnglish": "Amharic",
+  "nameDisplay": "Amharic",
+  "nameCalendar": "Gregorian",
+  "lcid": 94,
+  "isRightToLeft": false,
+  "iso3": "amh",
+  "iso2": "am",
+  "isNeutral": true,
+  "ietf": "am",
+  "dateTime": null,
+  "code": "am"
+}

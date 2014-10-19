@@ -1,0 +1,19 @@
+{
+  "win3": "HYE",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "հայերեն",
+  "nameEnglish": "Armenian",
+  "nameDisplay": "Armenian",
+  "nameCalendar": "Gregorian",
+  "lcid": 43,
+  "isRightToLeft": false,
+  "iso3": "hye",
+  "iso2": "hy",
+  "isNeutral": true,
+  "ietf": "hy",
+  "dateTime": null,
+  "code": "hy"
+}

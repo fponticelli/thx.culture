@@ -1,0 +1,19 @@
+{
+  "win3": "ASM",
+  "separatorList": ",",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "অসমীয়া",
+  "nameEnglish": "Assamese",
+  "nameDisplay": "Assamese",
+  "nameCalendar": "Gregorian",
+  "lcid": 77,
+  "isRightToLeft": false,
+  "iso3": "asm",
+  "iso2": "as",
+  "isNeutral": true,
+  "ietf": "as",
+  "dateTime": null,
+  "code": "as"
+}

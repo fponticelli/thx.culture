@@ -1,0 +1,19 @@
+{
+  "win3": "HRV",
+  "separatorList": ";",
+  "number": null,
+  "nameRegionNative": null,
+  "nameRegionEnglish": null,
+  "nameNative": "hrvatski",
+  "nameEnglish": "Croatian",
+  "nameDisplay": "Croatian",
+  "nameCalendar": "Gregorian",
+  "lcid": 26,
+  "isRightToLeft": false,
+  "iso3": "hrv",
+  "iso2": "hr",
+  "isNeutral": true,
+  "ietf": "hr",
+  "dateTime": null,
+  "code": "hr"
+}
