@@ -61,7 +61,7 @@ class Culture {
   inline public static function fromObject(o : Dynamic)
     return new Culture(
       o.code,
-      o.dateTime,
+      DateTimeFormatInfo.fromObject(o.dateTime),
       o.ietf,
       o.isNeutral,
       o.iso2,
@@ -73,7 +73,7 @@ class Culture {
       o.nameNative,
       o.nameRegionEnglish,
       o.nameRegionNative,
-      o.number,
+      NumberFormatInfo.fromObject(o.number),
       o.separatorList,
       o.win3
     );
