@@ -2,13 +2,11 @@
 
 [![Build Status](https://travis-ci.org/fponticelli/thx.culture.svg)](https://travis-ci.org/fponticelli/thx.culture)
 
-Localization library for Haxe.
+Localization library for Haxe. Strongly based on [.Net globalization](http://msdn.microsoft.com/en-us/library/System.Globalization.aspx) implementation.
 
 ## cultures
 
-
-
-
+List of supported cultures.
 
 <!-- BEGIN_CULTURES -->
 
@@ -297,7 +295,6 @@ Localization library for Haxe.
 | zu-ZA      | Zulu (South Africa)                        | isiZulu (i-South Africa)           | zu   | zul  | R        |
 
 <!-- END_CULTURES -->
-
 
 
 ## install
