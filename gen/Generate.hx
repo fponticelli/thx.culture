@@ -37,41 +37,7 @@ class Generate {
         dateTimeFormat = extractDateTimeFormatInfo(ci);
 
         // NUMBER FORMAT
-        var nf = ci.NumberFormat;
-        numberFormat = {
-          currency : {
-            decimalDigits    : nf.CurrencyDecimalDigits,
-            decimalSeparator : nf.CurrencyDecimalSeparator,
-            groupSeparator   : nf.CurrencyGroupSeparator,
-            groupSizes       : Lib.array(nf.CurrencyGroupSizes),
-            negativePattern  : nf.CurrencyNegativePattern,
-            positivePattern  : nf.CurrencyPositivePattern,
-            symbol           : nf.CurrencySymbol,
-          },
-          number : {
-            decimalDigits    : nf.NumberDecimalDigits,
-            decimalSeparator : nf.NumberDecimalSeparator,
-            groupSeparator   : nf.NumberGroupSeparator,
-            groupSizes       : Lib.array(nf.NumberGroupSizes),
-            negativePattern  : nf.NumberNegativePattern,
-          },
-          percent : {
-            perMilleSymbol   : nf.PerMilleSymbol,
-            decimalDigits    : nf.PercentDecimalDigits,
-            decimalSeparator : nf.PercentDecimalSeparator,
-            groupSeparator   : nf.PercentGroupSeparator,
-            groupSizes       : nf.PercentGroupSizes,
-            negativePattern  : nf.PercentNegativePattern,
-            positivePattern  : nf.PercentPositivePattern,
-          },
-          //digitSubstitution  : nf.DigitSubstitution.getName(),
-          naNSymbol              : nf.NaNSymbol,
-          //nativeDigits       : Lib.array(nf.NativeDigits),
-          negativeInfinitySymbol : nf.NegativeInfinitySymbol,
-          negativeSign           : nf.NegativeSign,
-          positiveInfinitySymbol : nf.PositiveInfinitySymbol,
-          positiveSign           : nf.PositiveSign,
-        };
+        numberFormat = extractNumberFormatInfo(ci);
 
 /*
         //ci.CompareInfo; ???
@@ -113,8 +79,43 @@ class Generate {
 */
     var ci = CultureInfo.InvariantCulture;
     var df = extractDateTimeFormatInfo(ci);
+    var nf = extractNumberFormatInfo(ci);
 
-    trace(haxe.Json.stringify(df, null, ' '));
+    trace(haxe.Json.stringify(nf, null, ' '));
+  }
+
+  public static function extractNumberFormatInfo(ci : CultureInfo) {
+    var nf = ci.NumberFormat;
+/*
+    //digitSubstitution  : nf.DigitSubstitution.getName(),
+    //nativeDigits       : Lib.array(nf.NativeDigits),
+*/
+    return new NumberFormatInfo(
+      nf.CurrencyDecimalDigits,
+      nf.NumberDecimalDigits,
+      nf.PercentDecimalDigits,
+      Lib.array(nf.CurrencyGroupSizes),
+      Lib.array(nf.NumberGroupSizes),
+      Lib.array(nf.PercentGroupSizes),
+      nf.CurrencyNegativePattern,
+      nf.NumberNegativePattern,
+      nf.PercentNegativePattern,
+      nf.CurrencyPositivePattern,
+      nf.PercentPositivePattern,
+      nf.CurrencyDecimalSeparator,
+      nf.NumberDecimalSeparator,
+      nf.PercentDecimalSeparator,
+      nf.CurrencyGroupSeparator,
+      nf.NumberGroupSeparator,
+      nf.PercentGroupSeparator,
+      nf.NegativeSign,
+      nf.PositiveSign,
+      nf.CurrencySymbol,
+      nf.NaNSymbol,
+      nf.NegativeInfinitySymbol,
+      nf.PerMilleSymbol,
+      nf.PositiveInfinitySymbol
+    );
   }
 
   public static function extractDateTimeFormatInfo(ci : CultureInfo) {
