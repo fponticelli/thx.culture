@@ -6,8 +6,7 @@ class TestAll {
     runner.addCase(new thx.culture.TestCulture());
     runner.addCase(new thx.culture.TestDateTimeFormatInfo());
     runner.addCase(new thx.culture.TestNumberFormatInfo());
-    //runner.addCase(new thx.culture.TestEmbed());
-    //runner.addCase(new thx.culture.TestLanguage());
+    runner.addCase(new thx.culture.TestEmbed());
   }
 
   public static function main() {
