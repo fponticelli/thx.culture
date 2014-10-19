@@ -34,40 +34,7 @@ class Generate {
 
       if(!ci.IsNeutralCulture) {
         // DATETIME
-        var dt = ci.DateTimeFormat;
-
-        var cwr = dt.CalendarWeekRule;
-
-        dateTimeFormat = new DateTimeFormatInfo(
-          dt.CalendarWeekRule.getIndex(),
-          dt.CalendarWeekRule.getName(),
-          dt.AMDesignator,
-          dt.PMDesignator,
-          //dt.FirstDayOfWeek,
-          ('' + dt.Calendar).split('.').pop().substr(0, -8),
-          try dt.NativeCalendarName catch(e : Dynamic) null,
-          Lib.array(dt.DayNames),
-          Lib.array(dt.AbbreviatedDayNames),
-          Lib.array(dt.ShortestDayNames),
-          Lib.array(dt.MonthNames),
-          Lib.array(dt.AbbreviatedMonthNames),
-          Lib.array(dt.MonthGenitiveNames),
-          Lib.array(dt.AbbreviatedMonthGenitiveNames),
-          dt.LongDatePattern,
-          dt.ShortDatePattern,
-          dt.FullDateTimePattern,
-          dt.SortableDateTimePattern,
-          dt.MonthDayPattern,
-          dt.RFC1123Pattern,
-          dt.LongTimePattern,
-          dt.ShortTimePattern,
-          dt.UniversalSortableDateTimePattern,
-          dt.YearMonthPattern,
-          dt.DateSeparator,
-          dt.TimeSeparator
-        );
-
-        trace(haxe.Json.stringify(dateTimeFormat));
+        dateTimeFormat = extractDateTimeFormatInfo(ci);
 
         // NUMBER FORMAT
         var nf = ci.NumberFormat;
@@ -136,11 +103,53 @@ class Generate {
       });
     }
 
+/*
     acc
       .order(function(a, b) return Strings.compare(a.displayName, b.displayName))
       .slice(90, 105)
       .map(function(item) {
         //trace(item);
       });
+*/
+    var ci = CultureInfo.InvariantCulture;
+    var df = extractDateTimeFormatInfo(ci);
+
+    trace(haxe.Json.stringify(df, null, ' '));
+  }
+
+  public static function extractDateTimeFormatInfo(ci : CultureInfo) {
+    var dt  = ci.DateTimeFormat,
+        cwr = dt.CalendarWeekRule,
+        fdw = dt.FirstDayOfWeek;
+
+    return new DateTimeFormatInfo(
+      dt.CalendarWeekRule.getIndex(),
+      dt.CalendarWeekRule.getName(),
+      dt.AMDesignator,
+      dt.PMDesignator,
+      fdw.getIndex(),
+      fdw.getName(),
+      ('' + dt.Calendar).split('.').pop().substr(0, -8),
+      try dt.NativeCalendarName catch(e : Dynamic) null,
+      Lib.array(dt.DayNames),
+      Lib.array(dt.AbbreviatedDayNames),
+      Lib.array(dt.ShortestDayNames),
+      Lib.array(dt.MonthNames),
+      Lib.array(dt.AbbreviatedMonthNames),
+      Lib.array(dt.MonthGenitiveNames),
+      Lib.array(dt.AbbreviatedMonthGenitiveNames),
+      dt.LongDatePattern,
+      dt.ShortDatePattern,
+      dt.FullDateTimePattern,
+      dt.SortableDateTimePattern,
+      dt.MonthDayPattern,
+      dt.RFC1123Pattern,
+      dt.LongTimePattern,
+      dt.ShortTimePattern,
+      dt.UniversalSortableDateTimePattern,
+      dt.YearMonthPattern,
+      dt.DateSeparator,
+      dt.TimeSeparator
+    );
   }
 }

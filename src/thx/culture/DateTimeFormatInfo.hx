@@ -1,11 +1,42 @@
 package thx.culture;
 
 class DateTimeFormatInfo {
+  public static var invariant(default, null) : DateTimeFormatInfo = new DateTimeFormatInfo(
+    0,
+    "FirstDay",
+    "AM",
+    "PM",
+    0,
+    "Sunday",
+    "Gregorian",
+    null,
+    ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],
+    ["Su","Mo","Tu","We","Th","Fr","Sa"],
+    ["January","February","March","April","May","June","July","August","September","October","November","December",""],
+    ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],
+    ["January","February","March","April","May","June","July","August","September","October","November","December",""],
+    ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",""],
+    "dddd, dd MMMM yyyy",
+    "MM/dd/yyyy",
+    "dddd, dd MMMM yyyy HH:mm:ss",
+    "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
+    "MMMM dd",
+    "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'",
+    "HH:mm:ss",
+    "HH:mm",
+    "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
+    "yyyy MMMM",
+    "/",
+    ":"
+  );
+
   public var calendarWeekRuleIndex(default, null) : Int;
   public var calendarWeekRuleName(default, null) : String;
   public var designatorAm(default, null) : String;
   public var designatorPm(default, null) : String;
-  //public var firstDayOfWeek(default, null) : String;
+  public var firstDayOfWeekIndex(default, null) : Int;
+  public var firstDayOfWeekName(default, null) : String;
   public var nameCalendar(default, null) : String;
   public var nameCalendarNative(default, null) : Null<String>;
   public var nameDays(default, null) : Array<String>;
@@ -33,9 +64,10 @@ class DateTimeFormatInfo {
       calendarWeekRuleName : String,
       designatorAm : String,
       designatorPm : String,
-      //firstDayOfWeek : String,
-      nameCalendar : Null<String>,
-      nameCalendarNative : String,
+      firstDayOfWeekIndex : Int,
+      firstDayOfWeekName : String,
+      nameCalendar : String,
+      nameCalendarNative : Null<String>,
       nameDays : Array<String>,
       nameDaysAbbreviated : Array<String>,
       nameDaysShortest : Array<String>,
@@ -60,7 +92,8 @@ class DateTimeFormatInfo {
       this.calendarWeekRuleName = calendarWeekRuleName;
       this.designatorAm = designatorAm;
       this.designatorPm = designatorPm;
-      //this.firstDayOfWeek = firstDayOfWeek;
+      this.firstDayOfWeekIndex = firstDayOfWeekIndex;
+      this.firstDayOfWeekName = firstDayOfWeekName;
       this.nameCalendar = nameCalendar;
       this.nameCalendarNative = nameCalendarNative;
       this.nameDays = nameDays;
@@ -83,4 +116,35 @@ class DateTimeFormatInfo {
       this.separatorDate = separatorDate;
       this.separatorTime = separatorTime;
   }
+
+  inline public static function fromObject(o : Dynamic)
+    return new DateTimeFormatInfo(
+      o.calendarWeekRuleIndex,
+      o.calendarWeekRuleName,
+      o.designatorAm,
+      o.designatorPm,
+      o.firstDayOfWeekIndex,
+      o.firstDayOfWeekName,
+      o.nameCalendar,
+      o.nameCalendarNative,
+      o.nameDays,
+      o.nameDaysAbbreviated,
+      o.nameDaysShortest,
+      o.nameMonths,
+      o.nameMonthsAbbreviated,
+      o.nameMonthGenitives,
+      o.nameMonthGenitivesAbbreviated,
+      o.patternDateLong,
+      o.patternDateShort,
+      o.patternDateTimeFull,
+      o.patternDateTimeSortable,
+      o.patternMonthDay,
+      o.patternRfc1123,
+      o.patternTimeLong,
+      o.patternTimeShort,
+      o.patternUniversalSortable,
+      o.patternYearMonth,
+      o.separatorDate,
+      o.separatorTime
+    );
 }
