@@ -10,6 +10,7 @@ List of supported cultures.
 
 
 
+
 <!-- BEGIN_CULTURES -->
 
 | code       | english                                    | native                             | ISO2 | ISO3 | currency |
@@ -19,22 +20,22 @@ List of supported cultures.
 | am         | Amharic                                    | አማርኛ                               | am   | amh  | -        |
 | am-ET      | Amharic (Ethiopia)                         | አማርኛ (ኢትዮጵያ)                       | am   | amh  | ብር       |
 | ar         | Arabic                                     | العربية                            | ar   | ara  | -        |
-| ar-AE      | Arabic (United Arab Emirates)              | (الإمارات العربية المتحدة) العربية | ar   | ara  | د.إ.‏    |
-| ar-BH      | Arabic (Bahrain)                           | (البحرين) العربية                  | ar   | ara  | د.ب.‏    |
-| ar-DZ      | Arabic (Algeria)                           | (الجزائر) العربية                  | ar   | ara  | د.ج.‏    |
-| ar-EG      | Arabic (Egypt)                             | (مصر) العربية                      | ar   | ara  | ج.م.‏    |
-| ar-IQ      | Arabic (Iraq)                              | (العراق) العربية                   | ar   | ara  | د.ع.‏    |
-| ar-JO      | Arabic (Jordan)                            | (الأردن) العربية                   | ar   | ara  | د.أ.‏    |
-| ar-KW      | Arabic (Kuwait)                            | (الكويت) العربية                   | ar   | ara  | د.ك.‏    |
-| ar-LB      | Arabic (Lebanon)                           | (لبنان) العربية                    | ar   | ara  | ل.ل.‏    |
-| ar-LY      | Arabic (Libya)                             | (ليبيا) العربية                    | ar   | ara  | د.ل.‏    |
-| ar-MA      | Arabic (Morocco)                           | (المغرب) العربية                   | ar   | ara  | د.م.‏    |
-| ar-OM      | Arabic (Oman)                              | (عُمان) العربية                    | ar   | ara  | ر.ع.‏    |
-| ar-QA      | Arabic (Qatar)                             | (قطر) العربية                      | ar   | ara  | ر.ق.‏    |
-| ar-SA      | Arabic (Saudi Arabia)                      | (المملكة العربية السعودية) العربية | ar   | ara  | ر.س.‏    |
-| ar-SY      | Arabic (Syria)                             | (سوريا) العربية                    | ar   | ara  | ل.س.‏    |
-| ar-TN      | Arabic (Tunisia)                           | (تونس) العربية                     | ar   | ara  | د.ت.‏    |
-| ar-YE      | Arabic (Yemen)                             | (اليمن) العربية                    | ar   | ara  | ر.ي.‏    |
+| ar-AE      | Arabic (United Arab Emirates)              | العربية (الإمارات العربية المتحدة) | ar   | ara  | د.إ.‏    |
+| ar-BH      | Arabic (Bahrain)                           | العربية (البحرين)                  | ar   | ara  | د.ب.‏    |
+| ar-DZ      | Arabic (Algeria)                           | العربية (الجزائر)                  | ar   | ara  | د.ج.‏    |
+| ar-EG      | Arabic (Egypt)                             | العربية (مصر)                      | ar   | ara  | ج.م.‏    |
+| ar-IQ      | Arabic (Iraq)                              | العربية (العراق)                   | ar   | ara  | د.ع.‏    |
+| ar-JO      | Arabic (Jordan)                            | العربية (الأردن)                   | ar   | ara  | د.أ.‏    |
+| ar-KW      | Arabic (Kuwait)                            | العربية (الكويت)                   | ar   | ara  | د.ك.‏    |
+| ar-LB      | Arabic (Lebanon)                           | العربية (لبنان)                    | ar   | ara  | ل.ل.‏    |
+| ar-LY      | Arabic (Libya)                             | العربية (ليبيا)                    | ar   | ara  | د.ل.‏    |
+| ar-MA      | Arabic (Morocco)                           | العربية (المغرب)                   | ar   | ara  | د.م.‏    |
+| ar-OM      | Arabic (Oman)                              | العربية (عُمان)                    | ar   | ara  | ر.ع.‏    |
+| ar-QA      | Arabic (Qatar)                             | العربية (قطر)                      | ar   | ara  | ر.ق.‏    |
+| ar-SA      | Arabic (Saudi Arabia)                      | العربية (المملكة العربية السعودية) | ar   | ara  | ر.س.‏    |
+| ar-SY      | Arabic (Syria)                             | العربية (سوريا)                    | ar   | ara  | ل.س.‏    |
+| ar-TN      | Arabic (Tunisia)                           | العربية (تونس)                     | ar   | ara  | د.ت.‏    |
+| ar-YE      | Arabic (Yemen)                             | العربية (اليمن)                    | ar   | ara  | ر.ي.‏    |
 | as         | Assamese                                   | অসমীয়া                            | as   | asm  | -        |
 | as-IN      | Assamese (India)                           | অসমীয়া (ভাৰত)                     | as   | asm  | ₹        |
 | az         | Azerbaijani                                | azərbaycan                         | az   | aze  | -        |
@@ -115,7 +116,7 @@ List of supported cultures.
 | eu         | Basque                                     | euskara                            | eu   | eus  | -        |
 | eu-ES      | Basque (Spain)                             | euskara (Espainia)                 | eu   | eus  | €        |
 | fa         | Persian                                    | فارسی                              | fa   | fas  | -        |
-| fa-IR      | Persian (Iran)                             | (ایران) فارسی                      | fa   | fas  | ریال     |
+| fa-IR      | Persian (Iran)                             | فارسی (ایران)                      | fa   | fas  | ریال     |
 | fi         | Finnish                                    | suomi                              | fi   | fin  | -        |
 | fi-FI      | Finnish (Finland)                          | suomi (Suomi)                      | fi   | fin  | €        |
 | fil        | Filipino                                   | Filipino                           | fil  | fil  | -        |
@@ -142,7 +143,7 @@ List of supported cultures.
 | ha-Latn    | Hausa (Latin)                              | Hausa                              | ha   | hau  | -        |
 | ha-Latn-NG | Hausa (Latin, Nigeria)                     | Hausa (Najeriya)                   | ha   | hau  | ₦        |
 | he         | Hebrew                                     | עברית                              | he   | heb  | -        |
-| he-IL      | Hebrew (Israel)                            | (ישראל) עברית                      | he   | heb  | ₪        |
+| he-IL      | Hebrew (Israel)                            | עברית (ישראל)                      | he   | heb  | ₪        |
 | hi         | Hindi                                      | हिंदी                              | hi   | hin  | -        |
 | hi-IN      | Hindi (India)                              | हिंदी (भारत)                       | hi   | hin  | ₹        |
 | hr         | Croatian                                   | hrvatski                           | hr   | hrv  | -        |
@@ -214,7 +215,7 @@ List of supported cultures.
 | pl         | Polish                                     | polski                             | pl   | pol  | -        |
 | pl-PL      | Polish (Poland)                            | polski (Polska)                    | pl   | pol  | zł       |
 | ps         | Pashto                                     | پښتو                               | ps   | pus  | -        |
-| ps-AF      | Pashto (Afghanistan)                       | (افغانستان) پښتو                   | ps   | pus  | ؋        |
+| ps-AF      | Pashto (Afghanistan)                       | پښتو (افغانستان)                   | ps   | pus  | ؋        |
 | pt         | Portuguese                                 | português                          | pt   | por  | -        |
 | pt-BR      | Portuguese (Brazil)                        | português (Brasil)                 | pt   | por  | R$       |
 | pt-PT      | Portuguese (Portugal)                      | português (Portugal)               | pt   | por  | €        |
@@ -271,7 +272,7 @@ List of supported cultures.
 | uk         | Ukrainian                                  | українська                         | uk   | ukr  | -        |
 | uk-UA      | Ukrainian (Ukraine)                        | українська (Україна)               | uk   | ukr  | ₴        |
 | ur         | Urdu                                       | اردو                               | ur   | urd  | -        |
-| ur-PK      | Urdu (Pakistan)                            | (پاکستان) اردو                     | ur   | urd  | Rs       |
+| ur-PK      | Urdu (Pakistan)                            | اردو (پاکستان)                     | ur   | urd  | Rs       |
 | uz         | Uzbek                                      | oʻzbekcha                          | uz   | uzb  | -        |
 | uz-Cyrl    | Uzbek (Cyrillic)                           | oʻzbekcha                          | uz   | uzb  | -        |
 | uz-Cyrl-UZ | Uzbek (Cyrillic, Uzbekistan)               | oʻzbekcha (Oʻzbekiston)            | uz   | uzb  | сўм      |
@@ -297,6 +298,7 @@ List of supported cultures.
 | zu-ZA      | Zulu (South Africa)                        | isiZulu (i-South Africa)           | zu   | zul  | R        |
 
 <!-- END_CULTURES -->
+
 
 
 
