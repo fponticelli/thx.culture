@@ -102,7 +102,7 @@ class Culture {
     return nameEnglish + (null == nameRegionEnglish ? '' : ' ($nameRegionEnglish)');
 
   inline function get_nameDisplayNative()
-    return nameNative + (null == nameRegionNative ? '' : ' ($nameRegionNative)');
+    return isRightToLeft ? (null == nameRegionNative ? '' : '($nameRegionNative) ') + nameNative : nameNative + (null == nameRegionNative ? '' : ' ($nameRegionNative)');
 
   inline public function toString()
     return nameDisplayEnglish;
