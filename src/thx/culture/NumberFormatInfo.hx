@@ -80,6 +80,34 @@ class NumberFormatInfo {
     this.symbolPositiveInfinity   = symbolPositiveInfinity;
   }
 
+  public function toObject()
+    return {
+      decimalDigitsCurrency : decimalDigitsCurrency,
+      decimalDigitsNumber : decimalDigitsNumber,
+      decimalDigitsPercent : decimalDigitsPercent,
+      groupSizesCurrency : groupSizesCurrency,
+      groupSizesNumber : groupSizesNumber,
+      groupSizesPercent : groupSizesPercent,
+      patternNegativeCurrency : patternNegativeCurrency,
+      patternNegativeNumber : patternNegativeNumber,
+      patternNegativePercent : patternNegativePercent,
+      patternPositiveCurrency : patternPositiveCurrency,
+      patternPositivePercent : patternPositivePercent,
+      separatorDecimalCurrency : separatorDecimalCurrency,
+      separatorDecimalNumber : separatorDecimalNumber,
+      separatorDecimalPercent : separatorDecimalPercent,
+      separatorGroupCurrency : separatorGroupCurrency,
+      separatorGroupNumber : separatorGroupNumber,
+      separatorGroupPercent : separatorGroupPercent,
+      signNegative : signNegative,
+      signPositive : signPositive,
+      symbolCurrency : symbolCurrency,
+      symbolNaN : symbolNaN,
+      symbolNegativeInfinity : symbolNegativeInfinity,
+      symbolPerMille : symbolPerMille,
+      symbolPositiveInfinity : symbolPositiveInfinity
+    };
+
   inline public static function fromObject(o : Dynamic)
     return new NumberFormatInfo(
       o.decimalDigitsCurrency,

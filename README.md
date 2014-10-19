@@ -8,6 +8,7 @@ Localization library for Haxe. Strongly based on [.Net globalization](http://msd
 
 List of supported cultures.
 
+
 <!-- BEGIN_CULTURES -->
 
 | code       | english                                    | native                             | ISO2 | ISO3 | currency |
@@ -295,6 +296,7 @@ List of supported cultures.
 | zu-ZA      | Zulu (South Africa)                        | isiZulu (i-South Africa)           | zu   | zul  | R        |
 
 <!-- END_CULTURES -->
+
 
 
 ## install

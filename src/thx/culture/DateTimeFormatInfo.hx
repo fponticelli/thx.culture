@@ -117,6 +117,37 @@ class DateTimeFormatInfo {
     this.separatorTime = separatorTime;
   }
 
+  public function toObject()
+    return {
+      calendarWeekRuleIndex : calendarWeekRuleIndex,
+      calendarWeekRuleName : calendarWeekRuleName,
+      designatorAm : designatorAm,
+      designatorPm : designatorPm,
+      firstDayOfWeekIndex : firstDayOfWeekIndex,
+      firstDayOfWeekName : firstDayOfWeekName,
+      nameCalendar : nameCalendar,
+      nameCalendarNative : nameCalendarNative,
+      nameDays : nameDays,
+      nameDaysAbbreviated : nameDaysAbbreviated,
+      nameDaysShortest : nameDaysShortest,
+      nameMonths : nameMonths,
+      nameMonthsAbbreviated : nameMonthsAbbreviated,
+      nameMonthGenitives : nameMonthGenitives,
+      nameMonthGenitivesAbbreviated : nameMonthGenitivesAbbreviated,
+      patternDateLong : patternDateLong,
+      patternDateShort : patternDateShort,
+      patternDateTimeFull : patternDateTimeFull,
+      patternDateTimeSortable : patternDateTimeSortable,
+      patternMonthDay : patternMonthDay,
+      patternRfc1123 : patternRfc1123,
+      patternTimeLong : patternTimeLong,
+      patternTimeShort : patternTimeShort,
+      patternUniversalSortable : patternUniversalSortable,
+      patternYearMonth : patternYearMonth,
+      separatorDate : separatorDate,
+      separatorTime : separatorTime
+    };
+
   inline public static function fromObject(o : Dynamic)
     return new DateTimeFormatInfo(
       o.calendarWeekRuleIndex,

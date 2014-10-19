@@ -58,10 +58,30 @@ class Culture {
     this.win3 = win3;
   }
 
+  public function toObject()
+    return {
+      code : code,
+      dateTime : null == dateTime ? null : dateTime.toObject(),
+      ietf : ietf,
+      isNeutral : isNeutral,
+      iso2 : iso2,
+      iso3 : iso3,
+      isRightToLeft : isRightToLeft,
+      lcid : lcid,
+      nameCalendar : nameCalendar,
+      nameEnglish : nameEnglish,
+      nameNative : nameNative,
+      nameRegionEnglish : nameRegionEnglish,
+      nameRegionNative : nameRegionNative,
+      number : null == number ? null : number.toObject(),
+      separatorList : separatorList,
+      win3 : win3
+    };
+
   inline public static function fromObject(o : Dynamic)
     return new Culture(
       o.code,
-      DateTimeFormatInfo.fromObject(o.dateTime),
+      null == o.dateTime ? null : DateTimeFormatInfo.fromObject(o.dateTime),
       o.ietf,
       o.isNeutral,
       o.iso2,
@@ -73,7 +93,7 @@ class Culture {
       o.nameNative,
       o.nameRegionEnglish,
       o.nameRegionNative,
-      NumberFormatInfo.fromObject(o.number),
+      null == o.number ? null : NumberFormatInfo.fromObject(o.number),
       o.separatorList,
       o.win3
     );

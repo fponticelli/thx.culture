@@ -18,7 +18,7 @@ class Generate {
       .map(function(culture) {
         var code = culture.code.toLowerCase(),
             file = '$path/$code.json',
-            json = haxe.Json.stringify(culture, null, '  ');
+            json = haxe.Json.stringify(culture.toObject(), '  ');
         sys.io.File.saveContent(file, json);
       });
 
@@ -75,7 +75,6 @@ class Generate {
       ci.TextInfo.IsRightToLeft,
       ci.LCID,
       extractCalendarName(ci.Calendar),
-      ci.DisplayName,
       englishName,
       nativeName,
       englishRegion,
