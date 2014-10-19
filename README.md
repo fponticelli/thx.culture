@@ -1,3 +1,5 @@
+REFACTORING IN BRANCH GENERATE.
+
 # thx.culture
 
 [![Build Status](https://travis-ci.org/fponticelli/thx.culture.svg)](https://travis-ci.org/fponticelli/thx.culture)
@@ -119,7 +121,7 @@ Localization library for Haxe.
 | Ukrainian (Ukraine)                                | україньска (Україна)                         | UA   | UKR  | UAH      | грн.   |
 | Urdu (Islamic Republic of Pakistan)                | اُردو (پاکستان)                              | PK   | PAK  | PKR      | Rs     |
 | Uzbek (Cyrillic, Uzbekistan)                       | Ўзбек (Ўзбекистон)                           | UZ   | UZB  | UZS      | сўм    |
-| Vietnamese (Vietnam)                               | Tiếng Việt (Việt Nam)                     | VN   | VNM  | VND      | ₫      |
+| Vietnamese (Vietnam)                               | Tiếng Việt (Việt Nam)                     | VN   | VNM  | VND      | ₫      |
 
 <!-- END_CULTURES -->
 
@@ -198,7 +200,7 @@ Localization library for Haxe.
 | Ukrainian            | україньска       | uk   | ukr  |
 | Urdu                 | اُردو            | ur   | urd  |
 | Uzbek                | U'zbek           | uz   | uzb  |
-| Vietnamese           | Tiếng Việt     | vi   | vie  |
+| Vietnamese           | Tiếng Việt     | vi   | vie  |
 
 <!-- END_LANGUAGES -->
 
