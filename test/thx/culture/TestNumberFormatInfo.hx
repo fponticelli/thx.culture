@@ -1,9 +1,7 @@
 package thx.culture;
 
 import utest.Assert;
-import thx.culture.NumberInfo;
-import thx.culture.CurrencyInfo;
-import thx.culture.PercentInfo;
+import thx.culture.Pattern;
 
 class TestNumberFormatInfo {
   public function new() { }

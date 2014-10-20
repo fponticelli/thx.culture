@@ -1,13 +1,14 @@
 {
   "nameCalendar": "Gregorian",
   "number": {
+    "symbolPermille": "‰",
     "symbolPositiveInfinity": "бесконечность",
     "signPositive": "+",
     "separatorGroupNumber": " ",
     "separatorDecimalPercent": ",",
     "signNegative": "-",
     "symbolCurrency": "руб.",
-    "symbolPerMille": "‰",
+    "symbolPercent": "%",
     "groupSizesNumber": [
       3
     ],

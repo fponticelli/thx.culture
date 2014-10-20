@@ -1,13 +1,14 @@
 {
   "nameCalendar": "UmAlQura",
   "number": {
+    "symbolPermille": "؉",
     "symbolPositiveInfinity": "Infinity",
     "signPositive": "‏+",
     "separatorGroupNumber": "٬",
     "separatorDecimalPercent": "٫",
     "signNegative": "-",
     "symbolCurrency": "ر.س.‏",
-    "symbolPerMille": "؉",
+    "symbolPercent": "٪",
     "groupSizesNumber": [
       3
     ],

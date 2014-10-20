@@ -114,6 +114,7 @@ class Generate {
       nf.CurrencySymbol,
       nf.NaNSymbol,
       nf.NegativeInfinitySymbol,
+      nf.PercentSymbol,
       nf.PerMilleSymbol,
       nf.PositiveInfinitySymbol
     );

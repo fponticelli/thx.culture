@@ -1,7 +1,7 @@
 package thx.culture;
 
 class NumberFormatInfo {
-  public static var invariant(default, null) : NumberFormatInfo = new NumberFormatInfo(2, 2, 2, [3], [3], [3], 0, 1, 0, 0, 0, ".", ".", ".", ",", ",", ",", "-", "+", "¤", "NaN", "-Infinity", "‰", "Infinity");
+  public static var invariant(default, null) : NumberFormatInfo = new NumberFormatInfo(2, 2, 2, [3], [3], [3], 0, 1, 0, 0, 0, ".", ".", ".", ",", ",", ",", "-", "+", "¤", "NaN", "-Infinity", "%", "‰", "Infinity");
 
   public var decimalDigitsCurrency(default, null)    : Int;
   public var decimalDigitsNumber(default, null)      : Int;
@@ -25,7 +25,8 @@ class NumberFormatInfo {
   public var symbolCurrency(default, null)           : String;
   public var symbolNaN(default, null)                : String;
   public var symbolNegativeInfinity(default, null)   : String;
-  public var symbolPerMille(default, null)           : String;
+  public var symbolPercent(default, null)            : String;
+  public var symbolPermille(default, null)           : String;
   public var symbolPositiveInfinity(default, null)   : String;
 
   public function new(
@@ -51,7 +52,8 @@ class NumberFormatInfo {
     symbolCurrency           : String,
     symbolNaN                : String,
     symbolNegativeInfinity   : String,
-    symbolPerMille           : String,
+    symbolPercent            : String,
+    symbolPermille           : String,
     symbolPositiveInfinity   : String
   ) {
     this.decimalDigitsCurrency    = decimalDigitsCurrency;
@@ -76,7 +78,8 @@ class NumberFormatInfo {
     this.symbolCurrency           = symbolCurrency;
     this.symbolNaN                = symbolNaN;
     this.symbolNegativeInfinity   = symbolNegativeInfinity;
-    this.symbolPerMille           = symbolPerMille;
+    this.symbolPercent            = symbolPercent;
+    this.symbolPermille           = symbolPermille;
     this.symbolPositiveInfinity   = symbolPositiveInfinity;
   }
 
@@ -104,7 +107,8 @@ class NumberFormatInfo {
       symbolCurrency : symbolCurrency,
       symbolNaN : symbolNaN,
       symbolNegativeInfinity : symbolNegativeInfinity,
-      symbolPerMille : symbolPerMille,
+      symbolPercent : symbolPercent,
+      symbolPermille : symbolPermille,
       symbolPositiveInfinity : symbolPositiveInfinity
     };
 
@@ -132,7 +136,8 @@ class NumberFormatInfo {
       o.symbolCurrency,
       o.symbolNaN,
       o.symbolNegativeInfinity,
-      o.symbolPerMille,
+      o.symbolPercent,
+      o.symbolPermille,
       o.symbolPositiveInfinity
     );
 }
