@@ -1,7 +1,7 @@
 package thx.culture;
 
-class DateTimeFormatInfo {
-  public static var invariant(default, null) : DateTimeFormatInfo = new DateTimeFormatInfo(
+class DateFormatInfo {
+  public static var invariant(default, null) : DateFormatInfo = new DateFormatInfo(
     0,
     "FirstDay",
     "AM",
@@ -149,7 +149,7 @@ class DateTimeFormatInfo {
     };
 
   inline public static function fromObject(o : Dynamic)
-    return new DateTimeFormatInfo(
+    return new DateFormatInfo(
       o.calendarWeekRuleIndex,
       o.calendarWeekRuleName,
       o.designatorAm,

@@ -2,11 +2,11 @@ package thx.culture;
 
 import utest.Assert;
 
-class TestDateTimeFormatInfo {
+class TestDateFormatInfo {
   public function new() { }
 
   public function testInvariant() {
-    var dt = DateTimeFormatInfo.invariant;
+    var dt = DateFormatInfo.invariant;
 
     Assert.equals('Gregorian', dt.nameCalendar);
     Assert.equals('Sunday', dt.firstDayOfWeekName);

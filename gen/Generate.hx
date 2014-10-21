@@ -24,7 +24,7 @@ class Generate {
 
     // INVARIANT
     //var ci = CultureInfo.InvariantCulture;
-    //var df = extractDateTimeFormatInfo(ci);
+    //var df = extractDateFormatInfo(ci);
     //var nf = extractNumberFormatInfo(ci);
     //var c  = extractCulture(ci);
     //trace(haxe.Json.stringify(c, null, ' '));
@@ -51,7 +51,7 @@ class Generate {
 
     if(!ci.IsNeutralCulture) {
       // DATETIME
-      dateTimeFormat = extractDateTimeFormatInfo(ci);
+      dateTimeFormat = extractDateFormatInfo(ci);
 
       // NUMBER FORMAT
       numberFormat = extractNumberFormatInfo(ci);
@@ -120,12 +120,12 @@ class Generate {
     );
   }
 
-  public static function extractDateTimeFormatInfo(ci : CultureInfo) {
+  public static function extractDateFormatInfo(ci : CultureInfo) {
     var dt  = ci.DateTimeFormat,
         cwr = dt.CalendarWeekRule,
         fdw = dt.FirstDayOfWeek;
 
-    return new DateTimeFormatInfo(
+    return new DateFormatInfo(
       dt.CalendarWeekRule.getIndex(),
       dt.CalendarWeekRule.getName(),
       dt.AMDesignator,

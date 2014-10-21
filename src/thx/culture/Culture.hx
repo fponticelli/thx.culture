@@ -1,10 +1,10 @@
 package thx.culture;
 
 class Culture {
-  public static var invariant(default, null) : Culture = new Culture("", DateTimeFormatInfo.invariant, "", false, "iv", "IVL", false, 127, "Gregorian", "Invariant Language", "Invariant Language", "Invariant Country", "Invariant Country", NumberFormatInfo.invariant, ",", "IVL");
+  public static var invariant(default, null) : Culture = new Culture("", DateFormatInfo.invariant, "", false, "iv", "IVL", false, 127, "Gregorian", "Invariant Language", "Invariant Language", "Invariant Country", "Invariant Country", NumberFormatInfo.invariant, ",", "IVL");
 
   public var code(default, null)               : String;
-  public var dateTime(default, null)           : DateTimeFormatInfo;
+  public var dateTime(default, null)           : DateFormatInfo;
   public var ietf(default, null)               : String;
   public var isNeutral(default, null)          : Bool;
   public var iso2(default, null)               : String;
@@ -24,7 +24,7 @@ class Culture {
 
   public function new(
     code               : String,
-    dateTime           : DateTimeFormatInfo,
+    dateTime           : DateFormatInfo,
     ietf               : String,
     isNeutral          : Bool,
     iso2               : String,
@@ -81,7 +81,7 @@ class Culture {
   inline public static function fromObject(o : Dynamic)
     return new Culture(
       o.code,
-      null == o.dateTime ? null : DateTimeFormatInfo.fromObject(o.dateTime),
+      null == o.dateTime ? null : DateFormatInfo.fromObject(o.dateTime),
       o.ietf,
       o.isNeutral,
       o.iso2,
