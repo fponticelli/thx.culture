@@ -121,12 +121,12 @@ class Culture {
     return culture;
   }
 
-  public static function getByCode(name : String)
-    return cultures.get(getCodeKey(name));
-  public static function getByIso2(name : String)
-    return cultures.get(getIso2Key(name));
-  public static function getByIso3(name : String)
-    return cultures.get(getIso3Key(name));
+  public static function getByCode(code : String)
+    return cultures.get(getCodeKey(code));
+  public static function getByIso2(iso2 : String)
+    return cultures.get(getIso2Key(iso2));
+  public static function getByIso3(iso3 : String)
+    return cultures.get(getIso3Key(iso3));
   public static function iterator()
     return list.iterator();
 
