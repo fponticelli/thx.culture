@@ -1,5 +1,6 @@
 import cs.Lib;
 import cs.system.globalization.*;
+import sys.FileSystem;
 
 using thx.core.Arrays;
 using thx.core.Strings;
@@ -9,10 +10,17 @@ using StringTools;
 class Generate {
   static var path = 'src/thx/culture/cultures';
   public static function main() {
-    Sys.command('rm', ['-rf', path]);
-    Sys.command('mkdir', ['-p', path]);
+    // cleanup
+    try FileSystem.readDirectory(path).map(function (file) {
+      FileSystem.deleteFile('$path/$file');
+    }) catch(e : Dynamic) {};
+    try FileSystem.deleteDirectory(path) catch (e : Dynamic) { }
+
+    // create dir
+    FileSystem.createDirectory(path);
 
     Lib.array(CultureInfo.GetCultures(CultureTypes.AllCultures))
+      .filterPluck(null != _)
       .map(extractCulture)
       .filter(function(culture) return culture.code != "")
       .map(function(culture) {
@@ -36,10 +44,13 @@ class Generate {
     if(patternExtractNames.match(ci.NativeName)) {
       nativeName = StringTools.trim(patternExtractNames.matched(1));
       nativeRegion = StringTools.trim(patternExtractNames.matched(2));
-
-      patternExtractNames.match(ci.EnglishName);
-      englishName = StringTools.trim(patternExtractNames.matched(1));
-      englishRegion = StringTools.trim(patternExtractNames.matched(2));
+      if (patternExtractNames.match(ci.EnglishName)) {
+        englishName = StringTools.trim(patternExtractNames.matched(1));
+        englishRegion = StringTools.trim(patternExtractNames.matched(2));
+      } else {
+        englishName = ci.EnglishName;
+        englishRegion = null;
+      }
     } else {
       nativeName = ci.NativeName;
       englishName = ci.EnglishName;

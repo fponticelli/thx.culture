@@ -1,5 +1,4 @@
 -cp gen
--cp hxcs
 -cp src
 -lib thx.core
 -main Generate
