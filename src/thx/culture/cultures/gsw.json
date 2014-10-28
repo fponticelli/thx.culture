@@ -1,7 +1,7 @@
 {
   "nameCalendar": "Gregorian",
   "number": null,
-  "nameNative": "Schwiizertüütsch",
+  "nameNative": "Elsässisch",
   "separatorList": ";",
   "nameRegionNative": null,
   "code": "gsw",
@@ -11,7 +11,7 @@
   "nameRegionEnglish": null,
   "win3": "GSW",
   "dateTime": null,
-  "nameEnglish": "Swiss German",
+  "nameEnglish": "Alsatian",
   "isNeutral": true,
   "isRightToLeft": false,
   "lcid": 132

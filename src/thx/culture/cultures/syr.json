@@ -1,0 +1,18 @@
+{
+  "nameCalendar": "Gregorian",
+  "number": null,
+  "nameNative": "ܣܘܪܝܝܐ",
+  "separatorList": ",",
+  "nameRegionNative": null,
+  "code": "syr",
+  "ietf": "syr",
+  "iso2": "syr",
+  "iso3": "syr",
+  "nameRegionEnglish": null,
+  "win3": "SYR",
+  "dateTime": null,
+  "nameEnglish": "Syriac",
+  "isNeutral": true,
+  "isRightToLeft": true,
+  "lcid": 90
+}

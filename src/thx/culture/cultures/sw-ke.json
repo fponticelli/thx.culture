@@ -7,7 +7,7 @@
     "separatorGroupNumber": ",",
     "separatorDecimalPercent": ".",
     "signNegative": "-",
-    "symbolCurrency": "Ksh",
+    "symbolCurrency": "S",
     "symbolPercent": "%",
     "groupSizesNumber": [
       3
@@ -46,18 +46,18 @@
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
     "patternDateTimeFull": "dddd, MMMM dd, yyyy h:mm:ss tt",
-    "nameCalendarNative": "Kalenda ya Kigregori",
+    "nameCalendarNative": "Kalenda ya Gregori",
     "calendarWeekRuleName": "FirstDay",
     "patternDateLong": "dddd, MMMM dd, yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "2",
-      "3",
-      "4",
-      "5",
+      "P",
+      "T",
+      "N",
+      "T",
       "A",
       "I",
-      "1"
+      "M"
     ],
     "firstDayOfWeekName": "Sunday",
     "nameMonthGenitives": [
@@ -72,7 +72,7 @@
       "Septemba",
       "Oktoba",
       "Novemba",
-      "Desemba",
+      "Decemba",
       ""
     ],
     "separatorDate": "/",
@@ -88,19 +88,19 @@
       "Sep",
       "Okt",
       "Nov",
-      "Des",
+      "Dec",
       ""
     ],
     "designatorAm": "AM",
     "designatorPm": "PM",
     "nameDaysAbbreviated": [
-      "J2",
-      "J3",
-      "J4",
-      "J5",
-      "Alh",
-      "Ij",
-      "J1"
+      "Jumap.",
+      "Jumat.",
+      "Juman.",
+      "Jumat.",
+      "Alh.",
+      "Iju.",
+      "Jumam."
     ],
     "patternTimeShort": "h:mm tt",
     "separatorTime": ":",
@@ -128,7 +128,7 @@
       "Sep",
       "Okt",
       "Nov",
-      "Des",
+      "Dec",
       ""
     ],
     "nameMonths": [
@@ -143,7 +143,7 @@
       "Septemba",
       "Oktoba",
       "Novemba",
-      "Desemba",
+      "Decemba",
       ""
     ],
     "patternDateShort": "M/d/yyyy",
@@ -151,7 +151,7 @@
     "firstDayOfWeekIndex": 0,
     "calendarWeekRuleIndex": 0
   },
-  "nameEnglish": "Swahili",
+  "nameEnglish": "Kiswahili",
   "isNeutral": false,
   "isRightToLeft": false,
   "lcid": 1089

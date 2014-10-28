@@ -14,7 +14,7 @@
     ],
     "symbolNegativeInfinity": "-oneindig",
     "separatorGroupPercent": ".",
-    "symbolNaN": "NaN",
+    "symbolNaN": "NaN (Niet-een-getal)",
     "separatorDecimalNumber": ",",
     "groupSizesCurrency": [
       3
@@ -47,17 +47,17 @@
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
     "patternDateTimeFull": "dddd d MMMM yyyy H:mm:ss",
     "nameCalendarNative": "Gregoriaanse kalender",
-    "calendarWeekRuleName": "FirstFourDayWeek",
+    "calendarWeekRuleName": "FirstDay",
     "patternDateLong": "dddd d MMMM yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "Z",
-      "M",
-      "D",
-      "W",
-      "D",
-      "V",
-      "Z"
+      "zo",
+      "ma",
+      "di",
+      "wo",
+      "do",
+      "vr",
+      "za"
     ],
     "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
@@ -91,8 +91,8 @@
       "dec",
       ""
     ],
-    "designatorAm": "a.m.",
-    "designatorPm": "p.m.",
+    "designatorAm": "",
+    "designatorPm": "",
     "nameDaysAbbreviated": [
       "zo",
       "ma",
@@ -106,7 +106,7 @@
     "separatorTime": ":",
     "patternTimeLong": "H:mm:ss",
     "patternYearMonth": "MMMM yyyy",
-    "patternMonthDay": "d MMMM",
+    "patternMonthDay": "dd MMMM",
     "nameDays": [
       "zondag",
       "maandag",
@@ -149,7 +149,7 @@
     "patternDateShort": "d/MM/yyyy",
     "patternRfc1123": "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'",
     "firstDayOfWeekIndex": 1,
-    "calendarWeekRuleIndex": 2
+    "calendarWeekRuleIndex": 0
   },
   "nameEnglish": "Dutch",
   "isNeutral": false,

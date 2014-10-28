@@ -1,0 +1,18 @@
+{
+  "nameCalendar": "Gregorian",
+  "number": null,
+  "nameNative": "Frysk",
+  "separatorList": ";",
+  "nameRegionNative": null,
+  "code": "fy",
+  "ietf": "fy",
+  "iso2": "fy",
+  "iso3": "fry",
+  "nameRegionEnglish": null,
+  "win3": "FYN",
+  "dateTime": null,
+  "nameEnglish": "Frisian",
+  "isNeutral": true,
+  "isRightToLeft": false,
+  "lcid": 98
+}

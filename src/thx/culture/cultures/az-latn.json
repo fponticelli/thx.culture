@@ -1,7 +1,7 @@
 {
   "nameCalendar": "Gregorian",
   "number": null,
-  "nameNative": "azərbaycan",
+  "nameNative": "Azərbaycan­ılı",
   "separatorList": ";",
   "nameRegionNative": null,
   "code": "az-Latn",
@@ -11,7 +11,7 @@
   "nameRegionEnglish": null,
   "win3": "AZE",
   "dateTime": null,
-  "nameEnglish": "Azerbaijani (Latin)",
+  "nameEnglish": "Azeri (Latin)",
   "isNeutral": true,
   "isRightToLeft": false,
   "lcid": 30764

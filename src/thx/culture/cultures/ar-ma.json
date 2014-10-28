@@ -1,21 +1,21 @@
 {
   "nameCalendar": "Gregorian",
   "number": {
-    "symbolPermille": "؉",
-    "symbolPositiveInfinity": "Infinity",
-    "signPositive": "‏+",
-    "separatorGroupNumber": "٬",
-    "separatorDecimalPercent": "٫",
+    "symbolPermille": "‰",
+    "symbolPositiveInfinity": "+لا نهاية",
+    "signPositive": "+",
+    "separatorGroupNumber": ",",
+    "separatorDecimalPercent": ".",
     "signNegative": "-",
     "symbolCurrency": "د.م.‏",
-    "symbolPercent": "٪",
+    "symbolPercent": "%",
     "groupSizesNumber": [
       3
     ],
-    "symbolNegativeInfinity": "-Infinity",
-    "separatorGroupPercent": "٬",
-    "symbolNaN": "ليس رقم",
-    "separatorDecimalNumber": "٫",
+    "symbolNegativeInfinity": "-لا نهاية",
+    "separatorGroupPercent": ",",
+    "symbolNaN": "ليس برقم",
+    "separatorDecimalNumber": ".",
     "groupSizesCurrency": [
       3
     ],
@@ -35,7 +35,7 @@
   },
   "nameNative": "العربية",
   "separatorList": ";",
-  "nameRegionNative": "المغرب",
+  "nameRegionNative": "المملكة المغربية",
   "code": "ar-MA",
   "ietf": "ar-MA",
   "iso2": "ar",
@@ -46,20 +46,20 @@
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
     "patternDateTimeFull": "dd MMMM, yyyy H:mm:ss",
-    "nameCalendarNative": "التقويم الهجري",
+    "nameCalendarNative": "التقويم الميلادي (تسمية فرنسية)‏",
     "calendarWeekRuleName": "FirstDay",
     "patternDateLong": "dd MMMM, yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "ح",
+      "ن",
+      "ث",
+      "ر",
+      "خ",
+      "ج",
+      "س"
     ],
-    "firstDayOfWeekName": "Saturday",
+    "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
       "يناير",
       "فبراير",
@@ -91,16 +91,16 @@
       "دجنبر",
       ""
     ],
-    "designatorAm": "",
-    "designatorPm": "",
+    "designatorAm": "ص",
+    "designatorPm": "م",
     "nameDaysAbbreviated": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "الأحد",
+      "الإثنين",
+      "الثلاثاء",
+      "الأربعاء",
+      "الخميس",
+      "الجمعة",
+      "السبت"
     ],
     "patternTimeShort": "H:mm",
     "separatorTime": ":",
@@ -108,13 +108,13 @@
     "patternYearMonth": "MMMM, yyyy",
     "patternMonthDay": "dd MMMM",
     "nameDays": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "الأحد",
+      "الإثنين",
+      "الثلاثاء",
+      "الأربعاء",
+      "الخميس",
+      "الجمعة",
+      "السبت"
     ],
     "nameMonthsAbbreviated": [
       "يناير",
@@ -148,7 +148,7 @@
     ],
     "patternDateShort": "dd-MM-yyyy",
     "patternRfc1123": "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'",
-    "firstDayOfWeekIndex": 6,
+    "firstDayOfWeekIndex": 1,
     "calendarWeekRuleIndex": 0
   },
   "nameEnglish": "Arabic",

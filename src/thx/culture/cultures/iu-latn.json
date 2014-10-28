@@ -1,0 +1,18 @@
+{
+  "nameCalendar": "Gregorian",
+  "number": null,
+  "nameNative": "Inuktitut",
+  "separatorList": ",",
+  "nameRegionNative": null,
+  "code": "iu-Latn",
+  "ietf": "iu-Latn",
+  "iso2": "iu",
+  "iso3": "iku",
+  "nameRegionEnglish": null,
+  "win3": "IUK",
+  "dateTime": null,
+  "nameEnglish": "Inuktitut (Latin)",
+  "isNeutral": true,
+  "isRightToLeft": false,
+  "lcid": 31837
+}

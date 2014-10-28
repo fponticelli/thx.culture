@@ -1,7 +1,7 @@
 {
   "nameCalendar": "Gregorian",
   "number": null,
-  "nameNative": "саха тыла",
+  "nameNative": "саха",
   "separatorList": ";",
   "nameRegionNative": null,
   "code": "sah",
@@ -11,7 +11,7 @@
   "nameRegionEnglish": null,
   "win3": "SAH",
   "dateTime": null,
-  "nameEnglish": "Sakha",
+  "nameEnglish": "Yakut",
   "isNeutral": true,
   "isRightToLeft": false,
   "lcid": 133

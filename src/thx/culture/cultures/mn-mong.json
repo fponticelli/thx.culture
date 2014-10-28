@@ -1,0 +1,18 @@
+{
+  "nameCalendar": "Gregorian",
+  "number": null,
+  "nameNative": "ᠮᠤᠨᠭᠭᠤᠯ ᠬᠡᠯᠡ",
+  "separatorList": ",",
+  "nameRegionNative": null,
+  "code": "mn-Mong",
+  "ietf": "mn-Mong",
+  "iso2": "mn",
+  "iso3": "mon",
+  "nameRegionEnglish": null,
+  "win3": "MNG",
+  "dateTime": null,
+  "nameEnglish": "Mongolian (Traditional Mongolian)",
+  "isNeutral": true,
+  "isRightToLeft": false,
+  "lcid": 31824
+}

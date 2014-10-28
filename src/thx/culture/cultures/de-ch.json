@@ -7,14 +7,14 @@
     "separatorGroupNumber": "'",
     "separatorDecimalPercent": ".",
     "signNegative": "-",
-    "symbolCurrency": "CHF",
+    "symbolCurrency": "Fr.",
     "symbolPercent": "%",
     "groupSizesNumber": [
       3
     ],
     "symbolNegativeInfinity": "-unendlich",
     "separatorGroupPercent": "'",
-    "symbolNaN": "NaN",
+    "symbolNaN": "n. def.",
     "separatorDecimalNumber": ".",
     "groupSizesCurrency": [
       3
@@ -51,13 +51,13 @@
     "patternDateLong": "dddd, d. MMMM yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "S",
-      "M",
-      "D",
-      "M",
-      "D",
-      "F",
-      "S"
+      "So",
+      "Mo",
+      "Di",
+      "Mi",
+      "Do",
+      "Fr",
+      "Sa"
     ],
     "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
@@ -79,7 +79,7 @@
     "nameMonthGenitivesAbbreviated": [
       "Jan",
       "Feb",
-      "Mär",
+      "Mrz",
       "Apr",
       "Mai",
       "Jun",
@@ -91,8 +91,8 @@
       "Dez",
       ""
     ],
-    "designatorAm": "vorm.",
-    "designatorPm": "nachm.",
+    "designatorAm": "",
+    "designatorPm": "",
     "nameDaysAbbreviated": [
       "So",
       "Mo",
@@ -106,7 +106,7 @@
     "separatorTime": ":",
     "patternTimeLong": "HH:mm:ss",
     "patternYearMonth": "MMMM yyyy",
-    "patternMonthDay": "d. MMMM",
+    "patternMonthDay": "dd MMMM",
     "nameDays": [
       "Sonntag",
       "Montag",
@@ -119,7 +119,7 @@
     "nameMonthsAbbreviated": [
       "Jan",
       "Feb",
-      "Mär",
+      "Mrz",
       "Apr",
       "Mai",
       "Jun",

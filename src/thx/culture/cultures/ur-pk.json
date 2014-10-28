@@ -3,18 +3,18 @@
   "number": {
     "symbolPermille": "‰",
     "symbolPositiveInfinity": "Infinity",
-    "signPositive": "‎+‎",
+    "signPositive": "+",
     "separatorGroupNumber": ",",
     "separatorDecimalPercent": ".",
-    "signNegative": "‎-‎",
+    "signNegative": "-",
     "symbolCurrency": "Rs",
     "symbolPercent": "%",
     "groupSizesNumber": [
       3
     ],
-    "symbolNegativeInfinity": "‎-‎Infinity",
+    "symbolNegativeInfinity": "-Infinity",
     "separatorGroupPercent": ",",
-    "symbolNaN": "یہ عدد نہیں",
+    "symbolNaN": "NaN",
     "separatorDecimalNumber": ".",
     "groupSizesCurrency": [
       3
@@ -29,37 +29,37 @@
     "patternPositivePercent": 0,
     "patternPositiveCurrency": 0,
     "decimalDigitsNumber": 2,
-    "decimalDigitsCurrency": 0,
+    "decimalDigitsCurrency": 2,
     "patternNegativeNumber": 1,
     "decimalDigitsPercent": 2
   },
-  "nameNative": "اردو",
+  "nameNative": "اُردو",
   "separatorList": ";",
   "nameRegionNative": "پاکستان",
   "code": "ur-PK",
   "ietf": "ur-PK",
   "iso2": "ur",
   "iso3": "urd",
-  "nameRegionEnglish": "Pakistan",
+  "nameRegionEnglish": "Islamic Republic of Pakistan",
   "win3": "URD",
   "dateTime": {
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
     "patternDateTimeFull": "dd MMMM, yyyy h:mm:ss tt",
-    "nameCalendarNative": "جارجیائی کیلنڈر",
-    "calendarWeekRuleName": "FirstDay",
+    "nameCalendarNative": "عيسوى سال",
+    "calendarWeekRuleName": "FirstFullWeek",
     "patternDateLong": "dd MMMM, yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "S",
-      "M",
-      "T",
-      "W",
-      "T",
-      "F",
-      "S"
+      "ا",
+      "پ",
+      "م",
+      "ب",
+      "ج",
+      "ج",
+      "ه"
     ],
-    "firstDayOfWeekName": "Sunday",
+    "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
       "جنوری",
       "فروری",
@@ -91,16 +91,16 @@
       "دسمبر",
       ""
     ],
-    "designatorAm": "قبل دوپہر",
-    "designatorPm": "بعد دوپہر",
+    "designatorAm": "AM",
+    "designatorPm": "PM",
     "nameDaysAbbreviated": [
       "اتوار",
-      "سوموار",
+      "پير",
       "منگل",
       "بدھ",
       "جمعرات",
-      "جمعہ",
-      "ہفتہ"
+      "جمعه",
+      "هفته"
     ],
     "patternTimeShort": "h:mm tt",
     "separatorTime": ":",
@@ -109,12 +109,12 @@
     "patternMonthDay": "dd MMMM",
     "nameDays": [
       "اتوار",
-      "سوموار",
+      "پير",
       "منگل",
       "بدھ",
       "جمعرات",
-      "جمعہ",
-      "ہفتہ"
+      "جمعه",
+      "هفته"
     ],
     "nameMonthsAbbreviated": [
       "جنوری",
@@ -148,8 +148,8 @@
     ],
     "patternDateShort": "dd/MM/yyyy",
     "patternRfc1123": "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'",
-    "firstDayOfWeekIndex": 0,
-    "calendarWeekRuleIndex": 0
+    "firstDayOfWeekIndex": 1,
+    "calendarWeekRuleIndex": 1
   },
   "nameEnglish": "Urdu",
   "isNeutral": false,

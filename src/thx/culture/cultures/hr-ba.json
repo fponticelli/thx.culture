@@ -40,7 +40,7 @@
   "ietf": "hr-BA",
   "iso2": "hr",
   "iso3": "hrb",
-  "nameRegionEnglish": "Bosnia and Herzegovina",
+  "nameRegionEnglish": "Latin, Bosnia and Herzegovina",
   "win3": "HRB",
   "dateTime": {
     "nameCalendar": "Gregorian",
@@ -51,13 +51,13 @@
     "patternDateLong": "d. MMMM yyyy.",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "n",
-      "p",
-      "u",
-      "s",
-      "č",
-      "p",
-      "s"
+      "ne",
+      "po",
+      "ut",
+      "sr",
+      "če",
+      "pe",
+      "su"
     ],
     "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
@@ -71,14 +71,14 @@
       "kolovoza",
       "rujna",
       "listopada",
-      "studenoga",
+      "studenog",
       "prosinca",
       ""
     ],
     "separatorDate": ".",
     "nameMonthGenitivesAbbreviated": [
       "sij",
-      "velj",
+      "vlj",
       "ožu",
       "tra",
       "svi",
@@ -91,8 +91,8 @@
       "pro",
       ""
     ],
-    "designatorAm": "AM",
-    "designatorPm": "PM",
+    "designatorAm": "",
+    "designatorPm": "",
     "nameDaysAbbreviated": [
       "ned",
       "pon",
@@ -118,7 +118,7 @@
     ],
     "nameMonthsAbbreviated": [
       "sij",
-      "velj",
+      "vlj",
       "ožu",
       "tra",
       "svi",

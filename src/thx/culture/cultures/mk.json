@@ -1,7 +1,7 @@
 {
   "nameCalendar": "Gregorian",
   "number": null,
-  "nameNative": "македонски",
+  "nameNative": "македонски јазик",
   "separatorList": ";",
   "nameRegionNative": null,
   "code": "mk",
@@ -11,7 +11,7 @@
   "nameRegionEnglish": null,
   "win3": "MKI",
   "dateTime": null,
-  "nameEnglish": "Macedonian",
+  "nameEnglish": "Macedonian (FYROM)",
   "isNeutral": true,
   "isRightToLeft": false,
   "lcid": 47

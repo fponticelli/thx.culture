@@ -14,7 +14,7 @@
     ],
     "symbolNegativeInfinity": "-Infinity",
     "separatorGroupPercent": ".",
-    "symbolNaN": "",
+    "symbolNaN": "NaN",
     "separatorDecimalNumber": ",",
     "groupSizesCurrency": [
       3
@@ -46,18 +46,18 @@
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
     "patternDateTimeFull": "d. MMMM yyyy H:mm:ss",
-    "nameCalendarNative": "Gregorijanski kalendar",
+    "nameCalendarNative": "gregorijanski kalendar",
     "calendarWeekRuleName": "FirstDay",
     "patternDateLong": "d. MMMM yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "",
-      "",
-      "",
-      "",
-      "",
-      "",
-      ""
+      "ne",
+      "po",
+      "ut",
+      "sr",
+      "če",
+      "pe",
+      "su"
     ],
     "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
@@ -91,8 +91,8 @@
       "dec",
       ""
     ],
-    "designatorAm": "pre podne",
-    "designatorPm": "popodne",
+    "designatorAm": "",
+    "designatorPm": "",
     "nameDaysAbbreviated": [
       "ned",
       "pon",
@@ -106,7 +106,7 @@
     "separatorTime": ":",
     "patternTimeLong": "H:mm:ss",
     "patternYearMonth": "MMMM yyyy",
-    "patternMonthDay": "dd. MMMM",
+    "patternMonthDay": "d. MMMM",
     "nameDays": [
       "nedjelja",
       "ponedjeljak",

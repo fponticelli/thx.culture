@@ -1,0 +1,18 @@
+{
+  "nameCalendar": "Gregorian",
+  "number": null,
+  "nameNative": "åarjelsaemiengiele",
+  "separatorList": ";",
+  "nameRegionNative": null,
+  "code": "sma",
+  "ietf": "sma",
+  "iso2": "sma",
+  "iso3": "smb",
+  "nameRegionEnglish": null,
+  "win3": "SMB",
+  "dateTime": null,
+  "nameEnglish": "Sami (Southern)",
+  "isNeutral": true,
+  "isRightToLeft": false,
+  "lcid": 30779
+}

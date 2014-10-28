@@ -2,7 +2,7 @@
   "nameCalendar": "Gregorian",
   "number": {
     "symbolPermille": "‰",
-    "symbolPositiveInfinity": "Infinity",
+    "symbolPositiveInfinity": "INF",
     "signPositive": "+",
     "separatorGroupNumber": " ",
     "separatorDecimalPercent": ",",
@@ -12,9 +12,9 @@
     "groupSizesNumber": [
       3
     ],
-    "symbolNegativeInfinity": "-Infinity",
+    "symbolNegativeInfinity": "-INF",
     "separatorGroupPercent": " ",
-    "symbolNaN": "epäluku",
+    "symbolNaN": "NaN",
     "separatorDecimalNumber": ",",
     "groupSizesCurrency": [
       3
@@ -45,34 +45,34 @@
   "dateTime": {
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
-    "patternDateTimeFull": "d. MMMM yyyy H:mm:ss",
+    "patternDateTimeFull": "d. MMMM'ta 'yyyy H:mm:ss",
     "nameCalendarNative": "gregoriaaninen kalenteri",
     "calendarWeekRuleName": "FirstFourDayWeek",
-    "patternDateLong": "d. MMMM yyyy",
+    "patternDateLong": "d. MMMM'ta 'yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "S",
-      "M",
-      "T",
-      "K",
-      "T",
-      "P",
-      "L"
+      "su",
+      "ma",
+      "ti",
+      "ke",
+      "to",
+      "pe",
+      "la"
     ],
     "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
-      "tammikuuta",
-      "helmikuuta",
-      "maaliskuuta",
-      "huhtikuuta",
-      "toukokuuta",
-      "kesäkuuta",
-      "heinäkuuta",
-      "elokuuta",
-      "syyskuuta",
-      "lokakuuta",
-      "marraskuuta",
-      "joulukuuta",
+      "tammikuu",
+      "helmikuu",
+      "maaliskuu",
+      "huhtikuu",
+      "toukokuu",
+      "kesäkuu",
+      "heinäkuu",
+      "elokuu",
+      "syyskuu",
+      "lokakuu",
+      "marraskuu",
+      "joulukuu",
       ""
     ],
     "separatorDate": ".",
@@ -91,8 +91,8 @@
       "joulu",
       ""
     ],
-    "designatorAm": "ap.",
-    "designatorPm": "ip.",
+    "designatorAm": "",
+    "designatorPm": "",
     "nameDaysAbbreviated": [
       "su",
       "ma",
@@ -106,15 +106,15 @@
     "separatorTime": ":",
     "patternTimeLong": "H:mm:ss",
     "patternYearMonth": "MMMM yyyy",
-    "patternMonthDay": "d'.' MMMM",
+    "patternMonthDay": "d. MMMM'ta'",
     "nameDays": [
-      "sunnuntaina",
-      "maanantaina",
-      "tiistaina",
-      "keskiviikkona",
-      "torstaina",
-      "perjantaina",
-      "lauantaina"
+      "sunnuntai",
+      "maanantai",
+      "tiistai",
+      "keskiviikko",
+      "torstai",
+      "perjantai",
+      "lauantai"
     ],
     "nameMonthsAbbreviated": [
       "tammi",

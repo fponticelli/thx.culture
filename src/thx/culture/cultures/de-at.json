@@ -14,7 +14,7 @@
     ],
     "symbolNegativeInfinity": "-unendlich",
     "separatorGroupPercent": ".",
-    "symbolNaN": "NaN",
+    "symbolNaN": "n. def.",
     "separatorDecimalNumber": ",",
     "groupSizesCurrency": [
       3
@@ -47,17 +47,17 @@
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
     "patternDateTimeFull": "dddd, dd. MMMM yyyy HH:mm:ss",
     "nameCalendarNative": "Gregorianischer Kalender",
-    "calendarWeekRuleName": "FirstFourDayWeek",
+    "calendarWeekRuleName": "FirstDay",
     "patternDateLong": "dddd, dd. MMMM yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "S",
-      "M",
-      "D",
-      "M",
-      "D",
-      "F",
-      "S"
+      "So",
+      "Mo",
+      "Di",
+      "Mi",
+      "Do",
+      "Fr",
+      "Sa"
     ],
     "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
@@ -91,8 +91,8 @@
       "Dez",
       ""
     ],
-    "designatorAm": "vorm.",
-    "designatorPm": "nachm.",
+    "designatorAm": "",
+    "designatorPm": "",
     "nameDaysAbbreviated": [
       "So",
       "Mo",
@@ -106,7 +106,7 @@
     "separatorTime": ":",
     "patternTimeLong": "HH:mm:ss",
     "patternYearMonth": "MMMM yyyy",
-    "patternMonthDay": "d. MMMM",
+    "patternMonthDay": "dd MMMM",
     "nameDays": [
       "Sonntag",
       "Montag",
@@ -149,7 +149,7 @@
     "patternDateShort": "dd.MM.yyyy",
     "patternRfc1123": "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'",
     "firstDayOfWeekIndex": 1,
-    "calendarWeekRuleIndex": 2
+    "calendarWeekRuleIndex": 0
   },
   "nameEnglish": "German",
   "isNeutral": false,

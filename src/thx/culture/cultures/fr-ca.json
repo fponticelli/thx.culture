@@ -14,7 +14,7 @@
     ],
     "symbolNegativeInfinity": "-Infini",
     "separatorGroupPercent": " ",
-    "symbolNaN": "NaN",
+    "symbolNaN": "Non Numérique",
     "separatorDecimalNumber": ",",
     "groupSizesCurrency": [
       3
@@ -46,18 +46,18 @@
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
     "patternDateTimeFull": "d MMMM yyyy HH:mm:ss",
-    "nameCalendarNative": "Calendrier grégorien",
+    "nameCalendarNative": "calendrier grégorien",
     "calendarWeekRuleName": "FirstDay",
     "patternDateLong": "d MMMM yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "D",
-      "L",
-      "M",
-      "M",
-      "J",
-      "V",
-      "S"
+      "di",
+      "lu",
+      "ma",
+      "me",
+      "je",
+      "ve",
+      "sa"
     ],
     "firstDayOfWeekName": "Sunday",
     "nameMonthGenitives": [
@@ -91,8 +91,8 @@
       "déc.",
       ""
     ],
-    "designatorAm": "AM",
-    "designatorPm": "PM",
+    "designatorAm": "",
+    "designatorPm": "",
     "nameDaysAbbreviated": [
       "dim.",
       "lun.",

@@ -14,7 +14,7 @@
     ],
     "symbolNegativeInfinity": "-nieskończoność",
     "separatorGroupPercent": " ",
-    "symbolNaN": "NaN",
+    "symbolNaN": "nie jest liczbą",
     "separatorDecimalNumber": ",",
     "groupSizesCurrency": [
       3
@@ -46,18 +46,18 @@
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
     "patternDateTimeFull": "d MMMM yyyy HH:mm:ss",
-    "nameCalendarNative": "kalendarz gregoriański",
+    "nameCalendarNative": "Kalendarz gregoriański",
     "calendarWeekRuleName": "FirstFourDayWeek",
     "patternDateLong": "d MMMM yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
       "N",
-      "P",
-      "W",
-      "Ś",
-      "C",
-      "P",
-      "S"
+      "Pn",
+      "Wt",
+      "Śr",
+      "Cz",
+      "Pt",
+      "So"
     ],
     "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
@@ -91,16 +91,16 @@
       "gru",
       ""
     ],
-    "designatorAm": "AM",
-    "designatorPm": "PM",
+    "designatorAm": "",
+    "designatorPm": "",
     "nameDaysAbbreviated": [
-      "niedz.",
-      "pon.",
-      "wt.",
-      "śr.",
-      "czw.",
-      "pt.",
-      "sob."
+      "N",
+      "Pn",
+      "Wt",
+      "Śr",
+      "Cz",
+      "Pt",
+      "So"
     ],
     "patternTimeShort": "HH:mm",
     "separatorTime": ":",

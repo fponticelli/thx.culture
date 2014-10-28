@@ -54,15 +54,15 @@
     "patternDateLong": "dd MMMM yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "S",
-      "M",
-      "T",
-      "W",
-      "T",
-      "F",
-      "S"
+      "Su",
+      "Mo",
+      "Tu",
+      "We",
+      "Th",
+      "Fr",
+      "Sa"
     ],
-    "firstDayOfWeekName": "Sunday",
+    "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
       "January",
       "February",
@@ -94,8 +94,8 @@
       "Dec",
       ""
     ],
-    "designatorAm": "am",
-    "designatorPm": "pm",
+    "designatorAm": "AM",
+    "designatorPm": "PM",
     "nameDaysAbbreviated": [
       "Sun",
       "Mon",
@@ -109,7 +109,7 @@
     "separatorTime": ":",
     "patternTimeLong": "HH:mm:ss",
     "patternYearMonth": "MMMM, yyyy",
-    "patternMonthDay": "d MMMM",
+    "patternMonthDay": "dd MMMM",
     "nameDays": [
       "Sunday",
       "Monday",
@@ -151,7 +151,7 @@
     ],
     "patternDateShort": "dd-MM-yyyy",
     "patternRfc1123": "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'",
-    "firstDayOfWeekIndex": 0,
+    "firstDayOfWeekIndex": 1,
     "calendarWeekRuleIndex": 0
   },
   "nameEnglish": "English",

@@ -5,7 +5,7 @@
     "symbolPositiveInfinity": "Infinity",
     "signPositive": "+",
     "separatorGroupNumber": " ",
-    "separatorDecimalPercent": ",",
+    "separatorDecimalPercent": ".",
     "signNegative": "-",
     "symbolCurrency": "R",
     "symbolPercent": "%",
@@ -15,7 +15,7 @@
     "symbolNegativeInfinity": "-Infinity",
     "separatorGroupPercent": " ",
     "symbolNaN": "NaN",
-    "separatorDecimalNumber": ",",
+    "separatorDecimalNumber": ".",
     "groupSizesCurrency": [
       3
     ],
@@ -51,13 +51,13 @@
     "patternDateLong": "dd MMMM yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "S",
-      "M",
-      "T",
-      "W",
-      "T",
-      "F",
-      "S"
+      "Su",
+      "Mo",
+      "Tu",
+      "We",
+      "Th",
+      "Fr",
+      "Sa"
     ],
     "firstDayOfWeekName": "Sunday",
     "nameMonthGenitives": [
@@ -75,7 +75,7 @@
       "December",
       ""
     ],
-    "separatorDate": "-",
+    "separatorDate": "/",
     "nameMonthGenitivesAbbreviated": [
       "Jan",
       "Feb",
@@ -106,7 +106,7 @@
     "separatorTime": ":",
     "patternTimeLong": "hh:mm:ss tt",
     "patternYearMonth": "MMMM yyyy",
-    "patternMonthDay": "MMMM d",
+    "patternMonthDay": "dd MMMM",
     "nameDays": [
       "Sunday",
       "Monday",
@@ -146,7 +146,7 @@
       "December",
       ""
     ],
-    "patternDateShort": "yyyy-MM-dd",
+    "patternDateShort": "yyyy/MM/dd",
     "patternRfc1123": "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'",
     "firstDayOfWeekIndex": 0,
     "calendarWeekRuleIndex": 0

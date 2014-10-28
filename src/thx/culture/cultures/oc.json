@@ -1,0 +1,18 @@
+{
+  "nameCalendar": "Gregorian",
+  "number": null,
+  "nameNative": "Occitan",
+  "separatorList": ";",
+  "nameRegionNative": null,
+  "code": "oc",
+  "ietf": "oc",
+  "iso2": "oc",
+  "iso3": "oci",
+  "nameRegionEnglish": null,
+  "win3": "OCI",
+  "dateTime": null,
+  "nameEnglish": "Occitan",
+  "isNeutral": true,
+  "isRightToLeft": false,
+  "lcid": 130
+}

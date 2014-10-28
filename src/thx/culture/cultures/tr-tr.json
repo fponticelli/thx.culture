@@ -45,19 +45,19 @@
   "dateTime": {
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
-    "patternDateTimeFull": "d MMMM yyyy dddd HH:mm:ss",
-    "nameCalendarNative": "Miladi Takvim",
+    "patternDateTimeFull": "dd MMMM yyyy dddd HH:mm:ss",
+    "nameCalendarNative": "Gregoryen Takvimi",
     "calendarWeekRuleName": "FirstDay",
-    "patternDateLong": "d MMMM yyyy dddd",
+    "patternDateLong": "dd MMMM yyyy dddd",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "P",
-      "P",
-      "S",
-      "Ç",
-      "P",
-      "C",
-      "C"
+      "Pz",
+      "Pt",
+      "Sa",
+      "Ça",
+      "Pe",
+      "Cu",
+      "Ct"
     ],
     "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
@@ -91,8 +91,8 @@
       "Ara",
       ""
     ],
-    "designatorAm": "ÖÖ",
-    "designatorPm": "ÖS",
+    "designatorAm": "",
+    "designatorPm": "",
     "nameDaysAbbreviated": [
       "Paz",
       "Pzt",
@@ -106,7 +106,7 @@
     "separatorTime": ":",
     "patternTimeLong": "HH:mm:ss",
     "patternYearMonth": "MMMM yyyy",
-    "patternMonthDay": "d MMMM",
+    "patternMonthDay": "dd MMMM",
     "nameDays": [
       "Pazar",
       "Pazartesi",
@@ -146,7 +146,7 @@
       "Aralık",
       ""
     ],
-    "patternDateShort": "d.M.yyyy",
+    "patternDateShort": "dd.MM.yyyy",
     "patternRfc1123": "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'",
     "firstDayOfWeekIndex": 1,
     "calendarWeekRuleIndex": 0

@@ -45,19 +45,19 @@
   "dateTime": {
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
-    "patternDateTimeFull": "MMMM d, yyyy h:mm:ss tt",
+    "patternDateTimeFull": "MMMM-dd-yy h:mm:ss tt",
     "nameCalendarNative": "Gregorian Calendar",
     "calendarWeekRuleName": "FirstDay",
-    "patternDateLong": "MMMM d, yyyy",
+    "patternDateLong": "MMMM-dd-yy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "S",
-      "M",
-      "T",
-      "W",
-      "T",
-      "F",
-      "S"
+      "Su",
+      "Mo",
+      "Tu",
+      "We",
+      "Th",
+      "Fr",
+      "Sa"
     ],
     "firstDayOfWeekName": "Sunday",
     "nameMonthGenitives": [
@@ -75,7 +75,7 @@
       "December",
       ""
     ],
-    "separatorDate": "-",
+    "separatorDate": "/",
     "nameMonthGenitivesAbbreviated": [
       "Jan",
       "Feb",
@@ -106,7 +106,7 @@
     "separatorTime": ":",
     "patternTimeLong": "h:mm:ss tt",
     "patternYearMonth": "MMMM, yyyy",
-    "patternMonthDay": "d MMMM",
+    "patternMonthDay": "MMMM dd",
     "nameDays": [
       "Sunday",
       "Monday",
@@ -146,7 +146,7 @@
       "December",
       ""
     ],
-    "patternDateShort": "yyyy-MM-dd",
+    "patternDateShort": "dd/MM/yyyy",
     "patternRfc1123": "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'",
     "firstDayOfWeekIndex": 0,
     "calendarWeekRuleIndex": 0

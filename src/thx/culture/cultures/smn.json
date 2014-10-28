@@ -1,0 +1,18 @@
+{
+  "nameCalendar": "Gregorian",
+  "number": null,
+  "nameNative": "sämikielâ",
+  "separatorList": ";",
+  "nameRegionNative": null,
+  "code": "smn",
+  "ietf": "smn",
+  "iso2": "smn",
+  "iso3": "smn",
+  "nameRegionEnglish": null,
+  "win3": "SMN",
+  "dateTime": null,
+  "nameEnglish": "Sami (Inari)",
+  "isNeutral": true,
+  "isRightToLeft": false,
+  "lcid": 28731
+}

@@ -2,7 +2,7 @@
   "nameCalendar": "Gregorian",
   "number": {
     "symbolPermille": "‰",
-    "symbolPositiveInfinity": "Infinity",
+    "symbolPositiveInfinity": "+beskonačnost",
     "signPositive": "+",
     "separatorGroupNumber": ".",
     "separatorDecimalPercent": ",",
@@ -12,7 +12,7 @@
     "groupSizesNumber": [
       3
     ],
-    "symbolNegativeInfinity": "-Infinity",
+    "symbolNegativeInfinity": "-beskonačnost",
     "separatorGroupPercent": ".",
     "symbolNaN": "NaN",
     "separatorDecimalNumber": ",",
@@ -33,9 +33,9 @@
     "patternNegativeNumber": 1,
     "decimalDigitsPercent": 2
   },
-  "nameNative": "Српски",
+  "nameNative": "srpski",
   "separatorList": ";",
-  "nameRegionNative": "Босна и Херцеговина",
+  "nameRegionNative": "Bosna i Hercegovina",
   "code": "sr-Latn-BA",
   "ietf": "sr-Latn-BA",
   "iso2": "sr",
@@ -45,19 +45,19 @@
   "dateTime": {
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
-    "patternDateTimeFull": "d. MMMM yyyy. H:mm:ss",
-    "nameCalendarNative": "Gregorijanski kalendar",
+    "patternDateTimeFull": "d. MMMM yyyy H:mm:ss",
+    "nameCalendarNative": "gregorijanski kalendar",
     "calendarWeekRuleName": "FirstDay",
-    "patternDateLong": "d. MMMM yyyy.",
+    "patternDateLong": "d. MMMM yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "n",
-      "p",
-      "u",
-      "s",
-      "č",
-      "p",
-      "s"
+      "ne",
+      "po",
+      "ut",
+      "sr",
+      "če",
+      "pe",
+      "su"
     ],
     "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
@@ -91,8 +91,8 @@
       "dec",
       ""
     ],
-    "designatorAm": "pre podne",
-    "designatorPm": "popodne",
+    "designatorAm": "",
+    "designatorPm": "",
     "nameDaysAbbreviated": [
       "ned",
       "pon",
@@ -105,7 +105,7 @@
     "patternTimeShort": "H:mm",
     "separatorTime": ":",
     "patternTimeLong": "H:mm:ss",
-    "patternYearMonth": "MMMM yyyy.",
+    "patternYearMonth": "MMMM yyyy",
     "patternMonthDay": "d. MMMM",
     "nameDays": [
       "nedelja",
@@ -146,7 +146,7 @@
       "decembar",
       ""
     ],
-    "patternDateShort": "d.M.yyyy.",
+    "patternDateShort": "d.M.yyyy",
     "patternRfc1123": "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'",
     "firstDayOfWeekIndex": 1,
     "calendarWeekRuleIndex": 0

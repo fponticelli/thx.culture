@@ -2,17 +2,17 @@
   "nameCalendar": "Gregorian",
   "number": {
     "symbolPermille": "‰",
-    "symbolPositiveInfinity": "Infinity",
+    "symbolPositiveInfinity": "INF",
     "signPositive": "+",
     "separatorGroupNumber": ".",
     "separatorDecimalPercent": ",",
     "signNegative": "-",
-    "symbolCurrency": "kr",
+    "symbolCurrency": "kr.",
     "symbolPercent": "%",
     "groupSizesNumber": [
       3
     ],
-    "symbolNegativeInfinity": "-Infinity",
+    "symbolNegativeInfinity": "-INF",
     "separatorGroupPercent": ".",
     "symbolNaN": "NaN",
     "separatorDecimalNumber": ",",
@@ -46,18 +46,18 @@
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
     "patternDateTimeFull": "d. MMMM yyyy HH:mm:ss",
-    "nameCalendarNative": "gregoriansk kalender",
+    "nameCalendarNative": "Den gregorianske kalender",
     "calendarWeekRuleName": "FirstFourDayWeek",
     "patternDateLong": "d. MMMM yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "S",
-      "M",
-      "T",
-      "O",
-      "T",
-      "F",
-      "L"
+      "sø",
+      "ma",
+      "ti",
+      "on",
+      "to",
+      "fr",
+      "lø"
     ],
     "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
@@ -91,16 +91,16 @@
       "dec",
       ""
     ],
-    "designatorAm": "AM",
-    "designatorPm": "PM",
+    "designatorAm": "",
+    "designatorPm": "",
     "nameDaysAbbreviated": [
-      "søn",
-      "man",
-      "tir",
-      "ons",
-      "tor",
-      "fre",
-      "lør"
+      "sø",
+      "ma",
+      "ti",
+      "on",
+      "to",
+      "fr",
+      "lø"
     ],
     "patternTimeShort": "HH:mm",
     "separatorTime": ":",

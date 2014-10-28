@@ -1,7 +1,7 @@
 {
   "nameCalendar": "Gregorian",
   "number": null,
-  "nameNative": "Tamaziɣt",
+  "nameNative": "Tamazight",
   "separatorList": ";",
   "nameRegionNative": null,
   "code": "tzm",
@@ -11,7 +11,7 @@
   "nameRegionEnglish": null,
   "win3": "TZM",
   "dateTime": null,
-  "nameEnglish": "Central Atlas Tamazight",
+  "nameEnglish": "Tamazight",
   "isNeutral": true,
   "isRightToLeft": false,
   "lcid": 95

@@ -2,18 +2,18 @@
   "nameCalendar": "Gregorian",
   "number": {
     "symbolPermille": "‰",
-    "symbolPositiveInfinity": "Infinity",
+    "symbolPositiveInfinity": "infinit",
     "signPositive": "+",
-    "separatorGroupNumber": " ",
+    "separatorGroupNumber": ".",
     "separatorDecimalPercent": ",",
     "signNegative": "-",
-    "symbolCurrency": "Lekë",
+    "symbolCurrency": "Lek",
     "symbolPercent": "%",
     "groupSizesNumber": [
       3
     ],
-    "symbolNegativeInfinity": "-Infinity",
-    "separatorGroupPercent": " ",
+    "symbolNegativeInfinity": "-infinit",
+    "separatorGroupPercent": ".",
     "symbolNaN": "NaN",
     "separatorDecimalNumber": ",",
     "groupSizesCurrency": [
@@ -29,13 +29,13 @@
     "patternPositivePercent": 0,
     "patternPositiveCurrency": 1,
     "decimalDigitsNumber": 2,
-    "decimalDigitsCurrency": 0,
+    "decimalDigitsCurrency": 2,
     "patternNegativeNumber": 1,
     "decimalDigitsPercent": 2
   },
-  "nameNative": "Shqip",
+  "nameNative": "shqipe",
   "separatorList": ";",
-  "nameRegionNative": "Shqipëri",
+  "nameRegionNative": "Shqipëria",
   "code": "sq-AL",
   "ietf": "sq-AL",
   "iso2": "sq",
@@ -45,19 +45,19 @@
   "dateTime": {
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
-    "patternDateTimeFull": "dddd, d MMMM yyyy HH:mm:ss",
-    "nameCalendarNative": "Kalendari Gregorian",
+    "patternDateTimeFull": "yyyy-MM-dd h:mm:ss.tt",
+    "nameCalendarNative": "kalendari gregorian",
     "calendarWeekRuleName": "FirstDay",
-    "patternDateLong": "dddd, d MMMM yyyy",
+    "patternDateLong": "yyyy-MM-dd",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "D",
-      "H",
-      "M",
-      "M",
-      "E",
-      "P",
-      "S"
+      "Di",
+      "Hë",
+      "Ma",
+      "Më",
+      "En",
+      "Pr",
+      "Sh"
     ],
     "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
@@ -75,7 +75,7 @@
       "dhjetor",
       ""
     ],
-    "separatorDate": ".",
+    "separatorDate": "-",
     "nameMonthGenitivesAbbreviated": [
       "Jan",
       "Shk",
@@ -91,8 +91,8 @@
       "Dhj",
       ""
     ],
-    "designatorAm": "paradite",
-    "designatorPm": "pasdite",
+    "designatorAm": "PD",
+    "designatorPm": "MD",
     "nameDaysAbbreviated": [
       "Die",
       "Hën",
@@ -102,11 +102,11 @@
       "Pre",
       "Sht"
     ],
-    "patternTimeShort": "HH:mm",
+    "patternTimeShort": "h:mm.tt",
     "separatorTime": ":",
-    "patternTimeLong": "HH:mm:ss",
-    "patternYearMonth": "MMMM yyyy",
-    "patternMonthDay": "d MMMM",
+    "patternTimeLong": "h:mm:ss.tt",
+    "patternYearMonth": "yyyy-MM",
+    "patternMonthDay": "MMMM dd",
     "nameDays": [
       "e diel",
       "e hënë",
@@ -146,7 +146,7 @@
       "dhjetor",
       ""
     ],
-    "patternDateShort": "d.M.yyyy",
+    "patternDateShort": "yyyy-MM-dd",
     "patternRfc1123": "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'",
     "firstDayOfWeekIndex": 1,
     "calendarWeekRuleIndex": 0

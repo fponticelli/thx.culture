@@ -2,19 +2,19 @@
   "nameCalendar": "Gregorian",
   "number": {
     "symbolPermille": "‰",
-    "symbolPositiveInfinity": "Infinity",
+    "symbolPositiveInfinity": "+∞",
     "signPositive": "+",
     "separatorGroupNumber": ",",
     "separatorDecimalPercent": ".",
     "signNegative": "-",
-    "symbolCurrency": "￥",
+    "symbolCurrency": "¥",
     "symbolPercent": "%",
     "groupSizesNumber": [
       3
     ],
-    "symbolNegativeInfinity": "-Infinity",
+    "symbolNegativeInfinity": "-∞",
     "separatorGroupPercent": ",",
-    "symbolNaN": "NaN",
+    "symbolNaN": "NaN (非数値)",
     "separatorDecimalNumber": ".",
     "groupSizesCurrency": [
       3
@@ -46,7 +46,7 @@
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
     "patternDateTimeFull": "yyyy'年'M'月'd'日' H:mm:ss",
-    "nameCalendarNative": "西暦(グレゴリオ暦)",
+    "nameCalendarNative": "西暦 (日本語)",
     "calendarWeekRuleName": "FirstDay",
     "patternDateLong": "yyyy'年'M'月'd'日'",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",

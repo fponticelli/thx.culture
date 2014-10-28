@@ -7,7 +7,7 @@
     "separatorGroupNumber": ",",
     "separatorDecimalPercent": ".",
     "signNegative": "-",
-    "symbolCurrency": "$",
+    "symbolCurrency": "J$",
     "symbolPercent": "%",
     "groupSizesNumber": [
       3
@@ -45,19 +45,19 @@
   "dateTime": {
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
-    "patternDateTimeFull": "dd MMMM, yyyy HH:mm:ss",
+    "patternDateTimeFull": "dddd, MMMM dd, yyyy hh:mm:ss tt",
     "nameCalendarNative": "Gregorian Calendar",
     "calendarWeekRuleName": "FirstDay",
-    "patternDateLong": "dd MMMM, yyyy",
+    "patternDateLong": "dddd, MMMM dd, yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "S",
-      "M",
-      "T",
-      "W",
-      "T",
-      "F",
-      "S"
+      "Su",
+      "Mo",
+      "Tu",
+      "We",
+      "Th",
+      "Fr",
+      "Sa"
     ],
     "firstDayOfWeekName": "Sunday",
     "nameMonthGenitives": [
@@ -102,11 +102,11 @@
       "Fri",
       "Sat"
     ],
-    "patternTimeShort": "HH:mm",
+    "patternTimeShort": "hh:mm tt",
     "separatorTime": ":",
-    "patternTimeLong": "HH:mm:ss",
+    "patternTimeLong": "hh:mm:ss tt",
     "patternYearMonth": "MMMM, yyyy",
-    "patternMonthDay": "d MMMM",
+    "patternMonthDay": "MMMM dd",
     "nameDays": [
       "Sunday",
       "Monday",

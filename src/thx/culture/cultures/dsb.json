@@ -1,0 +1,18 @@
+{
+  "nameCalendar": "Gregorian",
+  "number": null,
+  "nameNative": "dolnoserbšćina",
+  "separatorList": ";",
+  "nameRegionNative": null,
+  "code": "dsb",
+  "ietf": "dsb",
+  "iso2": "dsb",
+  "iso3": "dsb",
+  "nameRegionEnglish": null,
+  "win3": "DSB",
+  "dateTime": null,
+  "nameEnglish": "Lower Sorbian",
+  "isNeutral": true,
+  "isRightToLeft": false,
+  "lcid": 31790
+}

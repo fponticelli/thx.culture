@@ -4,17 +4,17 @@
     "symbolPermille": "‰",
     "symbolPositiveInfinity": "+infinit",
     "signPositive": "+",
-    "separatorGroupNumber": "’",
+    "separatorGroupNumber": "'",
     "separatorDecimalPercent": ".",
     "signNegative": "-",
-    "symbolCurrency": "CHF",
+    "symbolCurrency": "fr.",
     "symbolPercent": "%",
     "groupSizesNumber": [
       3
     ],
     "symbolNegativeInfinity": "-infinit",
-    "separatorGroupPercent": "’",
-    "symbolNaN": "NaN",
+    "separatorGroupPercent": "'",
+    "symbolNaN": "betg def.",
     "separatorDecimalNumber": ".",
     "groupSizesCurrency": [
       3
@@ -33,7 +33,7 @@
     "patternNegativeNumber": 1,
     "decimalDigitsPercent": 2
   },
-  "nameNative": "rumantsch",
+  "nameNative": "Rumantsch",
   "separatorList": ";",
   "nameRegionNative": "Svizra",
   "code": "rm-CH",
@@ -45,19 +45,19 @@
   "dateTime": {
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
-    "patternDateTimeFull": "dddd, 'ils’' d. MMMM, yyyy HH:mm:ss",
+    "patternDateTimeFull": "dddd, d MMMM yyyy HH:mm:ss",
     "nameCalendarNative": "chalender gregorian",
     "calendarWeekRuleName": "FirstFourDayWeek",
-    "patternDateLong": "dddd, 'ils’' d. MMMM, yyyy",
+    "patternDateLong": "dddd, d MMMM yyyy",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "D",
-      "G",
-      "M",
-      "M",
-      "G",
-      "V",
-      "S"
+      "du",
+      "gli",
+      "ma",
+      "me",
+      "gie",
+      "ve",
+      "so"
     ],
     "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
@@ -75,24 +75,24 @@
       "december",
       ""
     ],
-    "separatorDate": "-",
+    "separatorDate": "/",
     "nameMonthGenitivesAbbreviated": [
-      "schan.",
-      "favr.",
+      "schan",
+      "favr",
       "mars",
-      "avr.",
+      "avr",
       "matg",
-      "zercl.",
-      "fan.",
+      "zercl",
+      "fan",
       "avust",
-      "sett.",
-      "oct.",
-      "nov.",
-      "dec.",
+      "sett",
+      "oct",
+      "nov",
+      "dec",
       ""
     ],
-    "designatorAm": "am",
-    "designatorPm": "sm",
+    "designatorAm": "",
+    "designatorPm": "",
     "nameDaysAbbreviated": [
       "du",
       "gli",
@@ -106,7 +106,7 @@
     "separatorTime": ":",
     "patternTimeLong": "HH:mm:ss",
     "patternYearMonth": "MMMM yyyy",
-    "patternMonthDay": "d MMMM",
+    "patternMonthDay": "dd MMMM",
     "nameDays": [
       "dumengia",
       "glindesdi",
@@ -117,18 +117,18 @@
       "sonda"
     ],
     "nameMonthsAbbreviated": [
-      "schan.",
-      "favr.",
+      "schan",
+      "favr",
       "mars",
-      "avr.",
+      "avr",
       "matg",
-      "zercl.",
-      "fan.",
+      "zercl",
+      "fan",
       "avust",
-      "sett.",
-      "oct.",
-      "nov.",
-      "dec.",
+      "sett",
+      "oct",
+      "nov",
+      "dec",
       ""
     ],
     "nameMonths": [
@@ -146,7 +146,7 @@
       "december",
       ""
     ],
-    "patternDateShort": "dd-MM-yyyy",
+    "patternDateShort": "dd/MM/yyyy",
     "patternRfc1123": "ddd, dd MMM yyyy HH':'mm':'ss 'GMT'",
     "firstDayOfWeekIndex": 1,
     "calendarWeekRuleIndex": 2

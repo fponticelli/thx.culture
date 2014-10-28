@@ -2,7 +2,7 @@
   "nameCalendar": "Gregorian",
   "number": {
     "symbolPermille": "‰",
-    "symbolPositiveInfinity": "Infinity",
+    "symbolPositiveInfinity": "безмежність",
     "signPositive": "+",
     "separatorGroupNumber": " ",
     "separatorDecimalPercent": ",",
@@ -12,9 +12,9 @@
     "groupSizesNumber": [
       3
     ],
-    "symbolNegativeInfinity": "-Infinity",
+    "symbolNegativeInfinity": "-безмежність",
     "separatorGroupPercent": " ",
-    "symbolNaN": "Не число",
+    "symbolNaN": "NaN",
     "separatorDecimalNumber": ",",
     "groupSizesCurrency": [
       3
@@ -46,18 +46,18 @@
     "nameCalendar": "Gregorian",
     "patternUniversalSortable": "yyyy'-'MM'-'dd HH':'mm':'ss'Z'",
     "patternDateTimeFull": "d MMMM yyyy' р.' H:mm:ss",
-    "nameCalendarNative": "Григоріанський календар",
+    "nameCalendarNative": "Григоріаньский календар",
     "calendarWeekRuleName": "FirstDay",
     "patternDateLong": "d MMMM yyyy' р.'",
     "patternDateTimeSortable": "yyyy'-'MM'-'dd'T'HH':'mm':'ss",
     "nameDaysShortest": [
-      "Н",
-      "П",
-      "В",
-      "С",
-      "Ч",
-      "П",
-      "С"
+      "Нд",
+      "Пн",
+      "Вт",
+      "Ср",
+      "Чт",
+      "Пт",
+      "Сб"
     ],
     "firstDayOfWeekName": "Monday",
     "nameMonthGenitives": [
@@ -77,22 +77,22 @@
     ],
     "separatorDate": ".",
     "nameMonthGenitivesAbbreviated": [
-      "Січ",
-      "Лют",
-      "Бер",
-      "Кві",
-      "Тра",
-      "Чер",
-      "Лип",
-      "Сер",
-      "Вер",
-      "Жов",
-      "Лис",
-      "Гру",
+      "січ",
+      "лют",
+      "бер",
+      "кві",
+      "тра",
+      "чер",
+      "лип",
+      "сер",
+      "вер",
+      "жов",
+      "лис",
+      "гру",
       ""
     ],
-    "designatorAm": "дп",
-    "designatorPm": "пп",
+    "designatorAm": "",
+    "designatorPm": "",
     "nameDaysAbbreviated": [
       "Нд",
       "Пн",
@@ -113,7 +113,7 @@
       "вівторок",
       "середа",
       "четвер",
-      "пʼятниця",
+      "п'ятниця",
       "субота"
     ],
     "nameMonthsAbbreviated": [
