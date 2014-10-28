@@ -18,6 +18,7 @@ List of supported cultures.
 
 
 
+
 <!-- BEGIN_CULTURES -->
 
 | code        | english                                            | native                                             | ISO2 | ISO3 | currency      |
@@ -89,7 +90,7 @@ List of supported cultures.
 | dsb         | Lower Sorbian                                      | dolnoserbšćina                                     | dsb  | dsb  | -             |
 | dsb-DE      | Lower Sorbian (Germany)                            | dolnoserbšćina (Nimska)                            | dsb  | dsb  | €             |
 | dv          | Divehi                                             | -                                                  | dv   | div  | -             |
-| dv-MV       | Divehi (Maldives)                                  | -                                                  | dv   | div  | &#x202b;ރ.    |
+| dv-MV       | Divehi (Maldives)                                  | -                                                  | dv   | div  | -             |
 | el          | Greek                                              | Ελληνικά                                           | el   | ell  | -             |
 | el-GR       | Greek (Greece)                                     | Ελληνικά (Ελλάδα)                                  | el   | ell  | €             |
 | en          | English                                            | English                                            | en   | eng  | -             |
@@ -377,6 +378,7 @@ List of supported cultures.
 | zu-ZA       | isiZulu (South Africa)                             | isiZulu (iNingizimu Afrika)                        | zu   | zul  | R             |
 
 <!-- END_CULTURES -->
+
 
 
 

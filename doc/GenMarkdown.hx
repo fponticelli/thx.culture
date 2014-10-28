@@ -23,7 +23,7 @@ class GenMarkdown {
         blacklist.contains(cult.code) ? '-' : (cult.isRightToLeft ? '&#x202b;' : '') + cult.nameDisplayNative,
         cult.iso2,
         cult.iso3,
-        null != cult.number ? (cult.isRightToLeft ? '&#x202b;' : '') + cult.number.symbolCurrency : '-'];
+        !blacklist.contains(cult.code) && null != cult.number ? (cult.isRightToLeft ? '&#x202b;' : '') + cult.number.symbolCurrency : '-'];
     }).order(function(a, b) return a[0].compare(b[0])));
 
     var cultures = formatTable(arr);
