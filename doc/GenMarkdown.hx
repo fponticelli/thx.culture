@@ -15,7 +15,12 @@ class GenMarkdown {
     Embed.all();
 
     var arr = [['code', 'english', 'ISO2', 'ISO3', 'currency']].concat(Culture.iterator().map(function(cult) {
-      return [cult.code, cult.nameDisplayEnglish, cult.iso2, cult.iso3, null != cult.number ? cult.number.symbolCurrency : '-'];
+      return [
+        cult.code,
+        cult.nameDisplayEnglish,
+        cult.iso2,
+        cult.iso3,
+        null != cult.number ? (cult.isRightToLeft ? '&#x202b;' : '') + cult.number.symbolCurrency : '-'];
     }).order(function(a, b) return a[0].compare(b[0])));
 
     var cultures = formatTable(arr);
