@@ -14,365 +14,367 @@ List of supported cultures.
 
 
 
+
 <!-- BEGIN_CULTURES -->
 
-| code        | english                                            | native                                             | ISO2 | ISO3 | currency |
-| ----------- | -------------------------------------------------- | -------------------------------------------------- | ---- | ---- | -------- |
-| af          | Afrikaans                                          | Afrikaans                                          | af   | afr  | -        |
-| af-ZA       | Afrikaans (South Africa)                           | Afrikaans (Suid Afrika)                            | af   | afr  | R        |
-| am          | Amharic                                            | አማርኛ                                               | am   | amh  | -        |
-| am-ET       | Amharic (Ethiopia)                                 | አማርኛ (ኢትዮጵያ)                                       | am   | amh  | ETB      |
-| ar          | Arabic                                             | العربية                                            | ar   | ara  | -        |
-| ar-AE       | Arabic (U.A.E.)                                    | العربية (الإمارات العربية المتحدة)                 | ar   | ara  | د.إ.‏    |
-| ar-BH       | Arabic (Bahrain)                                   | العربية (البحرين)                                  | ar   | ara  | د.ب.‏    |
-| ar-DZ       | Arabic (Algeria)                                   | العربية (الجزائر)                                  | ar   | ara  | د.ج.‏    |
-| ar-EG       | Arabic (Egypt)                                     | العربية (مصر)                                      | ar   | ara  | ج.م.‏    |
-| ar-IQ       | Arabic (Iraq)                                      | العربية (العراق)                                   | ar   | ara  | د.ع.‏    |
-| ar-JO       | Arabic (Jordan)                                    | العربية (الأردن)                                   | ar   | ara  | د.ا.‏    |
-| ar-KW       | Arabic (Kuwait)                                    | العربية (الكويت)                                   | ar   | ara  | د.ك.‏    |
-| ar-LB       | Arabic (Lebanon)                                   | العربية (لبنان)                                    | ar   | ara  | ل.ل.‏    |
-| ar-LY       | Arabic (Libya)                                     | العربية (ليبيا)                                    | ar   | ara  | د.ل.‏    |
-| ar-MA       | Arabic (Morocco)                                   | العربية (المملكة المغربية)                         | ar   | ara  | د.م.‏    |
-| ar-OM       | Arabic (Oman)                                      | العربية (عمان)                                     | ar   | ara  | ر.ع.‏    |
-| ar-QA       | Arabic (Qatar)                                     | العربية (قطر)                                      | ar   | ara  | ر.ق.‏    |
-| ar-SA       | Arabic (Saudi Arabia)                              | العربية (المملكة العربية السعودية)                 | ar   | ara  | ر.س.‏    |
-| ar-SY       | Arabic (Syria)                                     | العربية (سوريا)                                    | ar   | ara  | ل.س.‏    |
-| ar-TN       | Arabic (Tunisia)                                   | العربية (تونس)                                     | ar   | ara  | د.ت.‏    |
-| ar-YE       | Arabic (Yemen)                                     | العربية (اليمن)                                    | ar   | ara  | ر.ي.‏    |
-| arn         | Mapudungun                                         | Mapudungun                                         | arn  | arn  | -        |
-| arn-CL      | Mapudungun (Chile)                                 | Mapudungun (Chile)                                 | arn  | arn  | $        |
-| as          | Assamese                                           | অসমীয়া                                             | as   | asm  | -        |
-| as-IN       | Assamese (India)                                   | অসমীয়া (ভাৰত)                                      | as   | asm  | ₹        |
-| az          | Azeri                                              | Azərbaycan­ılı                                     | az   | aze  | -        |
-| az-Cyrl     | Azeri (Cyrillic)                                   | Азәрбајҹан дили                                    | az   | aze  | -        |
-| az-Cyrl-AZ  | Azeri (Cyrillic, Azerbaijan)                       | Азәрбајҹан (Азәрбајҹан)                            | az   | aze  | ман.     |
-| az-Latn     | Azeri (Latin)                                      | Azərbaycan­ılı                                     | az   | aze  | -        |
-| az-Latn-AZ  | Azeri (Latin, Azerbaijan)                          | Azərbaycan­ılı (Azərbaycan)                        | az   | aze  | man.     |
-| ba          | Bashkir                                            | Башҡорт                                            | ba   | bak  | -        |
-| ba-RU       | Bashkir (Russia)                                   | Башҡорт (Россия)                                   | ba   | bak  | һ.       |
-| be          | Belarusian                                         | Беларускі                                          | be   | bel  | -        |
-| be-BY       | Belarusian (Belarus)                               | Беларускі (Беларусь)                               | be   | bel  | р.       |
-| bg          | Bulgarian                                          | български                                          | bg   | bul  | -        |
-| bg-BG       | Bulgarian (Bulgaria)                               | български (България)                               | bg   | bul  | лв.      |
-| bn          | Bengali                                            | বাংলা                                              | bn   | bng  | -        |
-| bn-BD       | Bengali (Bangladesh)                               | বাংলা (বাংলাদেশ)                                   | bn   | bng  | ৳        |
-| bn-IN       | Bengali (India)                                    | বাংলা (ভারত)                                       | bn   | bng  | ₹        |
-| bo          | Tibetan                                            | བོད་ཡིག                                            | bo   | bod  | -        |
-| bo-CN       | Tibetan (PRC)                                      | བོད་ཡིག (ཀྲུང་ཧྭ་མི་དམངས་སྤྱི་མཐུན་རྒྱལ་ཁབ།)       | bo   | bod  | ¥        |
-| br          | Breton                                             | brezhoneg                                          | br   | bre  | -        |
-| br-FR       | Breton (France)                                    | brezhoneg (Frañs)                                  | br   | bre  | €        |
-| bs          | Bosnian                                            | bosanski                                           | bs   | bsb  | -        |
-| bs-Cyrl     | Bosnian (Cyrillic)                                 | босански                                           | bs   | bsc  | -        |
-| bs-Cyrl-BA  | Bosnian (Cyrillic, Bosnia and Herzegovina)         | босански (Босна и Херцеговина)                     | bs   | bsc  | КМ       |
-| bs-Latn     | Bosnian (Latin)                                    | bosanski                                           | bs   | bsb  | -        |
-| bs-Latn-BA  | Bosnian (Latin, Bosnia and Herzegovina)            | bosanski (Bosna i Hercegovina)                     | bs   | bsb  | KM       |
-| ca          | Catalan                                            | català                                             | ca   | cat  | -        |
-| ca-ES       | Catalan (Catalan)                                  | català (català)                                    | ca   | cat  | €        |
-| co          | Corsican                                           | Corsu                                              | co   | cos  | -        |
-| co-FR       | Corsican (France)                                  | Corsu (France)                                     | co   | cos  | €        |
-| cs          | Czech                                              | čeština                                            | cs   | ces  | -        |
-| cs-CZ       | Czech (Czech Republic)                             | čeština (Česká republika)                          | cs   | ces  | Kč       |
-| cy          | Welsh                                              | Cymraeg                                            | cy   | cym  | -        |
-| cy-GB       | Welsh (United Kingdom)                             | Cymraeg (y Deyrnas Unedig)                         | cy   | cym  | £        |
-| da          | Danish                                             | dansk                                              | da   | dan  | -        |
-| da-DK       | Danish (Denmark)                                   | dansk (Danmark)                                    | da   | dan  | kr.      |
-| de          | German                                             | Deutsch                                            | de   | deu  | -        |
-| de-AT       | German (Austria)                                   | Deutsch (Österreich)                               | de   | deu  | €        |
-| de-CH       | German (Switzerland)                               | Deutsch (Schweiz)                                  | de   | deu  | Fr.      |
-| de-DE       | German (Germany)                                   | Deutsch (Deutschland)                              | de   | deu  | €        |
-| de-LI       | German (Liechtenstein)                             | Deutsch (Liechtenstein)                            | de   | deu  | CHF      |
-| de-LU       | German (Luxembourg)                                | Deutsch (Luxemburg)                                | de   | deu  | €        |
-| dsb         | Lower Sorbian                                      | dolnoserbšćina                                     | dsb  | dsb  | -        |
-| dsb-DE      | Lower Sorbian (Germany)                            | dolnoserbšćina (Nimska)                            | dsb  | dsb  | €        |
-| dv          | Divehi                                             | ދިވެހިބަސް                                         | dv   | div  | -        |
-| dv-MV       | Divehi (Maldives)                                  | ދިވެހިބަސް (ދިވެހި ރާއްޖެ)                         | dv   | div  | ރ.       |
-| el          | Greek                                              | Ελληνικά                                           | el   | ell  | -        |
-| el-GR       | Greek (Greece)                                     | Ελληνικά (Ελλάδα)                                  | el   | ell  | €        |
-| en          | English                                            | English                                            | en   | eng  | -        |
-| en-029      | English (Caribbean)                                | English (Caribbean)                                | en   | eng  | $        |
-| en-AU       | English (Australia)                                | English (Australia)                                | en   | eng  | $        |
-| en-BZ       | English (Belize)                                   | English (Belize)                                   | en   | eng  | BZ$      |
-| en-CA       | English (Canada)                                   | English (Canada)                                   | en   | eng  | $        |
-| en-GB       | English (United Kingdom)                           | English (United Kingdom)                           | en   | eng  | £        |
-| en-IE       | English (Ireland)                                  | English (Ireland)                                  | en   | eng  | €        |
-| en-IN       | English (India)                                    | English (India)                                    | en   | eng  | ₹        |
-| en-JM       | English (Jamaica)                                  | English (Jamaica)                                  | en   | eng  | J$       |
-| en-MY       | English (Malaysia)                                 | English (Malaysia)                                 | en   | eng  | RM       |
-| en-NZ       | English (New Zealand)                              | English (New Zealand)                              | en   | eng  | $        |
-| en-PH       | English (Republic of the Philippines)              | English (Philippines)                              | en   | eng  | Php      |
-| en-SG       | English (Singapore)                                | English (Singapore)                                | en   | eng  | $        |
-| en-TT       | English (Trinidad and Tobago)                      | English (Trinidad y Tobago)                        | en   | eng  | TT$      |
-| en-US       | English (United States)                            | English (United States)                            | en   | eng  | $        |
-| en-ZA       | English (South Africa)                             | English (South Africa)                             | en   | eng  | R        |
-| en-ZW       | English (Zimbabwe)                                 | English (Zimbabwe)                                 | en   | eng  | Z$       |
-| es          | Spanish                                            | español                                            | es   | spa  | -        |
-| es-AR       | Spanish (Argentina)                                | Español (Argentina)                                | es   | spa  | $        |
-| es-BO       | Spanish (Bolivia)                                  | Español (Bolivia)                                  | es   | spa  | $b       |
-| es-CL       | Spanish (Chile)                                    | Español (Chile)                                    | es   | spa  | $        |
-| es-CO       | Spanish (Colombia)                                 | Español (Colombia)                                 | es   | spa  | $        |
-| es-CR       | Spanish (Costa Rica)                               | Español (Costa Rica)                               | es   | spa  | ₡        |
-| es-DO       | Spanish (Dominican Republic)                       | Español (República Dominicana)                     | es   | spa  | RD$      |
-| es-EC       | Spanish (Ecuador)                                  | Español (Ecuador)                                  | es   | spa  | $        |
-| es-ES       | Spanish (Spain, International Sort)                | Español (España, alfabetización internacional)     | es   | spa  | €        |
-| es-GT       | Spanish (Guatemala)                                | Español (Guatemala)                                | es   | spa  | Q        |
-| es-HN       | Spanish (Honduras)                                 | Español (Honduras)                                 | es   | spa  | L.       |
-| es-MX       | Spanish (Mexico)                                   | Español (México)                                   | es   | spa  | $        |
-| es-NI       | Spanish (Nicaragua)                                | Español (Nicaragua)                                | es   | spa  | C$       |
-| es-PA       | Spanish (Panama)                                   | Español (Panamá)                                   | es   | spa  | B/.      |
-| es-PE       | Spanish (Peru)                                     | Español (Perú)                                     | es   | spa  | S/.      |
-| es-PR       | Spanish (Puerto Rico)                              | Español (Puerto Rico)                              | es   | spa  | $        |
-| es-PY       | Spanish (Paraguay)                                 | Español (Paraguay)                                 | es   | spa  | Gs       |
-| es-SV       | Spanish (El Salvador)                              | Español (El Salvador)                              | es   | spa  | $        |
-| es-US       | Spanish (United States)                            | Español (Estados Unidos)                           | es   | spa  | $        |
-| es-UY       | Spanish (Uruguay)                                  | Español (Uruguay)                                  | es   | spa  | $U       |
-| es-VE       | Spanish (Bolivarian Republic of Venezuela)         | Español (Republica Bolivariana de Venezuela)       | es   | spa  | Bs. F.   |
-| et          | Estonian                                           | eesti                                              | et   | est  | -        |
-| et-EE       | Estonian (Estonia)                                 | eesti (Eesti)                                      | et   | est  | €        |
-| eu          | Basque                                             | euskara                                            | eu   | eus  | -        |
-| eu-ES       | Basque (Basque)                                    | euskara (euskara)                                  | eu   | eus  | €        |
-| fa          | Persian                                            | فارسى                                              | fa   | fas  | -        |
-| fa-IR       | Persian                                            | فارسى (ایران)                                      | fa   | fas  | ريال     |
-| fi          | Finnish                                            | suomi                                              | fi   | fin  | -        |
-| fi-FI       | Finnish (Finland)                                  | suomi (Suomi)                                      | fi   | fin  | €        |
-| fil         | Filipino                                           | Filipino                                           | fil  | fil  | -        |
-| fil-PH      | Filipino (Philippines)                             | Filipino (Pilipinas)                               | fil  | fil  | PhP      |
-| fo          | Faroese                                            | føroyskt                                           | fo   | fao  | -        |
-| fo-FO       | Faroese (Faroe Islands)                            | føroyskt (Føroyar)                                 | fo   | fao  | kr.      |
-| fr          | French                                             | français                                           | fr   | fra  | -        |
-| fr-BE       | French (Belgium)                                   | français (Belgique)                                | fr   | fra  | €        |
-| fr-CA       | French (Canada)                                    | français (Canada)                                  | fr   | fra  | $        |
-| fr-CH       | French (Switzerland)                               | français (Suisse)                                  | fr   | fra  | fr.      |
-| fr-FR       | French (France)                                    | français (France)                                  | fr   | fra  | €        |
-| fr-LU       | French (Luxembourg)                                | français (Luxembourg)                              | fr   | fra  | €        |
-| fr-MC       | French (Monaco)                                    | français (Principauté de Monaco)                   | fr   | fra  | €        |
-| fy          | Frisian                                            | Frysk                                              | fy   | fry  | -        |
-| fy-NL       | Frisian (Netherlands)                              | Frysk (Nederlân)                                   | fy   | fry  | €        |
-| ga          | Irish                                              | Gaeilge                                            | ga   | gle  | -        |
-| ga-IE       | Irish (Ireland)                                    | Gaeilge (Éire)                                     | ga   | gle  | €        |
-| gd          | Scottish Gaelic                                    | Gàidhlig                                           | gd   | gla  | -        |
-| gd-GB       | Scottish Gaelic (United Kingdom)                   | Gàidhlig (An Rìoghachd Aonaichte)                  | gd   | gla  | £        |
-| gl          | Galician                                           | galego                                             | gl   | glg  | -        |
-| gl-ES       | Galician (Galician)                                | galego (galego)                                    | gl   | glg  | €        |
-| gsw         | Alsatian                                           | Elsässisch                                         | gsw  | gsw  | -        |
-| gsw-FR      | Alsatian (France)                                  | Elsässisch (Frànkrisch)                            | gsw  | gsw  | €        |
-| gu          | Gujarati                                           | ગુજરાતી                                            | gu   | guj  | -        |
-| gu-IN       | Gujarati (India)                                   | ગુજરાતી (ભારત)                                     | gu   | guj  | ₹        |
-| ha          | Hausa                                              | Hausa                                              | ha   | hau  | -        |
-| ha-Latn     | Hausa (Latin)                                      | Hausa                                              | ha   | hau  | -        |
-| ha-Latn-NG  | Hausa (Latin, Nigeria)                             | Hausa (Nigeria)                                    | ha   | hau  | N        |
-| he          | Hebrew                                             | עברית                                              | he   | heb  | -        |
-| he-IL       | Hebrew (Israel)                                    | עברית (ישראל)                                      | he   | heb  | ₪        |
-| hi          | Hindi                                              | हिंदी                                              | hi   | hin  | -        |
-| hi-IN       | Hindi (India)                                      | हिंदी (भारत)                                       | hi   | hin  | ₹        |
-| hr          | Croatian                                           | hrvatski                                           | hr   | hrv  | -        |
-| hr-BA       | Croatian (Latin, Bosnia and Herzegovina)           | hrvatski (Bosna i Hercegovina)                     | hr   | hrb  | KM       |
-| hr-HR       | Croatian (Croatia)                                 | hrvatski (Hrvatska)                                | hr   | hrv  | kn       |
-| hsb         | Upper Sorbian                                      | hornjoserbšćina                                    | hsb  | hsb  | -        |
-| hsb-DE      | Upper Sorbian (Germany)                            | hornjoserbšćina (Němska)                           | hsb  | hsb  | €        |
-| hu          | Hungarian                                          | magyar                                             | hu   | hun  | -        |
-| hu-HU       | Hungarian (Hungary)                                | magyar (Magyarország)                              | hu   | hun  | Ft       |
-| hy          | Armenian                                           | Հայերեն                                            | hy   | hye  | -        |
-| hy-AM       | Armenian (Armenia)                                 | Հայերեն (Հայաստան)                                 | hy   | hye  | դր.      |
-| id          | Indonesian                                         | Bahasa Indonesia                                   | id   | ind  | -        |
-| id-ID       | Indonesian (Indonesia)                             | Bahasa Indonesia (Indonesia)                       | id   | ind  | Rp       |
-| ig          | Igbo                                               | Igbo                                               | ig   | ibo  | -        |
-| ig-NG       | Igbo (Nigeria)                                     | Igbo (Nigeria)                                     | ig   | ibo  | N        |
-| ii          | Yi                                                 | ꆈꌠꁱꂷ                                               | ii   | iii  | -        |
-| ii-CN       | Yi (PRC)                                           | ꆈꌠꁱꂷ (ꍏꉸꏓꂱꇭꉼꇩ)                                     | ii   | iii  | ¥        |
-| is          | Icelandic                                          | íslenska                                           | is   | isl  | -        |
-| is-IS       | Icelandic (Iceland)                                | íslenska (Ísland)                                  | is   | isl  | kr.      |
-| it          | Italian                                            | italiano                                           | it   | ita  | -        |
-| it-CH       | Italian (Switzerland)                              | italiano (Svizzera)                                | it   | ita  | fr.      |
-| it-IT       | Italian (Italy)                                    | italiano (Italia)                                  | it   | ita  | €        |
-| iu          | Inuktitut                                          | Inuktitut                                          | iu   | iku  | -        |
-| iu-Cans     | Inuktitut (Syllabics)                              | ᐃᓄᒃᑎᑐᑦ                                             | iu   | iku  | -        |
-| iu-Cans-CA  | Inuktitut (Syllabics, Canada)                      | ᐃᓄᒃᑎᑐᑦ (ᑲᓇᑕᒥ)                                      | iu   | iku  | $        |
-| iu-Latn     | Inuktitut (Latin)                                  | Inuktitut                                          | iu   | iku  | -        |
-| iu-Latn-CA  | Inuktitut (Latin, Canada)                          | Inuktitut (Kanatami)                               | iu   | iku  | $        |
-| ja          | Japanese                                           | 日本語                                                | ja   | jpn  | -        |
-| ja-JP       | Japanese (Japan)                                   | 日本語 (日本)                                           | ja   | jpn  | ¥        |
-| ka          | Georgian                                           | ქართული                                            | ka   | kat  | -        |
-| ka-GE       | Georgian (Georgia)                                 | ქართული (საქართველო)                               | ka   | kat  | Lari     |
-| kk          | Kazakh                                             | Қазақ                                              | kk   | kaz  | -        |
-| kk-KZ       | Kazakh (Kazakhstan)                                | Қазақ (Қазақстан)                                  | kk   | kaz  | Т        |
-| kl          | Greenlandic                                        | kalaallisut                                        | kl   | kal  | -        |
-| kl-GL       | Greenlandic (Greenland)                            | kalaallisut (Kalaallit Nunaat)                     | kl   | kal  | kr.      |
-| km          | Khmer                                              | ខ្មែរ                                              | km   | khm  | -        |
-| km-KH       | Khmer (Cambodia)                                   | ខ្មែរ (កម្ពុជា)                                    | km   | khm  | ៛        |
-| kn          | Kannada                                            | ಕನ್ನಡ                                              | kn   | kan  | -        |
-| kn-IN       | Kannada (India)                                    | ಕನ್ನಡ (ಭಾರತ)                                       | kn   | kan  | ₹        |
-| ko          | Korean                                             | 한국어                                                | ko   | kor  | -        |
-| ko-KR       | Korean (Korea)                                     | 한국어 (대한민국)                                         | ko   | kor  | ₩        |
-| kok         | Konkani                                            | कोंकणी                                             | kok  | kok  | -        |
-| kok-IN      | Konkani (India)                                    | कोंकणी (भारत)                                      | kok  | kok  | ₹        |
-| ky          | Kyrgyz                                             | Кыргыз                                             | ky   | kir  | -        |
-| ky-KG       | Kyrgyz (Kyrgyzstan)                                | Кыргыз (Кыргызстан)                                | ky   | kir  | сом      |
-| lb          | Luxembourgish                                      | Lëtzebuergesch                                     | lb   | ltz  | -        |
-| lb-LU       | Luxembourgish (Luxembourg)                         | Lëtzebuergesch (Luxembourg)                        | lb   | ltz  | €        |
-| lo          | Lao                                                | ລາວ                                                | lo   | lao  | -        |
-| lo-LA       | Lao (Lao P.D.R.)                                   | ລາວ (ສ.ປ.ປ. ລາວ)                                   | lo   | lao  | ₭        |
-| lt          | Lithuanian                                         | lietuvių                                           | lt   | lit  | -        |
-| lt-LT       | Lithuanian (Lithuania)                             | lietuvių (Lietuva)                                 | lt   | lit  | Lt       |
-| lv          | Latvian                                            | latviešu                                           | lv   | lav  | -        |
-| lv-LV       | Latvian (Latvia)                                   | latviešu (Latvija)                                 | lv   | lav  | €        |
-| mi          | Maori                                              | Reo Māori                                          | mi   | mri  | -        |
-| mi-NZ       | Maori (New Zealand)                                | Reo Māori (Aotearoa)                               | mi   | mri  | $        |
-| mk          | Macedonian (FYROM)                                 | македонски јазик                                   | mk   | mkd  | -        |
-| mk-MK       | Macedonian (Former Yugoslav Republic of Macedonia) | македонски јазик (Македонија)                      | mk   | mkd  | ден.     |
-| ml          | Malayalam                                          | മലയാളം                                             | ml   | mym  | -        |
-| ml-IN       | Malayalam (India)                                  | മലയാളം (ഭാരതം)                                     | ml   | mym  | ₹        |
-| mn          | Mongolian                                          | Монгол хэл                                         | mn   | mon  | -        |
-| mn-Cyrl     | Mongolian (Cyrillic)                               | Монгол хэл                                         | mn   | mon  | -        |
-| mn-MN       | Mongolian (Cyrillic, Mongolia)                     | Монгол хэл (Монгол улс)                            | mn   | mon  | ₮        |
-| mn-Mong     | Mongolian (Traditional Mongolian)                  | ᠮᠤᠨᠭᠭᠤᠯ ᠬᠡᠯᠡ                                       | mn   | mon  | -        |
-| mn-Mong-CN  | Mongolian (Traditional Mongolian, PRC)             | ᠮᠤᠨᠭᠭᠤᠯ ᠬᠡᠯᠡ (ᠪᠦᠭᠦᠳᠡ ᠨᠠᠢᠷᠠᠮᠳᠠᠬᠤ ᠳᠤᠮᠳᠠᠳᠤ ᠠᠷᠠᠳ ᠣᠯᠣᠰ) | mn   | mon  | ¥        |
-| moh         | Mohawk                                             | Kanien'kéha                                        | moh  | moh  | -        |
-| moh-CA      | Mohawk (Mohawk)                                    | Kanien'kéha                                        | moh  | moh  | $        |
-| mr          | Marathi                                            | मराठी                                              | mr   | mar  | -        |
-| mr-IN       | Marathi (India)                                    | मराठी (भारत)                                       | mr   | mar  | ₹        |
-| ms          | Malay                                              | Bahasa Melayu                                      | ms   | msa  | -        |
-| ms-BN       | Malay (Brunei Darussalam)                          | Bahasa Melayu (Brunei Darussalam)                  | ms   | msa  | $        |
-| ms-MY       | Malay (Malaysia)                                   | Bahasa Melayu (Malaysia)                           | ms   | msa  | RM       |
-| mt          | Maltese                                            | Malti                                              | mt   | mlt  | -        |
-| mt-MT       | Maltese (Malta)                                    | Malti (Malta)                                      | mt   | mlt  | €        |
-| nb          | Norwegian (Bokmål)                                 | norsk (bokmål)                                     | nb   | nob  | -        |
-| nb-NO       | Norwegian, Bokmål (Norway)                         | norsk, bokmål (Norge)                              | nb   | nob  | kr       |
-| ne          | Nepali                                             | नेपाली                                             | ne   | nep  | -        |
-| ne-NP       | Nepali (Nepal)                                     | नेपाली (नेपाल)                                     | ne   | nep  | रु       |
-| nl          | Dutch                                              | Nederlands                                         | nl   | nld  | -        |
-| nl-BE       | Dutch (Belgium)                                    | Nederlands (België)                                | nl   | nld  | €        |
-| nl-NL       | Dutch (Netherlands)                                | Nederlands (Nederland)                             | nl   | nld  | €        |
-| nn          | Norwegian (Nynorsk)                                | norsk (nynorsk)                                    | nn   | nno  | -        |
-| nn-NO       | Norwegian, Nynorsk (Norway)                        | norsk, nynorsk (Noreg)                             | nn   | nno  | kr       |
-| no          | Norwegian                                          | norsk                                              | nb   | nob  | -        |
-| nso         | Sesotho sa Leboa                                   | Sesotho sa Leboa                                   | nso  | nso  | -        |
-| nso-ZA      | Sesotho sa Leboa (South Africa)                    | Sesotho sa Leboa (Afrika Borwa)                    | nso  | nso  | R        |
-| oc          | Occitan                                            | Occitan                                            | oc   | oci  | -        |
-| oc-FR       | Occitan (France)                                   | Occitan (França)                                   | oc   | oci  | €        |
-| or          | Oriya                                              | ଓଡ଼ିଆ                                               | or   | ori  | -        |
-| or-IN       | Oriya (India)                                      | ଓଡ଼ିଆ (ଭାରତ)                                        | or   | ori  | ₹        |
-| pa          | Punjabi                                            | ਪੰਜਾਬੀ                                             | pa   | pan  | -        |
-| pa-IN       | Punjabi (India)                                    | ਪੰਜਾਬੀ (ਭਾਰਤ)                                      | pa   | pan  | ₹        |
-| pl          | Polish                                             | polski                                             | pl   | pol  | -        |
-| pl-PL       | Polish (Poland)                                    | polski (Polska)                                    | pl   | pol  | zł       |
-| prs         | Dari                                               | درى                                                | prs  | prs  | -        |
-| prs-AF      | Dari (Afghanistan)                                 | درى (افغانستان)                                    | prs  | prs  | ؋        |
-| ps          | Pashto                                             | پښتو                                               | ps   | pus  | -        |
-| ps-AF       | Pashto (Afghanistan)                               | پښتو (افغانستان)                                   | ps   | pus  | ؋        |
-| pt          | Portuguese                                         | Português                                          | pt   | por  | -        |
-| pt-BR       | Portuguese (Brazil)                                | Português (Brasil)                                 | pt   | por  | R$       |
-| pt-PT       | Portuguese (Portugal)                              | português (Portugal)                               | pt   | por  | €        |
-| qut         | K'iche                                             | K'iche                                             | qut  | qut  | -        |
-| qut-GT      | K'iche (Guatemala)                                 | K'iche (Guatemala)                                 | qut  | qut  | Q        |
-| quz         | Quechua                                            | runasimi                                           | quz  | qub  | -        |
-| quz-BO      | Quechua (Bolivia)                                  | runasimi (Qullasuyu)                               | quz  | qub  | $b       |
-| quz-EC      | Quechua (Ecuador)                                  | runasimi (Ecuador)                                 | quz  | que  | $        |
-| quz-PE      | Quechua (Peru)                                     | runasimi (Piruw)                                   | quz  | qup  | S/.      |
-| rm          | Romansh                                            | Rumantsch                                          | rm   | roh  | -        |
-| rm-CH       | Romansh (Switzerland)                              | Rumantsch (Svizra)                                 | rm   | roh  | fr.      |
-| ro          | Romanian                                           | română                                             | ro   | ron  | -        |
-| ro-RO       | Romanian (Romania)                                 | română (România)                                   | ro   | ron  | lei      |
-| ru          | Russian                                            | русский                                            | ru   | rus  | -        |
-| ru-RU       | Russian (Russia)                                   | русский (Россия)                                   | ru   | rus  | р.       |
-| rw          | Kinyarwanda                                        | Kinyarwanda                                        | rw   | kin  | -        |
-| rw-RW       | Kinyarwanda (Rwanda)                               | Kinyarwanda (Rwanda)                               | rw   | kin  | RWF      |
-| sa          | Sanskrit                                           | संस्कृत                                            | sa   | san  | -        |
-| sa-IN       | Sanskrit (India)                                   | संस्कृत (भारतम्)                                   | sa   | san  | ₹        |
-| sah         | Yakut                                              | саха                                               | sah  | sah  | -        |
-| sah-RU      | Yakut (Russia)                                     | саха (Россия)                                      | sah  | sah  | с.       |
-| se          | Sami (Northern)                                    | davvisámegiella                                    | se   | sme  | -        |
-| se-FI       | Sami, Northern (Finland)                           | davvisámegiella (Suopma)                           | se   | smg  | €        |
-| se-NO       | Sami, Northern (Norway)                            | davvisámegiella (Norga)                            | se   | sme  | kr       |
-| se-SE       | Sami, Northern (Sweden)                            | davvisámegiella (Ruoŧŧa)                           | se   | smf  | kr       |
-| si          | Sinhala                                            | සිංහල                                              | si   | sin  | -        |
-| si-LK       | Sinhala (Sri Lanka)                                | සිංහල (ශ්‍රී ලංකා)                                 | si   | sin  | රු.      |
-| sk          | Slovak                                             | slovenčina                                         | sk   | slk  | -        |
-| sk-SK       | Slovak (Slovakia)                                  | slovenčina (Slovenská republika)                   | sk   | slk  | €        |
-| sl          | Slovenian                                          | slovenski                                          | sl   | slv  | -        |
-| sl-SI       | Slovenian (Slovenia)                               | slovenski (Slovenija)                              | sl   | slv  | €        |
-| sma         | Sami (Southern)                                    | åarjelsaemiengiele                                 | sma  | smb  | -        |
-| sma-NO      | Sami, Southern (Norway)                            | åarjelsaemiengiele (Nöörje)                        | sma  | sma  | kr       |
-| sma-SE      | Sami, Southern (Sweden)                            | åarjelsaemiengiele (Sveerje)                       | sma  | smb  | kr       |
-| smj         | Sami (Lule)                                        | julevusámegiella                                   | smj  | smk  | -        |
-| smj-NO      | Sami, Lule (Norway)                                | julevusámegiella (Vuodna)                          | smj  | smj  | kr       |
-| smj-SE      | Sami, Lule (Sweden)                                | julevusámegiella (Svierik)                         | smj  | smk  | kr       |
-| smn         | Sami (Inari)                                       | sämikielâ                                          | smn  | smn  | -        |
-| smn-FI      | Sami, Inari (Finland)                              | sämikielâ (Suomâ)                                  | smn  | smn  | €        |
-| sms         | Sami (Skolt)                                       | sääm´ǩiõll                                         | sms  | sms  | -        |
-| sms-FI      | Sami, Skolt (Finland)                              | sääm´ǩiõll (Lää´ddjânnam)                          | sms  | sms  | €        |
-| sq          | Albanian                                           | shqipe                                             | sq   | sqi  | -        |
-| sq-AL       | Albanian (Albania)                                 | shqipe (Shqipëria)                                 | sq   | sqi  | Lek      |
-| sr          | Serbian                                            | srpski                                             | sr   | srp  | -        |
-| sr-Cyrl     | Serbian (Cyrillic)                                 | српски                                             | sr   | srp  | -        |
-| sr-Cyrl-BA  | Serbian (Cyrillic, Bosnia and Herzegovina)         | српски (Босна и Херцеговина)                       | sr   | srn  | КМ       |
-| sr-Cyrl-CS  | Serbian (Cyrillic, Serbia and Montenegro (Former)) | српски (Србија и Црна Гора (Претходно))            | sr   | srp  | Дин.     |
-| sr-Cyrl-ME  | Serbian (Cyrillic, Montenegro)                     | српски (Црна Гора)                                 | sr   | srp  | €        |
-| sr-Cyrl-RS  | Serbian (Cyrillic, Serbia)                         | српски (Србија)                                    | sr   | srp  | Дин.     |
-| sr-Latn     | Serbian (Latin)                                    | srpski                                             | sr   | srp  | -        |
-| sr-Latn-BA  | Serbian (Latin, Bosnia and Herzegovina)            | srpski (Bosna i Hercegovina)                       | sr   | srs  | KM       |
-| sr-Latn-CS  | Serbian (Latin, Serbia and Montenegro (Former))    | srpski (Srbija i Crna Gora (Prethodno))            | sr   | srp  | Din.     |
-| sr-Latn-ME  | Serbian (Latin, Montenegro)                        | srpski (Crna Gora)                                 | sr   | srp  | €        |
-| sr-Latn-RS  | Serbian (Latin, Serbia)                            | srpski (Srbija)                                    | sr   | srp  | Din.     |
-| sv          | Swedish                                            | svenska                                            | sv   | swe  | -        |
-| sv-FI       | Swedish (Finland)                                  | svenska (Finland)                                  | sv   | swe  | €        |
-| sv-SE       | Swedish (Sweden)                                   | svenska (Sverige)                                  | sv   | swe  | kr       |
-| sw          | Kiswahili                                          | Kiswahili                                          | sw   | swa  | -        |
-| sw-KE       | Kiswahili (Kenya)                                  | Kiswahili (Kenya)                                  | sw   | swa  | S        |
-| syr         | Syriac                                             | ܣܘܪܝܝܐ                                             | syr  | syr  | -        |
-| syr-SY      | Syriac (Syria)                                     | ܣܘܪܝܝܐ (سوريا)                                     | syr  | syr  | ل.س.‏    |
-| ta          | Tamil                                              | தமிழ்                                              | ta   | tam  | -        |
-| ta-IN       | Tamil (India)                                      | தமிழ் (இந்தியா)                                    | ta   | tam  | ₹        |
-| te          | Telugu                                             | తెలుగు                                             | te   | tel  | -        |
-| te-IN       | Telugu (India)                                     | తెలుగు (భారత దేశం)                                 | te   | tel  | ₹        |
-| tg          | Tajik                                              | Тоҷикӣ                                             | tg   | tgk  | -        |
-| tg-Cyrl     | Tajik (Cyrillic)                                   | Тоҷикӣ                                             | tg   | tgk  | -        |
-| tg-Cyrl-TJ  | Tajik (Cyrillic, Tajikistan)                       | Тоҷикӣ (Тоҷикистон)                                | tg   | tgk  | т.р.     |
-| th          | Thai                                               | ไทย                                                | th   | tha  | -        |
-| th-TH       | Thai (Thailand)                                    | ไทย (ไทย)                                          | th   | tha  | ฿        |
-| tk          | Turkmen                                            | türkmençe                                          | tk   | tuk  | -        |
-| tk-TM       | Turkmen (Turkmenistan)                             | türkmençe (Türkmenistan)                           | tk   | tuk  | m.       |
-| tn          | Setswana                                           | Setswana                                           | tn   | tsn  | -        |
-| tn-ZA       | Setswana (South Africa)                            | Setswana (Aforika Borwa)                           | tn   | tsn  | R        |
-| tr          | Turkish                                            | Türkçe                                             | tr   | tur  | -        |
-| tr-TR       | Turkish (Turkey)                                   | Türkçe (Türkiye)                                   | tr   | tur  | ₺        |
-| tt          | Tatar                                              | Татар                                              | tt   | tat  | -        |
-| tt-RU       | Tatar (Russia)                                     | Татар (Россия)                                     | tt   | tat  | р.       |
-| tzm         | Tamazight                                          | Tamazight                                          | tzm  | tzm  | -        |
-| tzm-Latn    | Tamazight (Latin)                                  | Tamazight                                          | tzm  | tzm  | -        |
-| tzm-Latn-DZ | Tamazight (Latin, Algeria)                         | Tamazight (Djazaïr)                                | tzm  | tzm  | DZD      |
-| ug          | Uyghur                                             | ئۇيغۇرچە                                           | ug   | uig  | -        |
-| ug-CN       | Uyghur (PRC)                                       | ئۇيغۇرچە (جۇڭخۇا خەلق جۇمھۇرىيىتى)                 | ug   | uig  | ¥        |
-| uk          | Ukrainian                                          | українська                                         | uk   | ukr  | -        |
-| uk-UA       | Ukrainian (Ukraine)                                | українська (Україна)                               | uk   | ukr  | ₴        |
-| ur          | Urdu                                               | اُردو                                              | ur   | urd  | -        |
-| ur-PK       | Urdu (Islamic Republic of Pakistan)                | اُردو (پاکستان)                                    | ur   | urd  | Rs       |
-| uz          | Uzbek                                              | U'zbek                                             | uz   | uzb  | -        |
-| uz-Cyrl     | Uzbek (Cyrillic)                                   | Ўзбек                                              | uz   | uzb  | -        |
-| uz-Cyrl-UZ  | Uzbek (Cyrillic, Uzbekistan)                       | Ўзбек (Ўзбекистон)                                 | uz   | uzb  | сўм      |
-| uz-Latn     | Uzbek (Latin)                                      | U'zbek                                             | uz   | uzb  | -        |
-| uz-Latn-UZ  | Uzbek (Latin, Uzbekistan)                          | U'zbek (U'zbekiston Respublikasi)                  | uz   | uzb  | so'm     |
-| vi          | Vietnamese                                         | Tiếng Việt                                        | vi   | vie  | -        |
-| vi-VN       | Vietnamese (Vietnam)                               | Tiếng Việt (Việt Nam)                             | vi   | vie  | ₫        |
-| wo          | Wolof                                              | Wolof                                              | wo   | wol  | -        |
-| wo-SN       | Wolof (Senegal)                                    | Wolof (Sénégal)                                    | wo   | wol  | XOF      |
-| xh          | isiXhosa                                           | isiXhosa                                           | xh   | xho  | -        |
-| xh-ZA       | isiXhosa (South Africa)                            | isiXhosa (uMzantsi Afrika)                         | xh   | xho  | R        |
-| yo          | Yoruba                                             | Yoruba                                             | yo   | yor  | -        |
-| yo-NG       | Yoruba (Nigeria)                                   | Yoruba (Nigeria)                                   | yo   | yor  | N        |
-| zh          | Chinese                                            | 中文                                                 | zh   | zho  | -        |
-| zh-CHS      | Chinese (Simplified) Legacy                        | 中文(简体) 旧版                                          | zh   | zho  | -        |
-| zh-CHT      | Chinese (Traditional) Legacy                       | 中文(繁體) 舊版                                          | zh   | zho  | -        |
-| zh-CN       | Chinese (Simplified, PRC)                          | 中文 (中华人民共和国)                                       | zh   | zho  | ¥        |
-| zh-HK       | Chinese (Traditional, Hong Kong S.A.R.)            | 中文 (香港特別行政區)                                       | zh   | zho  | HK$      |
-| zh-Hans     | Chinese (Simplified)                               | 中文 (简体)                                            | zh   | zho  | -        |
-| zh-Hant     | Chinese (Traditional)                              | 中文 (繁體)                                            | zh   | zho  | -        |
-| zh-MO       | Chinese (Traditional, Macao S.A.R.)                | 中文 (澳門特別行政區)                                       | zh   | zho  | MOP      |
-| zh-SG       | Chinese (Simplified, Singapore)                    | 中文 (新加坡)                                           | zh   | zho  | $        |
-| zh-TW       | Chinese (Traditional, Taiwan)                      | 中文 (台灣)                                            | zh   | zho  | NT$      |
-| zu          | isiZulu                                            | isiZulu                                            | zu   | zul  | -        |
-| zu-ZA       | isiZulu (South Africa)                             | isiZulu (iNingizimu Afrika)                        | zu   | zul  | R        |
+| code        | english                                            | ISO2 | ISO3 | currency |
+| ----------- | -------------------------------------------------- | ---- | ---- | -------- |
+| af          | Afrikaans                                          | af   | afr  | -        |
+| af-ZA       | Afrikaans (South Africa)                           | af   | afr  | R        |
+| am          | Amharic                                            | am   | amh  | -        |
+| am-ET       | Amharic (Ethiopia)                                 | am   | amh  | ETB      |
+| ar          | Arabic                                             | ar   | ara  | -        |
+| ar-AE       | Arabic (U.A.E.)                                    | ar   | ara  | د.إ.‏    |
+| ar-BH       | Arabic (Bahrain)                                   | ar   | ara  | د.ب.‏    |
+| ar-DZ       | Arabic (Algeria)                                   | ar   | ara  | د.ج.‏    |
+| ar-EG       | Arabic (Egypt)                                     | ar   | ara  | ج.م.‏    |
+| ar-IQ       | Arabic (Iraq)                                      | ar   | ara  | د.ع.‏    |
+| ar-JO       | Arabic (Jordan)                                    | ar   | ara  | د.ا.‏    |
+| ar-KW       | Arabic (Kuwait)                                    | ar   | ara  | د.ك.‏    |
+| ar-LB       | Arabic (Lebanon)                                   | ar   | ara  | ل.ل.‏    |
+| ar-LY       | Arabic (Libya)                                     | ar   | ara  | د.ل.‏    |
+| ar-MA       | Arabic (Morocco)                                   | ar   | ara  | د.م.‏    |
+| ar-OM       | Arabic (Oman)                                      | ar   | ara  | ر.ع.‏    |
+| ar-QA       | Arabic (Qatar)                                     | ar   | ara  | ر.ق.‏    |
+| ar-SA       | Arabic (Saudi Arabia)                              | ar   | ara  | ر.س.‏    |
+| ar-SY       | Arabic (Syria)                                     | ar   | ara  | ل.س.‏    |
+| ar-TN       | Arabic (Tunisia)                                   | ar   | ara  | د.ت.‏    |
+| ar-YE       | Arabic (Yemen)                                     | ar   | ara  | ر.ي.‏    |
+| arn         | Mapudungun                                         | arn  | arn  | -        |
+| arn-CL      | Mapudungun (Chile)                                 | arn  | arn  | $        |
+| as          | Assamese                                           | as   | asm  | -        |
+| as-IN       | Assamese (India)                                   | as   | asm  | ₹        |
+| az          | Azeri                                              | az   | aze  | -        |
+| az-Cyrl     | Azeri (Cyrillic)                                   | az   | aze  | -        |
+| az-Cyrl-AZ  | Azeri (Cyrillic, Azerbaijan)                       | az   | aze  | ман.     |
+| az-Latn     | Azeri (Latin)                                      | az   | aze  | -        |
+| az-Latn-AZ  | Azeri (Latin, Azerbaijan)                          | az   | aze  | man.     |
+| ba          | Bashkir                                            | ba   | bak  | -        |
+| ba-RU       | Bashkir (Russia)                                   | ba   | bak  | һ.       |
+| be          | Belarusian                                         | be   | bel  | -        |
+| be-BY       | Belarusian (Belarus)                               | be   | bel  | р.       |
+| bg          | Bulgarian                                          | bg   | bul  | -        |
+| bg-BG       | Bulgarian (Bulgaria)                               | bg   | bul  | лв.      |
+| bn          | Bengali                                            | bn   | bng  | -        |
+| bn-BD       | Bengali (Bangladesh)                               | bn   | bng  | ৳        |
+| bn-IN       | Bengali (India)                                    | bn   | bng  | ₹        |
+| bo          | Tibetan                                            | bo   | bod  | -        |
+| bo-CN       | Tibetan (PRC)                                      | bo   | bod  | ¥        |
+| br          | Breton                                             | br   | bre  | -        |
+| br-FR       | Breton (France)                                    | br   | bre  | €        |
+| bs          | Bosnian                                            | bs   | bsb  | -        |
+| bs-Cyrl     | Bosnian (Cyrillic)                                 | bs   | bsc  | -        |
+| bs-Cyrl-BA  | Bosnian (Cyrillic, Bosnia and Herzegovina)         | bs   | bsc  | КМ       |
+| bs-Latn     | Bosnian (Latin)                                    | bs   | bsb  | -        |
+| bs-Latn-BA  | Bosnian (Latin, Bosnia and Herzegovina)            | bs   | bsb  | KM       |
+| ca          | Catalan                                            | ca   | cat  | -        |
+| ca-ES       | Catalan (Catalan)                                  | ca   | cat  | €        |
+| co          | Corsican                                           | co   | cos  | -        |
+| co-FR       | Corsican (France)                                  | co   | cos  | €        |
+| cs          | Czech                                              | cs   | ces  | -        |
+| cs-CZ       | Czech (Czech Republic)                             | cs   | ces  | Kč       |
+| cy          | Welsh                                              | cy   | cym  | -        |
+| cy-GB       | Welsh (United Kingdom)                             | cy   | cym  | £        |
+| da          | Danish                                             | da   | dan  | -        |
+| da-DK       | Danish (Denmark)                                   | da   | dan  | kr.      |
+| de          | German                                             | de   | deu  | -        |
+| de-AT       | German (Austria)                                   | de   | deu  | €        |
+| de-CH       | German (Switzerland)                               | de   | deu  | Fr.      |
+| de-DE       | German (Germany)                                   | de   | deu  | €        |
+| de-LI       | German (Liechtenstein)                             | de   | deu  | CHF      |
+| de-LU       | German (Luxembourg)                                | de   | deu  | €        |
+| dsb         | Lower Sorbian                                      | dsb  | dsb  | -        |
+| dsb-DE      | Lower Sorbian (Germany)                            | dsb  | dsb  | €        |
+| dv          | Divehi                                             | dv   | div  | -        |
+| dv-MV       | Divehi (Maldives)                                  | dv   | div  | ރ.       |
+| el          | Greek                                              | el   | ell  | -        |
+| el-GR       | Greek (Greece)                                     | el   | ell  | €        |
+| en          | English                                            | en   | eng  | -        |
+| en-029      | English (Caribbean)                                | en   | eng  | $        |
+| en-AU       | English (Australia)                                | en   | eng  | $        |
+| en-BZ       | English (Belize)                                   | en   | eng  | BZ$      |
+| en-CA       | English (Canada)                                   | en   | eng  | $        |
+| en-GB       | English (United Kingdom)                           | en   | eng  | £        |
+| en-IE       | English (Ireland)                                  | en   | eng  | €        |
+| en-IN       | English (India)                                    | en   | eng  | ₹        |
+| en-JM       | English (Jamaica)                                  | en   | eng  | J$       |
+| en-MY       | English (Malaysia)                                 | en   | eng  | RM       |
+| en-NZ       | English (New Zealand)                              | en   | eng  | $        |
+| en-PH       | English (Republic of the Philippines)              | en   | eng  | Php      |
+| en-SG       | English (Singapore)                                | en   | eng  | $        |
+| en-TT       | English (Trinidad and Tobago)                      | en   | eng  | TT$      |
+| en-US       | English (United States)                            | en   | eng  | $        |
+| en-ZA       | English (South Africa)                             | en   | eng  | R        |
+| en-ZW       | English (Zimbabwe)                                 | en   | eng  | Z$       |
+| es          | Spanish                                            | es   | spa  | -        |
+| es-AR       | Spanish (Argentina)                                | es   | spa  | $        |
+| es-BO       | Spanish (Bolivia)                                  | es   | spa  | $b       |
+| es-CL       | Spanish (Chile)                                    | es   | spa  | $        |
+| es-CO       | Spanish (Colombia)                                 | es   | spa  | $        |
+| es-CR       | Spanish (Costa Rica)                               | es   | spa  | ₡        |
+| es-DO       | Spanish (Dominican Republic)                       | es   | spa  | RD$      |
+| es-EC       | Spanish (Ecuador)                                  | es   | spa  | $        |
+| es-ES       | Spanish (Spain, International Sort)                | es   | spa  | €        |
+| es-GT       | Spanish (Guatemala)                                | es   | spa  | Q        |
+| es-HN       | Spanish (Honduras)                                 | es   | spa  | L.       |
+| es-MX       | Spanish (Mexico)                                   | es   | spa  | $        |
+| es-NI       | Spanish (Nicaragua)                                | es   | spa  | C$       |
+| es-PA       | Spanish (Panama)                                   | es   | spa  | B/.      |
+| es-PE       | Spanish (Peru)                                     | es   | spa  | S/.      |
+| es-PR       | Spanish (Puerto Rico)                              | es   | spa  | $        |
+| es-PY       | Spanish (Paraguay)                                 | es   | spa  | Gs       |
+| es-SV       | Spanish (El Salvador)                              | es   | spa  | $        |
+| es-US       | Spanish (United States)                            | es   | spa  | $        |
+| es-UY       | Spanish (Uruguay)                                  | es   | spa  | $U       |
+| es-VE       | Spanish (Bolivarian Republic of Venezuela)         | es   | spa  | Bs. F.   |
+| et          | Estonian                                           | et   | est  | -        |
+| et-EE       | Estonian (Estonia)                                 | et   | est  | €        |
+| eu          | Basque                                             | eu   | eus  | -        |
+| eu-ES       | Basque (Basque)                                    | eu   | eus  | €        |
+| fa          | Persian                                            | fa   | fas  | -        |
+| fa-IR       | Persian                                            | fa   | fas  | ريال     |
+| fi          | Finnish                                            | fi   | fin  | -        |
+| fi-FI       | Finnish (Finland)                                  | fi   | fin  | €        |
+| fil         | Filipino                                           | fil  | fil  | -        |
+| fil-PH      | Filipino (Philippines)                             | fil  | fil  | PhP      |
+| fo          | Faroese                                            | fo   | fao  | -        |
+| fo-FO       | Faroese (Faroe Islands)                            | fo   | fao  | kr.      |
+| fr          | French                                             | fr   | fra  | -        |
+| fr-BE       | French (Belgium)                                   | fr   | fra  | €        |
+| fr-CA       | French (Canada)                                    | fr   | fra  | $        |
+| fr-CH       | French (Switzerland)                               | fr   | fra  | fr.      |
+| fr-FR       | French (France)                                    | fr   | fra  | €        |
+| fr-LU       | French (Luxembourg)                                | fr   | fra  | €        |
+| fr-MC       | French (Monaco)                                    | fr   | fra  | €        |
+| fy          | Frisian                                            | fy   | fry  | -        |
+| fy-NL       | Frisian (Netherlands)                              | fy   | fry  | €        |
+| ga          | Irish                                              | ga   | gle  | -        |
+| ga-IE       | Irish (Ireland)                                    | ga   | gle  | €        |
+| gd          | Scottish Gaelic                                    | gd   | gla  | -        |
+| gd-GB       | Scottish Gaelic (United Kingdom)                   | gd   | gla  | £        |
+| gl          | Galician                                           | gl   | glg  | -        |
+| gl-ES       | Galician (Galician)                                | gl   | glg  | €        |
+| gsw         | Alsatian                                           | gsw  | gsw  | -        |
+| gsw-FR      | Alsatian (France)                                  | gsw  | gsw  | €        |
+| gu          | Gujarati                                           | gu   | guj  | -        |
+| gu-IN       | Gujarati (India)                                   | gu   | guj  | ₹        |
+| ha          | Hausa                                              | ha   | hau  | -        |
+| ha-Latn     | Hausa (Latin)                                      | ha   | hau  | -        |
+| ha-Latn-NG  | Hausa (Latin, Nigeria)                             | ha   | hau  | N        |
+| he          | Hebrew                                             | he   | heb  | -        |
+| he-IL       | Hebrew (Israel)                                    | he   | heb  | ₪        |
+| hi          | Hindi                                              | hi   | hin  | -        |
+| hi-IN       | Hindi (India)                                      | hi   | hin  | ₹        |
+| hr          | Croatian                                           | hr   | hrv  | -        |
+| hr-BA       | Croatian (Latin, Bosnia and Herzegovina)           | hr   | hrb  | KM       |
+| hr-HR       | Croatian (Croatia)                                 | hr   | hrv  | kn       |
+| hsb         | Upper Sorbian                                      | hsb  | hsb  | -        |
+| hsb-DE      | Upper Sorbian (Germany)                            | hsb  | hsb  | €        |
+| hu          | Hungarian                                          | hu   | hun  | -        |
+| hu-HU       | Hungarian (Hungary)                                | hu   | hun  | Ft       |
+| hy          | Armenian                                           | hy   | hye  | -        |
+| hy-AM       | Armenian (Armenia)                                 | hy   | hye  | դր.      |
+| id          | Indonesian                                         | id   | ind  | -        |
+| id-ID       | Indonesian (Indonesia)                             | id   | ind  | Rp       |
+| ig          | Igbo                                               | ig   | ibo  | -        |
+| ig-NG       | Igbo (Nigeria)                                     | ig   | ibo  | N        |
+| ii          | Yi                                                 | ii   | iii  | -        |
+| ii-CN       | Yi (PRC)                                           | ii   | iii  | ¥        |
+| is          | Icelandic                                          | is   | isl  | -        |
+| is-IS       | Icelandic (Iceland)                                | is   | isl  | kr.      |
+| it          | Italian                                            | it   | ita  | -        |
+| it-CH       | Italian (Switzerland)                              | it   | ita  | fr.      |
+| it-IT       | Italian (Italy)                                    | it   | ita  | €        |
+| iu          | Inuktitut                                          | iu   | iku  | -        |
+| iu-Cans     | Inuktitut (Syllabics)                              | iu   | iku  | -        |
+| iu-Cans-CA  | Inuktitut (Syllabics, Canada)                      | iu   | iku  | $        |
+| iu-Latn     | Inuktitut (Latin)                                  | iu   | iku  | -        |
+| iu-Latn-CA  | Inuktitut (Latin, Canada)                          | iu   | iku  | $        |
+| ja          | Japanese                                           | ja   | jpn  | -        |
+| ja-JP       | Japanese (Japan)                                   | ja   | jpn  | ¥        |
+| ka          | Georgian                                           | ka   | kat  | -        |
+| ka-GE       | Georgian (Georgia)                                 | ka   | kat  | Lari     |
+| kk          | Kazakh                                             | kk   | kaz  | -        |
+| kk-KZ       | Kazakh (Kazakhstan)                                | kk   | kaz  | Т        |
+| kl          | Greenlandic                                        | kl   | kal  | -        |
+| kl-GL       | Greenlandic (Greenland)                            | kl   | kal  | kr.      |
+| km          | Khmer                                              | km   | khm  | -        |
+| km-KH       | Khmer (Cambodia)                                   | km   | khm  | ៛        |
+| kn          | Kannada                                            | kn   | kan  | -        |
+| kn-IN       | Kannada (India)                                    | kn   | kan  | ₹        |
+| ko          | Korean                                             | ko   | kor  | -        |
+| ko-KR       | Korean (Korea)                                     | ko   | kor  | ₩        |
+| kok         | Konkani                                            | kok  | kok  | -        |
+| kok-IN      | Konkani (India)                                    | kok  | kok  | ₹        |
+| ky          | Kyrgyz                                             | ky   | kir  | -        |
+| ky-KG       | Kyrgyz (Kyrgyzstan)                                | ky   | kir  | сом      |
+| lb          | Luxembourgish                                      | lb   | ltz  | -        |
+| lb-LU       | Luxembourgish (Luxembourg)                         | lb   | ltz  | €        |
+| lo          | Lao                                                | lo   | lao  | -        |
+| lo-LA       | Lao (Lao P.D.R.)                                   | lo   | lao  | ₭        |
+| lt          | Lithuanian                                         | lt   | lit  | -        |
+| lt-LT       | Lithuanian (Lithuania)                             | lt   | lit  | Lt       |
+| lv          | Latvian                                            | lv   | lav  | -        |
+| lv-LV       | Latvian (Latvia)                                   | lv   | lav  | €        |
+| mi          | Maori                                              | mi   | mri  | -        |
+| mi-NZ       | Maori (New Zealand)                                | mi   | mri  | $        |
+| mk          | Macedonian (FYROM)                                 | mk   | mkd  | -        |
+| mk-MK       | Macedonian (Former Yugoslav Republic of Macedonia) | mk   | mkd  | ден.     |
+| ml          | Malayalam                                          | ml   | mym  | -        |
+| ml-IN       | Malayalam (India)                                  | ml   | mym  | ₹        |
+| mn          | Mongolian                                          | mn   | mon  | -        |
+| mn-Cyrl     | Mongolian (Cyrillic)                               | mn   | mon  | -        |
+| mn-MN       | Mongolian (Cyrillic, Mongolia)                     | mn   | mon  | ₮        |
+| mn-Mong     | Mongolian (Traditional Mongolian)                  | mn   | mon  | -        |
+| mn-Mong-CN  | Mongolian (Traditional Mongolian, PRC)             | mn   | mon  | ¥        |
+| moh         | Mohawk                                             | moh  | moh  | -        |
+| moh-CA      | Mohawk (Mohawk)                                    | moh  | moh  | $        |
+| mr          | Marathi                                            | mr   | mar  | -        |
+| mr-IN       | Marathi (India)                                    | mr   | mar  | ₹        |
+| ms          | Malay                                              | ms   | msa  | -        |
+| ms-BN       | Malay (Brunei Darussalam)                          | ms   | msa  | $        |
+| ms-MY       | Malay (Malaysia)                                   | ms   | msa  | RM       |
+| mt          | Maltese                                            | mt   | mlt  | -        |
+| mt-MT       | Maltese (Malta)                                    | mt   | mlt  | €        |
+| nb          | Norwegian (Bokmål)                                 | nb   | nob  | -        |
+| nb-NO       | Norwegian, Bokmål (Norway)                         | nb   | nob  | kr       |
+| ne          | Nepali                                             | ne   | nep  | -        |
+| ne-NP       | Nepali (Nepal)                                     | ne   | nep  | रु       |
+| nl          | Dutch                                              | nl   | nld  | -        |
+| nl-BE       | Dutch (Belgium)                                    | nl   | nld  | €        |
+| nl-NL       | Dutch (Netherlands)                                | nl   | nld  | €        |
+| nn          | Norwegian (Nynorsk)                                | nn   | nno  | -        |
+| nn-NO       | Norwegian, Nynorsk (Norway)                        | nn   | nno  | kr       |
+| no          | Norwegian                                          | nb   | nob  | -        |
+| nso         | Sesotho sa Leboa                                   | nso  | nso  | -        |
+| nso-ZA      | Sesotho sa Leboa (South Africa)                    | nso  | nso  | R        |
+| oc          | Occitan                                            | oc   | oci  | -        |
+| oc-FR       | Occitan (France)                                   | oc   | oci  | €        |
+| or          | Oriya                                              | or   | ori  | -        |
+| or-IN       | Oriya (India)                                      | or   | ori  | ₹        |
+| pa          | Punjabi                                            | pa   | pan  | -        |
+| pa-IN       | Punjabi (India)                                    | pa   | pan  | ₹        |
+| pl          | Polish                                             | pl   | pol  | -        |
+| pl-PL       | Polish (Poland)                                    | pl   | pol  | zł       |
+| prs         | Dari                                               | prs  | prs  | -        |
+| prs-AF      | Dari (Afghanistan)                                 | prs  | prs  | ؋        |
+| ps          | Pashto                                             | ps   | pus  | -        |
+| ps-AF       | Pashto (Afghanistan)                               | ps   | pus  | ؋        |
+| pt          | Portuguese                                         | pt   | por  | -        |
+| pt-BR       | Portuguese (Brazil)                                | pt   | por  | R$       |
+| pt-PT       | Portuguese (Portugal)                              | pt   | por  | €        |
+| qut         | K'iche                                             | qut  | qut  | -        |
+| qut-GT      | K'iche (Guatemala)                                 | qut  | qut  | Q        |
+| quz         | Quechua                                            | quz  | qub  | -        |
+| quz-BO      | Quechua (Bolivia)                                  | quz  | qub  | $b       |
+| quz-EC      | Quechua (Ecuador)                                  | quz  | que  | $        |
+| quz-PE      | Quechua (Peru)                                     | quz  | qup  | S/.      |
+| rm          | Romansh                                            | rm   | roh  | -        |
+| rm-CH       | Romansh (Switzerland)                              | rm   | roh  | fr.      |
+| ro          | Romanian                                           | ro   | ron  | -        |
+| ro-RO       | Romanian (Romania)                                 | ro   | ron  | lei      |
+| ru          | Russian                                            | ru   | rus  | -        |
+| ru-RU       | Russian (Russia)                                   | ru   | rus  | р.       |
+| rw          | Kinyarwanda                                        | rw   | kin  | -        |
+| rw-RW       | Kinyarwanda (Rwanda)                               | rw   | kin  | RWF      |
+| sa          | Sanskrit                                           | sa   | san  | -        |
+| sa-IN       | Sanskrit (India)                                   | sa   | san  | ₹        |
+| sah         | Yakut                                              | sah  | sah  | -        |
+| sah-RU      | Yakut (Russia)                                     | sah  | sah  | с.       |
+| se          | Sami (Northern)                                    | se   | sme  | -        |
+| se-FI       | Sami, Northern (Finland)                           | se   | smg  | €        |
+| se-NO       | Sami, Northern (Norway)                            | se   | sme  | kr       |
+| se-SE       | Sami, Northern (Sweden)                            | se   | smf  | kr       |
+| si          | Sinhala                                            | si   | sin  | -        |
+| si-LK       | Sinhala (Sri Lanka)                                | si   | sin  | රු.      |
+| sk          | Slovak                                             | sk   | slk  | -        |
+| sk-SK       | Slovak (Slovakia)                                  | sk   | slk  | €        |
+| sl          | Slovenian                                          | sl   | slv  | -        |
+| sl-SI       | Slovenian (Slovenia)                               | sl   | slv  | €        |
+| sma         | Sami (Southern)                                    | sma  | smb  | -        |
+| sma-NO      | Sami, Southern (Norway)                            | sma  | sma  | kr       |
+| sma-SE      | Sami, Southern (Sweden)                            | sma  | smb  | kr       |
+| smj         | Sami (Lule)                                        | smj  | smk  | -        |
+| smj-NO      | Sami, Lule (Norway)                                | smj  | smj  | kr       |
+| smj-SE      | Sami, Lule (Sweden)                                | smj  | smk  | kr       |
+| smn         | Sami (Inari)                                       | smn  | smn  | -        |
+| smn-FI      | Sami, Inari (Finland)                              | smn  | smn  | €        |
+| sms         | Sami (Skolt)                                       | sms  | sms  | -        |
+| sms-FI      | Sami, Skolt (Finland)                              | sms  | sms  | €        |
+| sq          | Albanian                                           | sq   | sqi  | -        |
+| sq-AL       | Albanian (Albania)                                 | sq   | sqi  | Lek      |
+| sr          | Serbian                                            | sr   | srp  | -        |
+| sr-Cyrl     | Serbian (Cyrillic)                                 | sr   | srp  | -        |
+| sr-Cyrl-BA  | Serbian (Cyrillic, Bosnia and Herzegovina)         | sr   | srn  | КМ       |
+| sr-Cyrl-CS  | Serbian (Cyrillic, Serbia and Montenegro (Former)) | sr   | srp  | Дин.     |
+| sr-Cyrl-ME  | Serbian (Cyrillic, Montenegro)                     | sr   | srp  | €        |
+| sr-Cyrl-RS  | Serbian (Cyrillic, Serbia)                         | sr   | srp  | Дин.     |
+| sr-Latn     | Serbian (Latin)                                    | sr   | srp  | -        |
+| sr-Latn-BA  | Serbian (Latin, Bosnia and Herzegovina)            | sr   | srs  | KM       |
+| sr-Latn-CS  | Serbian (Latin, Serbia and Montenegro (Former))    | sr   | srp  | Din.     |
+| sr-Latn-ME  | Serbian (Latin, Montenegro)                        | sr   | srp  | €        |
+| sr-Latn-RS  | Serbian (Latin, Serbia)                            | sr   | srp  | Din.     |
+| sv          | Swedish                                            | sv   | swe  | -        |
+| sv-FI       | Swedish (Finland)                                  | sv   | swe  | €        |
+| sv-SE       | Swedish (Sweden)                                   | sv   | swe  | kr       |
+| sw          | Kiswahili                                          | sw   | swa  | -        |
+| sw-KE       | Kiswahili (Kenya)                                  | sw   | swa  | S        |
+| syr         | Syriac                                             | syr  | syr  | -        |
+| syr-SY      | Syriac (Syria)                                     | syr  | syr  | ل.س.‏    |
+| ta          | Tamil                                              | ta   | tam  | -        |
+| ta-IN       | Tamil (India)                                      | ta   | tam  | ₹        |
+| te          | Telugu                                             | te   | tel  | -        |
+| te-IN       | Telugu (India)                                     | te   | tel  | ₹        |
+| tg          | Tajik                                              | tg   | tgk  | -        |
+| tg-Cyrl     | Tajik (Cyrillic)                                   | tg   | tgk  | -        |
+| tg-Cyrl-TJ  | Tajik (Cyrillic, Tajikistan)                       | tg   | tgk  | т.р.     |
+| th          | Thai                                               | th   | tha  | -        |
+| th-TH       | Thai (Thailand)                                    | th   | tha  | ฿        |
+| tk          | Turkmen                                            | tk   | tuk  | -        |
+| tk-TM       | Turkmen (Turkmenistan)                             | tk   | tuk  | m.       |
+| tn          | Setswana                                           | tn   | tsn  | -        |
+| tn-ZA       | Setswana (South Africa)                            | tn   | tsn  | R        |
+| tr          | Turkish                                            | tr   | tur  | -        |
+| tr-TR       | Turkish (Turkey)                                   | tr   | tur  | ₺        |
+| tt          | Tatar                                              | tt   | tat  | -        |
+| tt-RU       | Tatar (Russia)                                     | tt   | tat  | р.       |
+| tzm         | Tamazight                                          | tzm  | tzm  | -        |
+| tzm-Latn    | Tamazight (Latin)                                  | tzm  | tzm  | -        |
+| tzm-Latn-DZ | Tamazight (Latin, Algeria)                         | tzm  | tzm  | DZD      |
+| ug          | Uyghur                                             | ug   | uig  | -        |
+| ug-CN       | Uyghur (PRC)                                       | ug   | uig  | ¥        |
+| uk          | Ukrainian                                          | uk   | ukr  | -        |
+| uk-UA       | Ukrainian (Ukraine)                                | uk   | ukr  | ₴        |
+| ur          | Urdu                                               | ur   | urd  | -        |
+| ur-PK       | Urdu (Islamic Republic of Pakistan)                | ur   | urd  | Rs       |
+| uz          | Uzbek                                              | uz   | uzb  | -        |
+| uz-Cyrl     | Uzbek (Cyrillic)                                   | uz   | uzb  | -        |
+| uz-Cyrl-UZ  | Uzbek (Cyrillic, Uzbekistan)                       | uz   | uzb  | сўм      |
+| uz-Latn     | Uzbek (Latin)                                      | uz   | uzb  | -        |
+| uz-Latn-UZ  | Uzbek (Latin, Uzbekistan)                          | uz   | uzb  | so'm     |
+| vi          | Vietnamese                                         | vi   | vie  | -        |
+| vi-VN       | Vietnamese (Vietnam)                               | vi   | vie  | ₫        |
+| wo          | Wolof                                              | wo   | wol  | -        |
+| wo-SN       | Wolof (Senegal)                                    | wo   | wol  | XOF      |
+| xh          | isiXhosa                                           | xh   | xho  | -        |
+| xh-ZA       | isiXhosa (South Africa)                            | xh   | xho  | R        |
+| yo          | Yoruba                                             | yo   | yor  | -        |
+| yo-NG       | Yoruba (Nigeria)                                   | yo   | yor  | N        |
+| zh          | Chinese                                            | zh   | zho  | -        |
+| zh-CHS      | Chinese (Simplified) Legacy                        | zh   | zho  | -        |
+| zh-CHT      | Chinese (Traditional) Legacy                       | zh   | zho  | -        |
+| zh-CN       | Chinese (Simplified, PRC)                          | zh   | zho  | ¥        |
+| zh-HK       | Chinese (Traditional, Hong Kong S.A.R.)            | zh   | zho  | HK$      |
+| zh-Hans     | Chinese (Simplified)                               | zh   | zho  | -        |
+| zh-Hant     | Chinese (Traditional)                              | zh   | zho  | -        |
+| zh-MO       | Chinese (Traditional, Macao S.A.R.)                | zh   | zho  | MOP      |
+| zh-SG       | Chinese (Simplified, Singapore)                    | zh   | zho  | $        |
+| zh-TW       | Chinese (Traditional, Taiwan)                      | zh   | zho  | NT$      |
+| zu          | isiZulu                                            | zu   | zul  | -        |
+| zu-ZA       | isiZulu (South Africa)                             | zu   | zul  | R        |
 
 <!-- END_CULTURES -->
+
 
 
 
