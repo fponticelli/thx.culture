@@ -14,10 +14,11 @@ class GenMarkdown {
     // list all cultures
     Embed.all();
 
-    var arr = [['code', 'english', 'ISO2', 'ISO3', 'currency']].concat(Culture.iterator().map(function(cult) {
+    var arr = [['code', 'english', 'native', 'ISO2', 'ISO3', 'currency']].concat(Culture.iterator().map(function(cult) {
       return [
         cult.code,
         cult.nameDisplayEnglish,
+        (cult.isRightToLeft ? '&#x202b;' : '') + cult.nameDisplayNative,
         cult.iso2,
         cult.iso3,
         null != cult.number ? (cult.isRightToLeft ? '&#x202b;' : '') + cult.number.symbolCurrency : '-'];
