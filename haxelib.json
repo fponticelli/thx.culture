@@ -5,7 +5,7 @@
   "classPath": "src",
   "tags": ["localization", "thx", "cross"],
   "description": "Localization library.",
-  "releasenote": "updated release",
+  "releasenote": "Completely refactored release",
   "version": "0.2.0",
   "contributors": ["fponticelli"],
   "dependencies": {
