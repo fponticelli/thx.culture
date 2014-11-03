@@ -8,17 +8,6 @@ Localization library for Haxe. Strongly based on [.Net globalization](http://msd
 
 List of supported cultures.
 
-
-
-
-
-
-
-
-
-
-
-
 <!-- BEGIN_CULTURES -->
 
 | code        | english                                            | native                                             | ISO2 | ISO3 | currency      |
@@ -379,20 +368,8 @@ List of supported cultures.
 
 <!-- END_CULTURES -->
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## install
 
 ```bash
-haxelib git thx.culture https://github.com/fponticelli/thx.culture.git
+haxelib install thx.culture
 ```
