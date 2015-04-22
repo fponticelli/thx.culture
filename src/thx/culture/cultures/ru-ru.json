@@ -7,7 +7,7 @@
     "separatorGroupNumber": " ",
     "separatorDecimalPercent": ",",
     "signNegative": "-",
-    "symbolCurrency": "р.",
+    "symbolCurrency": "₽",
     "symbolPercent": "%",
     "groupSizesNumber": [
       3
@@ -24,10 +24,10 @@
     "groupSizesPercent": [
       3
     ],
-    "patternNegativeCurrency": 5,
+    "patternNegativeCurrency": 8,
     "patternNegativePercent": 1,
     "patternPositivePercent": 1,
-    "patternPositiveCurrency": 1,
+    "patternPositiveCurrency": 3,
     "decimalDigitsNumber": 2,
     "decimalDigitsCurrency": 2,
     "patternNegativeNumber": 1,

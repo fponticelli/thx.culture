@@ -4,4 +4,4 @@
 -main Generate
 -cs bin/generate/cs/
 
--cmd mono bin/generate/cs/bin/Generate.exe
+#-cmd mono bin/generate/cs/bin/Generate.exe
