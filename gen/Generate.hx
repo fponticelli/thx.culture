@@ -22,20 +22,13 @@ class Generate {
     Lib.array(CultureInfo.GetCultures(CultureTypes.AllCultures))
       .filterPluck(null != _)
       .map(extractCulture)
-      .filter(function(culture) return culture.code != "")
+      .filterPluck("" != _.code)
       .map(function(culture) {
         var code = culture.code.toLowerCase(),
             file = '$path/$code.json',
             json = haxe.Json.stringify(culture.toObject(), '  ');
         sys.io.File.saveContent(file, json);
       });
-
-    // INVARIANT
-    //var ci = CultureInfo.InvariantCulture;
-    //var df = extractDateFormatInfo(ci);
-    //var nf = extractNumberFormatInfo(ci);
-    //var c  = extractCulture(ci);
-    //trace(haxe.Json.stringify(c, null, ' '));
   }
 
   static var patternExtractNames = ~/^([^(]+)\(([^)]+)\)$/;
