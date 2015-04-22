@@ -2,8 +2,8 @@ import cs.Lib;
 import cs.system.globalization.*;
 import sys.FileSystem;
 
-using thx.core.Arrays;
-using thx.core.Strings;
+using thx.Arrays;
+using thx.Strings;
 import thx.culture.*;
 using StringTools;
 

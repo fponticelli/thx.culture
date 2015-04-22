@@ -1,10 +1,10 @@
 import thx.culture.*;
 
-using thx.core.Arrays;
-using thx.core.Nulls;
-using thx.core.Ints;
-using thx.core.Iterators;
-using thx.core.Strings;
+using thx.Arrays;
+using thx.Nulls;
+using thx.Ints;
+using thx.Iterators;
+using thx.Strings;
 
 class GenMarkdown {
   public static function main() {

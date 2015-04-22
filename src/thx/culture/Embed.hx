@@ -1,8 +1,8 @@
 package thx.culture;
 
 #if macro
-using thx.core.Arrays;
-using thx.core.Strings;
+using thx.Arrays;
+using thx.Strings;
 #end
 
 class Embed {
