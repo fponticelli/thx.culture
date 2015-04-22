@@ -5,8 +5,8 @@
   "classPath": "src",
   "tags": ["localization", "thx", "cross"],
   "description": "Localization library.",
-  "releasenote": "Updated documentation",
-  "version": "0.2.1",
+  "releasenote": "Updated a few definitions and updated package for thx.core",
+  "version": "0.3.0",
   "contributors": ["fponticelli"],
   "dependencies": {
     "thx.core": ""
