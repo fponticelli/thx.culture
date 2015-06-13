@@ -3,6 +3,7 @@ import cs.system.globalization.*;
 import sys.FileSystem;
 
 using thx.Arrays;
+using thx.Functions;
 using thx.Strings;
 import thx.culture.*;
 using StringTools;
@@ -20,9 +21,9 @@ class Generate {
     FileSystem.createDirectory(path);
 
     Lib.array(CultureInfo.GetCultures(CultureTypes.AllCultures))
-      .filterPluck(null != _)
+      .filter.fn(null != _)
       .map(extractCulture)
-      .filterPluck("" != _.code)
+      .filter.fn("" != _.code)
       .map(function(culture) {
         var code = culture.code.toLowerCase(),
             file = '$path/$code.json',

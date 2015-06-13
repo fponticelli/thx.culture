@@ -42,7 +42,7 @@ class Embed {
     var path  = '${getPath()}/$dir/',
         files = sys.FileSystem.readDirectory(path);
     files.order(function(a, b) return Strings.compare(a, b));
-    return Arrays.pluck(files, _.split('.').shift());
+    return files.map(function(o) return o.split('.').shift());
   }
 
   static function getPath() {
