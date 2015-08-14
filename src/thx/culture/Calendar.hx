@@ -12,6 +12,7 @@ class Calendar {
     return throw new thx.error.AbstractMethod();
   public function getMonth(date : DateTime) : Int
     return throw new thx.error.AbstractMethod();
+
 /**
 Era defaults to `currentEra` if not provided.
 */
