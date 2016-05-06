@@ -2,7 +2,5 @@
 -cp test
 -lib utest
 -lib thx.core
--lib hxcs
--cs bin/cs
+-D travis
 -main TestAll
--D thx-culture
