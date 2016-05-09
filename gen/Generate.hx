@@ -1,6 +1,5 @@
 import cs.Lib;
 import cs.system.globalization.*;
-import haxe.Json;
 import sys.FileSystem;
 
 using thx.Arrays;
@@ -31,9 +30,6 @@ class Generate {
             json = haxe.Json.stringify(culture.toObject(), '  ');
         sys.io.File.saveContent(file, json);
       });
-	  
-	var info = extractCulture(CultureInfo.InvariantCulture);
-	//trace(Json.stringify(info.toObject(), null, "  "));
   }
 
   static var patternExtractNames = ~/^([^(]+)\(([^)]+)\)$/;
