@@ -127,7 +127,6 @@ class Generate {
 
   public static function extractDateFormatInfo(ci : CultureInfo) {
     var dt  = ci.DateTimeFormat,
-        cwr = dt.CalendarWeekRule,
         fdw = dt.FirstDayOfWeek;
 
     return new DateFormatInfo(
